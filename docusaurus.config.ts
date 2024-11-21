@@ -24,8 +24,8 @@ const config: Config = {
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'ct-sce', // Usually your GitHub org/user name.
-  projectName: 'test-docusaurus', // Usually your repo name.
+  organizationName: 'aelttil', // Usually your GitHub org/user name.
+  projectName: 'docs-content', // Usually your repo name.
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
