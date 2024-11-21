@@ -81,16 +81,3 @@ title: Suivi des changements
 ## Version 240430.1.36.4
 
 - Correction de quelques informations sur l'offre de calcul vmware et le stockage.
-
-## Version 240430.1.36.3
-
-- L'offre de [Calcul v2](../iaas/compute.md/#offre-de-calcul-v2) n'est plus commercialisée et est remplacée par l'offre de [Calcul v3](../iaas/compute.md/#offre-de-calcul-v3).
-- Ajout de la description de [l'abonnement aux canaux de notification thématique](../console/accounts.md#abonnement-aux-notifications-thématiques).
-- Ajout de la [gestion des accès réseaux à vos buckets S3](../paas/s3.md#limitations-des-accès-à-vos-bucket-s3) et enrichissement de la [faq](../paas/s3.md#faq).
-- L'offre IPV4 v1 n'est plus commercialisée et est remplacée par l'offre IPV4 v2.
-- Ajout de la description de la [gestion des accès internet](../network/internet.md#gestion-de-vos-connectivités-internet) depuis la console Cloud Temple.
-- Ajout de la description de l'usage des adresses *Provider Independant*.
-- Ajout des unités d'oeuvre RedHat Openshift.
-- Ajout des unités d'oeuvre de [hosting de type 'serveur'](../housing/housing.md).
-- Ajout du suivi des [opérations planifiés et incidents](../console/status.md) dans la console Cloud Temple.
-- Mise a jour des [permissions](../console/permissions.md).
