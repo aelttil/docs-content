@@ -5,7 +5,7 @@ import type * as Preset from '@docusaurus/preset-classic';
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
 const config: Config = {
-  title: 'My Site',
+  title: 'Cloud Temple Docs',
   tagline: 'Dinosaurs are cool',
   favicon: 'img/favicon.ico',
 
@@ -20,7 +20,7 @@ const config: Config = {
   url: 'https://github.com',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/test-docusaurus/',
+  baseUrl: '/docs-content/',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
@@ -33,19 +33,19 @@ const config: Config = {
   // Even if you don't use internationalization, you can use this field to set
   // useful metadata like html lang. For example, if your site is Chinese, you
   // may want to replace "en" with "zh-Hans".
-  i18n: {
-    defaultLocale: 'en',
-    locales: ['en', 'fr', 'fa'],
-    localeConfigs: {
-      en: {
-        htmlLang: 'en-GB',
-      },
-      // You can omit a locale (e.g. fr) if you don't need to override the defaults
-      fa: {
-        direction: 'rtl',
-      },
-    },
-  },
+  // i18n: {
+  //   defaultLocale: 'en',
+  //   locales: ['en', 'fr', 'fa'],
+  //   localeConfigs: {
+  //     en: {
+  //       htmlLang: 'en-GB',
+  //     },
+  //     // You can omit a locale (e.g. fr) if you don't need to override the defaults
+  //     fa: {
+  //       direction: 'rtl',
+  //     },
+  //   },
+  // },
   presets: [
     [
       'classic',
@@ -101,10 +101,10 @@ const config: Config = {
           label: 'GitHub',
           position: 'right',
         },
-        {
-          type: 'localeDropdown',
-          position: 'left',
-        },
+        // {
+        //   type: 'localeDropdown',
+        //   position: 'left',
+        // },
       ],
     },
     footer: {
