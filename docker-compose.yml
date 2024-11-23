@@ -12,3 +12,5 @@ services:
       - ./blog:/app/blog
       - ./docs:/app/docs
       - ./i18n:/app/i18n
+      - ./static:/app/static
+      - ./src:/app/src

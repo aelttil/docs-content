@@ -5,8 +5,8 @@ import type * as Preset from '@docusaurus/preset-classic';
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
 const config: Config = {
-  title: 'Cloud Temple Docs',
-  tagline: 'Dinosaurs are cool',
+  title: 'Documentation Cloud Temple',
+  tagline: 'Tout ce dont vous avez besoin pour tirer le meilleur parti des produits Cloud Temple.  ',
   favicon: 'img/favicon.ico',
 
   // enable faster build time https://docusaurus.io/blog/releases/3.6
@@ -33,19 +33,15 @@ const config: Config = {
   // Even if you don't use internationalization, you can use this field to set
   // useful metadata like html lang. For example, if your site is Chinese, you
   // may want to replace "en" with "zh-Hans".
-  // i18n: {
-  //   defaultLocale: 'en',
-  //   locales: ['en', 'fr', 'fa'],
-  //   localeConfigs: {
-  //     en: {
-  //       htmlLang: 'en-GB',
-  //     },
-  //     // You can omit a locale (e.g. fr) if you don't need to override the defaults
-  //     fa: {
-  //       direction: 'rtl',
-  //     },
-  //   },
-  // },
+  i18n: {
+    defaultLocale: 'fr',
+    locales: ['en', 'fr'],
+    localeConfigs: {
+      en: {
+        htmlLang: 'en',
+      },
+    },
+  },
   presets: [
     [
       'classic',
@@ -83,28 +79,39 @@ const config: Config = {
     // Replace with your project's social card
     image: 'img/docusaurus-social-card.jpg',
     navbar: {
-      title: 'My Site',
+      title: '',
       logo: {
-        alt: 'My Site Logo',
+        alt: 'Cloud Temple Logo',
         src: 'img/logo.svg',
       },
       items: [
         {
           type: 'docSidebar',
-          sidebarId: 'tutorialSidebar',
+          sidebarId: 'docSidebar',
           position: 'left',
-          label: 'Tutorial',
+          label: 'Docs',
         },
-        {to: '/blog', label: 'Blog', position: 'left'},
+        
+        // {
+        //   type: 'dropdown',
+        //   label: 'Documentation',
+        //   position: 'left',
+        //   items: [
+        //     { to: '/docs/guide/introduction', label: 'Guide' },
+        //     { to: '/docs/api/overview', label: 'API' },
+        //     { href: 'https://external-link.com', label: 'External' }
+        //   ],
+        // },
+        
         {
           href: 'https://github.com/facebook/docusaurus',
           label: 'GitHub',
           position: 'right',
         },
-        // {
-        //   type: 'localeDropdown',
-        //   position: 'left',
-        // },
+        {
+          type: 'localeDropdown',
+          position: 'right',
+        },
       ],
     },
     footer: {
