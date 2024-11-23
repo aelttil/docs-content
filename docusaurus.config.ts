@@ -110,7 +110,7 @@ const config: Config = {
           items: [
             {
               label: 'Tutorial',
-              to: '/docs-content/docs/getting-started/',
+              to: '/docs-content/docs/home/',
             },
           ],
         },
