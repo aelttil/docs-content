@@ -40,6 +40,9 @@ const config: Config = {
       en: {
         htmlLang: 'en',
       },
+      fr: {
+        htmlLang: 'fr',
+      },
     },
   },
   presets: [
