@@ -110,7 +110,7 @@ const config: Config = {
           items: [
             {
               label: 'Tutorial',
-              to: '/docs-content/docs/category/getting-started/',
+              to: '/docs-content/docs/getting-started/',
             },
           ],
         },
@@ -118,26 +118,13 @@ const config: Config = {
           title: 'Community',
           items: [
             {
-              label: 'Stack Overflow',
-              href: 'https://stackoverflow.com/questions/tagged/docusaurus',
+              label: 'Linkedin',
+              href: 'https://www.linkedin.com/company/cloud-temple/',
             },
-            {
-              label: 'Discord',
-              href: 'https://discordapp.com/invite/docusaurus',
-            },
-            {
-              label: 'X',
-              href: 'https://x.com/docusaurus',
-            },
-          ],
-        },
-        {
-          title: 'More',
-          items: [
             {
               label: 'GitHub',
               href: 'https://github.com/cloud-temple',
-            },
+            }
           ],
         },
       ],
