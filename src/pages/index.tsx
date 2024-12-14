@@ -24,30 +24,47 @@ export default function Home() {
         <section className={styles.section}>
           <h2><Translate id="getting.started"></Translate></h2>
           <div className={styles.cardContainer}>
+
           <Card
-              title={<Translate id="homepage.card1.title" />}
-              description={<Translate id="homepage.card1.description" />}
-              link="/docs-content/docs/console/"
-              linkText={<Translate id="homepage.card1.linkText" />}
-            />
-            <Card
-              title={<Translate id="homepage.card2.title" />}
-              description={<Translate id="homepage.card2.description" />}
-              link="/docs-content/docs/console/orders/"
-              linkText={<Translate id="homepage.card2.linkText" />}
-            />
-            <Card
-              title={<Translate id="homepage.card3.title" />}
-              description={<Translate id="homepage.card3.description" />}
-              link="/docs-content/docs/iaas/quickstart_iaas_template"
-              linkText={<Translate id="homepage.card3.linkText" />}
-            />
-            <Card
-              title={<Translate id="homepage.card4.title" />}
-              description={<Translate id="homepage.card4.description" />}
-              link="/docs-content/docs/paas/s3/#lister-lensemble-des-bucket-s3-de-votre-tenant"
-              linkText={<Translate id="homepage.card4.linkText" />}
-            />
+            title={<Translate id="homepage.card1.title">Explore and master the console</Translate>}
+            description={
+              <Translate id="homepage.card1.description">
+                Learn to manage your Cloud resources effortlessly with our intuitive and powerful console.
+              </Translate>
+            }
+            link="/docs-content/docs/console/"
+            linkText={<Translate id="homepage.card1.linkText">Discover the console</Translate>}
+          />
+          <Card
+            title={<Translate id="homepage.card2.title">Provision your Cloud resources</Translate>}
+            description={
+              <Translate id="homepage.card2.description">
+                Order your first instances, volumes, or services to get started on a secure and high-performance Cloud.
+              </Translate>
+            }
+            link="/docs-content/docs/console/orders/"
+            linkText={<Translate id="homepage.card2.linkText">Get started now</Translate>}
+          />
+          <Card
+            title={<Translate id="homepage.card3.title">Deploy in just a few clicks</Translate>}
+            description={
+              <Translate id="homepage.card3.description">
+                Launch your first virtual machine in a few simple steps and configure it to meet your specific needs.
+              </Translate>
+            }
+            link="/docs-content/docs/iaas/quickstart_iaas_template"
+            linkText={<Translate id="homepage.card3.linkText">Deploy</Translate>}
+          />
+          <Card
+            title={<Translate id="homepage.card4.title">Set up an S3 Bucket</Translate>}
+            description={
+              <Translate id="homepage.card4.description">
+                Create an S3-compatible bucket and integrate access credentials to simplify your storage workflows.
+              </Translate>
+            }
+            link="/docs-content/docs/paas/s3/#lister-lensemble-des-bucket-s3-de-votre-tenant"
+            linkText={<Translate id="homepage.card4.linkText">Create a Bucket</Translate>}
+          />
 
           </div>
         </section>
@@ -75,7 +92,7 @@ export default function Home() {
   );
 }
 
-// A reusable Card component for consistency
+
 function Card({ title, description, link, linkText }) {
   return (
     <div className={styles.card}>

@@ -39,7 +39,7 @@
 }
 
 .card a {
-  color: #0078d4;
+  color: #3b7a57;
   text-decoration: none;
   font-weight: bold;
 }
@@ -76,4 +76,24 @@
 .linkText:hover {
   color: #1a3526; /* Bleu légèrement plus foncé au survol */
   text-decoration: underline;
+}
+
+.link {
+  color: #008000; /* Vert */
+  text-decoration: none; /* Pas de soulignement */
+  font-weight: bold; /* Met en gras */
+}
+
+.link:visited {
+  color: #008000; /* Vert même si le lien a été visité */
+}
+
+.link:hover {
+  color: #006400; /* Vert plus sombre au survol */
+  text-decoration: underline; /* Optionnel */
+}
+
+.link:focus {
+  color: #006400; /* Vert plus sombre quand le lien est sélectionné */
+  outline: none; /* Supprime la bordure par défaut, optionnel */
 }
