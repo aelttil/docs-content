@@ -1,9 +1,8 @@
 import React from 'react';
 import Layout from '@theme/Layout';
 import styles from './styles.module.css'; // Créez ce fichier pour ajouter des styles personnalisés.
-import {translate} from '@docusaurus/Translate';
 import {usePluralForm} from '@docusaurus/theme-common';
-
+import Translate, { translate } from '@docusaurus/Translate';
 
 export default function Home() {
   return (
@@ -15,6 +14,13 @@ export default function Home() {
       <h2><Translate id="homepage.documentation.title">Documentation Cloud Temple.</Translate></h2>
         <p>
           Bienvenue sur la documentation des produits et services Cloud de confiance.
+
+          <Translate
+                  id="homepage.visitMyBlog.linkLabel"
+                  description="Le libellé du lien vers mon blog">
+                  blog
+                </Translate>
+
         </p>
         <p>
           Notre documentation vous guide pas à pas, des bases de la configuration aux cas d’usage avancés, pour tirer pleinement parti de nos services tout en respectant les plus hauts standards de conformité européenne.

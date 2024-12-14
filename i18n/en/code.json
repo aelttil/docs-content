@@ -1,5 +1,18 @@
 {
-  "homepage.documentation.title": {"message": "Cloud Temple Documentation."}
+  // Aucun ID pour le composant <Translate> : le message par défaut est utilisé comme ID
+  "Welcome to my website": {
+    "message": "en - Welcome to my website"
+  },
+  "home.visitMyBlog": {
+    "message": "en - You can also visit my {blog}",
+    "description": "en - The homepage message to ask the user to visit my blog"
+  },
+  "homepage.visitMyBlog.linkLabel": {
+    "message": "en - Blog",
+    "description": "en - The label for the link to my blog"
+  },
+  "Home icon": {
+    "message": "en - Home icon",
+    "description": "en - The homepage icon alt message"
+  }
 }
-
-
