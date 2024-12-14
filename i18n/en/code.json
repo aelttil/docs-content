@@ -58,6 +58,15 @@
   },
   "homepage.changeLog.linkText": {
     "message": "See all versions"
+  },
+  "homepage.visitWebsite.title": {
+    "message": "Visit our website"
+  },
+  "homepage.visitWebsite.description": {
+    "message": "Discover all our products and services in detail on our official website."
+  },
+  "homepage.visitWebsite.linkText": {
+    "message": "Explore our products"
   }
 
 }

@@ -58,5 +58,14 @@
   },
   "homepage.changeLog.linkText": {
     "message": "Voir toutes les versions"
+  },
+  "homepage.visitWebsite.title": {
+    "message": "Visitez notre site web"
+  },
+  "homepage.visitWebsite.description": {
+    "message": "Découvrez tous nos produits et services en détail sur notre site officiel."
+  },
+  "homepage.visitWebsite.linkText": {
+    "message": "Explorer nos produits"
   }
 }
