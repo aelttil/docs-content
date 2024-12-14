@@ -4,8 +4,8 @@ on:
   push:
     branches:
       - main
-      - dev
-      - feature/* # Ajoute toutes les branches que tu veux inclure dans le déploiement
+    # Review gh actions docs if you want to further define triggers, paths, etc
+    # https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions#on
 
 jobs:
   build:
@@ -46,13 +46,6 @@ jobs:
 
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v4
-
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: peaceiris/actions-gh-pages@v3
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: build # Dossier généré par Docusaurus
-          destination_dir: ${{ github.ref_name }} # Nom de la branche pour le dossier de destination
+        uses: actions/deploy-pages@v4
