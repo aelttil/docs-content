@@ -12,7 +12,7 @@
     "message": "Explorer nos solutions et produits."
   },
   "getting.started": {
-    "message": "Premiers pas."
+    "message": "Premiers pas"
   },
   "homepage.card1.title": {
     "message": "Explorez et maîtrisez la console"
@@ -49,5 +49,14 @@
   },
   "homepage.card4.linkText": {
     "message": "Créer un Bucket"
+  },
+  "homepage.changeLog.title": {
+    "message": "Suivi des évolutions"
+  },
+  "homepage.changeLog.description": {
+    "message": "Retrouvez les dernières évolutions et nouvelles fonctionnalités. Explorez les améliorations apportées pour optimiser vos environnements, enrichir vos capacités de gestion, et faciliter vos opérations."
+  },
+  "homepage.changeLog.linkText": {
+    "message": "Voir toutes les versions"
   }
 }

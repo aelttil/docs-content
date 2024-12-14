@@ -63,10 +63,12 @@ export default function Home() {
 
         {/* Section: Suivi des évolutions */}
         <section className={styles.section}>
-          <h2>Suivi des évolutions</h2>
+          <h2>
+            <Translate id="homepage.changeLog.title"></Translate>
+          </h2>
+
           <p>
-            Retrouvez les dernières évolutions et nouvelles fonctionnalités. 
-            Explorez les améliorations apportées pour optimiser vos environnements, enrichir vos capacités de gestion, et faciliter vos opérations.
+          <Translate id="homepage.changeLog.description"></Translate>
           </p>
 
           <div className={styles.changeLog}>
@@ -110,7 +112,7 @@ export default function Home() {
               className={styles.linkButton}
 
             >
-              Voir toutes les versions
+              <Translate id="homepage.changeLog.linkText"></Translate>
             </a>
           </div>
         </section>

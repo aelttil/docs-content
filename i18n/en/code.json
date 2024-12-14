@@ -12,7 +12,7 @@
     "message": "Explore our solutions and products."
   },
   "getting.started": {
-    "message": "Getting started."
+    "message": "Getting started"
   },
   "homepage.card1.title": {
     "message": "Explore and master the console"
@@ -49,6 +49,15 @@
   },
   "homepage.card4.linkText": {
     "message": "Create a Bucket"
+  },
+  "homepage.changeLog.title": {
+    "message": "Change Log"
+  },
+  "homepage.changeLog.description": {
+    "message": "Find the latest updates and new features. Explore the improvements made to optimize your environments, enhance your management capabilities, and simplify your operations."
+  },
+  "homepage.changeLog.linkText": {
+    "message": "See all versions"
   }
 
 }
