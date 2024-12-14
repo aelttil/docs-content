@@ -9,7 +9,7 @@ export default function Home() {
 
       {/* Section: Documentation technique */}
       <section className={styles.section}>
-        <h2>Documentation Cloud Temple.</h2>
+      <h2><Translate id="homepage.documentation.title">Documentation Cloud Temple.</Translate></h2>
         <p>
           Bienvenue sur la documentation des produits et services Cloud de confiance.
         </p>
