@@ -1,7 +1,9 @@
 import React from 'react';
 import Layout from '@theme/Layout';
 import styles from './styles.module.css'; // Créez ce fichier pour ajouter des styles personnalisés.
-import Translate, { translate } from '@docusaurus/Translate';
+import {translate} from '@docusaurus/Translate';
+import {usePluralForm} from '@docusaurus/theme-common';
+
 
 export default function Home() {
   return (
