@@ -16,10 +16,13 @@ export default function Home() {
           Bienvenue sur la documentation des produits et services Cloud de confiance.
 
           <Translate
-                  id="homepage.visitMyBlog.linkLabel"
-                  description="Le libellé du lien vers mon blog">
-                  blog
-                </Translate>
+            id="homepage.visitMyBlog.linkLabel"
+            description="Le libellé du lien vers mon blog">
+          </Translate>
+
+          <Translate
+            id="homepage.description">
+          </Translate>
 
         </p>
         <p>

@@ -1,17 +1,10 @@
 {
-  "Welcome to my website": {
-    "message": "fr - Welcome to my website"
+  "homepage.title": {
+    "message": "Documentation Cloud Temple.",
+    "description": "fr descp"
   },
-  "home.visitMyBlog": {
-    "message": "fr - You can also visit my {blog}",
-    "description": "fr - The homepage message to ask the user to visit my blog"
-  },
-  "homepage.visitMyBlog.linkLabel": {
-    "message": "fr - Blog",
-    "description": "fr - The label for the link to my blog"
-  },
-  "Home icon": {
-    "message": "fr - Home icon",
-    "description": "fr - The homepage icon alt message"
+  "homepage.description": {
+    "message": "coucou 02 francaise",
+    "description": "fr descrp"
   }
 }
