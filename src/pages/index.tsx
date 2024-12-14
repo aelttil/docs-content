@@ -31,36 +31,32 @@ export default function Home() {
 
         {/* Section: Getting Started */}
         <section className={styles.section}>
-          <h2>Getting started</h2>
+          <h2><Translate id="getting.started">Premiers pas.</Translate></h2>
           <div className={styles.cardContainer}>
           <Card
-            title="Explorez et maîtrisez la console"
-            description="Apprenez à gérer vos ressources Cloud en toute simplicité grâce à notre console intuitive et puissante."
-            link="/docs-content/docs/console/"
-            linkText="Découvrir la console"
-            className={styles.linkText}
-          />
-          <Card
-            title="Provisionnez vos ressources Cloud"
-            description="Commandez vos premières instances, volumes ou services pour débuter sur un Cloud sécurisé et performant."
-            link="/docs-content/docs/console/orders/"
-            linkText="Commencez dès maintenant"
-            className={styles.linkText}
-          />
-          <Card
-            title="Déployez en quelques clics"
-            description="Lancez votre première machine virtuelle en quelques étapes simples et configurez-la pour vos besoins spécifiques."
-            link="/docs-content/docs/iaas/quickstart_iaas_template"
-            linkText="Déployer"
-            className={styles.linkText}
-          />
-          <Card
-            title="Configurez un Bucket S3"
-            description="Créez un Bucket compatible S3 et intégrez-y des identifiants d'accès pour simplifier vos workflows de stockage."
-            link="/docs-content/docs/paas/s3/#lister-lensemble-des-bucket-s3-de-votre-tenant"
-            linkText="Créer un Bucket"
-            className={styles.linkText}
-          />
+              title={<Translate id="homepage.card1.title" />}
+              description={<Translate id="homepage.card1.description" />}
+              link="/docs-content/docs/console/"
+              linkText={<Translate id="homepage.card1.linkText" />}
+            />
+            <Card
+              title={<Translate id="homepage.card2.title" />}
+              description={<Translate id="homepage.card2.description" />}
+              link="/docs-content/docs/console/orders/"
+              linkText={<Translate id="homepage.card2.linkText" />}
+            />
+            <Card
+              title={<Translate id="homepage.card3.title" />}
+              description={<Translate id="homepage.card3.description" />}
+              link="/docs-content/docs/iaas/quickstart_iaas_template"
+              linkText={<Translate id="homepage.card3.linkText" />}
+            />
+            <Card
+              title={<Translate id="homepage.card4.title" />}
+              description={<Translate id="homepage.card4.description" />}
+              link="/docs-content/docs/paas/s3/#lister-lensemble-des-bucket-s3-de-votre-tenant"
+              linkText={<Translate id="homepage.card4.linkText" />}
+            />
 
           </div>
         </section>
