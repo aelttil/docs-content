@@ -11,19 +11,10 @@ export default function Home() {
 
       {/* Section: Documentation technique */}
       <section className={styles.section}>
-      <h2><Translate id="homepage.documentation.title">Documentation Cloud Temple.</Translate></h2>
+      <h2><Translate id="homepage.title">Documentation Cloud Temple.</Translate></h2>
         <p>
-          Bienvenue sur la documentation des produits et services Cloud de confiance.
-
-          <Translate
-            id="homepage.visitMyBlog.linkLabel"
-            description="Le libellé du lien vers mon blog">
-          </Translate>
-
-          <Translate
-            id="homepage.description">
-          </Translate>
-
+        <Translate id="homepage.description">Bienvenue sur la documentation des produits et services Cloud de confiance.</Translate>
+          
         </p>
         <p>
           Notre documentation vous guide pas à pas, des bases de la configuration aux cas d’usage avancés, pour tirer pleinement parti de nos services tout en respectant les plus hauts standards de conformité européenne.

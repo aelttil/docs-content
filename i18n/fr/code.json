@@ -1,10 +1,10 @@
 {
   "homepage.title": {
-    "message": "Documentation Cloud Temple.",
-    "description": "fr descp"
+    "message": "Documentation de Cloud Temple.",
+    "description": "fr descrp"
   },
   "homepage.description": {
-    "message": "coucou 02 francaise",
+    "message": "Bienvenue sur la documentation des produits et services Cloud de confiance.",
     "description": "fr descrp"
   }
 }
