@@ -1,10 +1,14 @@
 {
   "homepage.title": {
-    "message": "Documentation de Cloud Temple.",
-    "description": "fr descrp"
+    "message": "Documentation de Cloud Temple."
   },
+  "homepage.welcome": {
+    "message": "Bienvenue sur la documentation des produits et services Cloud de confiance."
+  }, 
   "homepage.description": {
-    "message": "Bienvenue sur la documentation des produits et services Cloud de confiance.",
-    "description": "fr descrp"
+    "message": "Notre documentation vous guide pas à pas, des bases de la configuration aux cas d’usage avancés, pour tirer pleinement parti de nos services tout en respectant les plus hauts standards de conformité européenne."
+  },
+  "homepage.linktowebsite.title": {
+    "message": "Explorer nos solutions et produits."
   }
 }

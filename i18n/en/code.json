@@ -1,10 +1,19 @@
 {
   "homepage.title": {
-    "message": "Cloud Temple Documentation.",
-    "description": "english descrp"
+    "message": "Cloud Temple Documentation."
   },
+  "homepage.welcome": {
+    "message": "Welcome to the Trusted Cloud Products and Services Documentation."
+  }, 
   "homepage.description": {
-    "message": "Welcome to the Trusted Cloud Products and Services Documentation.",
-    "description": "english descrp"
+    "message": "Our documentation guides you step by step, from basic configuration to advanced use cases, to fully leverage our services while adhering to the highest European compliance standards."  
+  },
+  "homepage.linktowebsite.title": {
+    "message": "Explore our solutions and products."
   }
+
 }
+
+
+
+
