@@ -1,50 +1,33 @@
-import {themes as prismThemes} from 'prism-react-renderer';
-import type {Config} from '@docusaurus/types';
-import type * as Preset from '@docusaurus/preset-classic';
+// Obtenir le nom de la branche depuis les variables d'environnement (par défaut à "main")
+const branch = process.env.BRANCH || 'main'; 
 
-// This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
+// Définir la base URL dynamiquement en fonction de la branche
+const baseUrl = branch === 'dev' ? '/dev/' : '/docs-content/';
 
-const config: Config = {
+const config = {
   title: 'Documentation Cloud Temple',
-  tagline: 'Tout ce dont vous avez besoin pour tirer le meilleur parti des produits Cloud Temple.  ',
+  tagline: 'Tout ce dont vous avez besoin pour tirer le meilleur parti des produits Cloud Temple.',
   favicon: 'img/favicon.ico',
 
-  baseUrl: isDevBranch ? '/dev/' : '/docs-content/', 
-  
-  // enable faster build time https://docusaurus.io/blog/releases/3.6
   future: {
     experimental_faster: true,
   },
-  
   trailingSlash: true,
+  url: 'https://aelttil.github.io', // URL de base pour GitHub Pages
+  baseUrl, // Utiliser la base URL dynamique
 
-  // Set the production url of your site here
-  url: 'https://github.com',
-  // Set the /<baseUrl>/ pathname under which your site is served
-  // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/docs-content/',
-
-  // GitHub pages deployment config.
-  // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'aelttil', // Usually your GitHub org/user name.
-  projectName: 'docs-content', // Usually your repo name.
+  organizationName: 'aelttil',
+  projectName: 'docs-content',
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
 
-  // Even if you don't use internationalization, you can use this field to set
-  // useful metadata like html lang. For example, if your site is Chinese, you
-  // may want to replace "en" with "zh-Hans".
   i18n: {
     defaultLocale: 'fr',
     locales: ['en', 'fr'],
     localeConfigs: {
-      en: {
-        htmlLang: 'en',
-      },
-      fr: {
-        htmlLang: 'fr',
-      },
+      en: { htmlLang: 'en' },
+      fr: { htmlLang: 'fr' },
     },
   },
   presets: [
@@ -53,23 +36,17 @@ const config: Config = {
       {
         docs: {
           sidebarPath: './sidebars.ts',
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/aelttil/docs-content/',
+          editUrl: 'https://github.com/aelttil/docs-content/edit/main/', // Lien d'édition
         },
         theme: {
           customCss: './src/css/custom.css',
         },
-      } satisfies Preset.Options,
+      },
     ],
   ],
-
   themeConfig: {
-    // Replace with your project's social card
     image: 'img/docusaurus-social-card.jpg',
     navbar: {
-      title: '',
       logo: {
         alt: 'Cloud Temple Logo',
         src: 'img/logo.svg',
@@ -81,18 +58,6 @@ const config: Config = {
           position: 'left',
           label: 'Docs',
         },
-        
-        // {
-        //   type: 'dropdown',
-        //   label: 'Documentation',
-        //   position: 'left',
-        //   items: [
-        //     { to: '/docs/guide/introduction', label: 'Guide' },
-        //     { to: '/docs/api/overview', label: 'API' },
-        //     { href: 'https://external-link.com', label: 'External' }
-        //   ],
-        // },
-        
         {
           href: 'https://github.com/cloud-temple',
           label: 'GitHub',
@@ -126,17 +91,17 @@ const config: Config = {
             {
               label: 'GitHub',
               href: 'https://github.com/cloud-temple',
-            }
+            },
           ],
         },
       ],
       copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
     },
     prism: {
-      theme: prismThemes.github,
-      darkTheme: prismThemes.dracula,
+      theme: require('prism-react-renderer').themes.github,
+      darkTheme: require('prism-react-renderer').themes.dracula,
     },
-  } satisfies Preset.ThemeConfig,
+  },
 };
 
 export default config;
