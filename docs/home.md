@@ -1,11 +1,12 @@
 ---
 sidebar_position: 1
 tags:
-  - Releases
-  - docusaurus
+  - home
+  - accueil
+  - onboarding
 ---
 
-# Bienvenue sur l'espace documentation Cloud Temple
+# Bienvenue sur l'espace documentation Cloud Temple.
 
 Bienvenue dans l’espace documentation de **Cloud Temple** ! Cet espace a été conçu pour vous accompagner dans la gestion de vos services Cloud Temple via notre **Console Cloud Temple**, également connue sous le nom de **Shiva**.
 
