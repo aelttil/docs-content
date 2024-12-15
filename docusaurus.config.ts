@@ -9,6 +9,8 @@ const config: Config = {
   tagline: 'Tout ce dont vous avez besoin pour tirer le meilleur parti des produits Cloud Temple.  ',
   favicon: 'img/favicon.ico',
 
+  baseUrl: isDevBranch ? '/dev/' : '/docs-content/', 
+  
   // enable faster build time https://docusaurus.io/blog/releases/3.6
   future: {
     experimental_faster: true,
