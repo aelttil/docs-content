@@ -5,6 +5,7 @@ on:
     branches:
       - main
       - dev
+      - feature/*
 
 jobs:
   build:
@@ -18,12 +19,12 @@ jobs:
         with:
           node-version: 18
           cache: npm
-
       - name: Install dependencies
         run: npm ci
+      - name: Set environment variable for branch
+        run: echo "BRANCH=${GITHUB_REF_NAME}" >> $GITHUB_ENV
       - name: Build website
         run: npm run build
-
       - name: Upload Build Artifact
         uses: actions/upload-pages-artifact@v3
         with:
@@ -32,29 +33,18 @@ jobs:
   deploy:
     name: Deploy to GitHub Pages
     needs: build
-
-    # Grant GITHUB_TOKEN the permissions required to make a Pages deployment
     permissions:
-      contents: write # Donne les droits nécessaires pour écrire sur les branches
-      pages: write # Permet de publier sur GitHub Pages
-      id-token: write # Requis pour la validation de Pages
-      
-    # Deploy to the github-pages environment
+      contents: write
+      pages: write
+      id-token: write
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
-
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v4
-
       - name: Deploy to GitHub Pages
         id: deployment
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: build # Dossier généré par Docusaurus
-          destination_dir: ${{ github.ref_name }} # Nom de la branche pour le dossier de destination
-
-          
+          publish_dir: build
