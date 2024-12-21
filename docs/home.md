@@ -7,7 +7,7 @@ tags:
 ---
 
 # Bienvenue sur l'espace documentation Cloud Temple.
-
+test alt 
 Bienvenue dans l’espace documentation de **Cloud Temple** ! Cet espace a été conçu pour vous accompagner dans la gestion de vos services Cloud Temple via notre **Console Cloud Temple**, également connue sous le nom de **Shiva**.
 
 ## La Console Cloud Temple 'Shiva'
