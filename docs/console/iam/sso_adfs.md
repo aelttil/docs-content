@@ -1,5 +1,9 @@
 ---
 title: Exemple de fédération d'identité avec Microsoft ADFS 
+tags:
+  - iam
+  - tutorials
+  - onboarding
 ---
 Voici un exemple de configuration du référentiel d'authentification d'une organisation Cloud Temple avec __Microsoft ADFS__.
 

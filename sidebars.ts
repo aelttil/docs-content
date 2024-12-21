@@ -1,10 +1,11 @@
 import type { SidebarsConfig } from '@docusaurus/plugin-content-docs';
 
+
 const sidebars: SidebarsConfig = {
   docSidebar: [
     {
       type: 'doc',
-      id: 'home', // Correspond à l'ID défini dans le frontmatter de la page
+      id: 'home',
     },
     {
       type: 'link', // Lien externe
@@ -19,21 +20,49 @@ const sidebars: SidebarsConfig = {
       className: 'sidebar-github-link', // Classe CSS personnalisée
     },
     {
+      type: 'doc',
+      id: 'console/api',
+    },
+    {
       type: 'html', // Séparateur et titre
       value: `
         <hr class="sidebar-separator" />
-        <h3 class="sidebar-title">Management</h3>
+        <h3 class="sidebar-title">Console</h3>
       `,
     },
     {
       type: 'category',
-      label: 'Console',
+      label: 'Management',
       items: [
-        'console/accounts',
-        'console/api',
         'console/console',
         'console/howto',
         'console/status',
+        'console/metrics',
+        'console/orders',
+      ],
+    },
+    {
+      type: 'category',
+      label: 'Organisations & Tenants',
+      items: [
+        'console/organisations',
+        'console/tenants',
+      ],
+    },
+    {
+      type: 'category',
+      label: 'IAM',
+      items: [
+        'console/accounts',
+        'console/permissions',
+        {
+          type: 'category',
+          label: 'Tutorials',
+          items: [
+            'console/iam/sso_aad',
+            'console/iam/sso_adfs',
+          ],
+        },
       ],
     },
     {

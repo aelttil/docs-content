@@ -1,4 +1,7 @@
 {
+  "sidebar.products": {
+    "message": "Produits"
+  },
   "homepage.title": {
     "message": "Documentation de Cloud Temple."
   },
