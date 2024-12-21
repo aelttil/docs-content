@@ -114,3 +114,44 @@
   text-align: left; /* Alignement à gauche */
 }
 
+.purchase-platforms {
+  background: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 16px;
+  text-align: left;
+}
+
+.purchase-platforms h3 {
+  margin-top: 0;
+  color: #333;
+  font-size: 1.5em;
+}
+
+.platform-card {
+  display: flex;
+  align-items: center;
+  margin: 16px 0;
+}
+
+.platform-logo {
+  width: 60px;
+  height: auto;
+  margin-right: 16px;
+}
+
+.platform-card p {
+  margin: 0;
+}
+
+.learn-more-link {
+  display: inline-block;
+  margin-top: 16px;
+  color: #007bff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.learn-more-link:hover {
+  text-decoration: underline;
+}

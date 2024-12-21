@@ -8,30 +8,30 @@ const sidebars: SidebarsConfig = {
       id: 'home',
     },
     {
-      type: 'link', // Lien externe
-      label: 'Visitez notre site web', // Texte affiché
-      href: 'https://www.cloud-temple.com', // URL externe
-      className: 'sidebar-external-link', // Classe personnalisée pour le style
-    },
-    {
-      type: 'link',
-      label: 'Cloud Temple sur GitHub', // Texte affiché
-      href: 'https://github.com/cloud-temple', // URL du dépôt GitHub
-      className: 'sidebar-github-link', // Classe CSS personnalisée
-    },
-    {
       type: 'doc',
       id: 'console/api',
     },
-    {
-      type: 'category',
-      label: 'FAQ',
-      items: [
-        'faq/general/general',
-        'faq/issues',
-        'faq/iam/iam',
-      ],
-    },
+    // {
+    //   type: 'category',
+    //   label: 'FAQ',
+    //   items: [
+    //     'faq/general/general',
+    //     'faq/issues',
+    //     'faq/iam/iam',
+    //   ],
+    // },
+    // {
+    //   type: 'link', // Lien externe
+    //   label: 'Visitez notre site web', // Texte affiché
+    //   href: 'https://www.cloud-temple.com', // URL externe
+    //   className: 'sidebar-external-link', // Classe personnalisée pour le style
+    // },
+    // {
+    //   type: 'link',
+    //   label: 'Cloud Temple sur GitHub', // Texte affiché
+    //   href: 'https://github.com/cloud-temple', // URL du dépôt GitHub
+    //   className: 'sidebar-github-link', // Classe CSS personnalisée
+    // },
     {
       type: 'html', // Séparateur et titre
       value: `
@@ -44,10 +44,6 @@ const sidebars: SidebarsConfig = {
       label: 'Management',
       items: [
         'console/console',
-        'console/howto',
-        'console/status',
-        'console/metrics',
-        'console/orders',
       ],
     },
     {
@@ -81,16 +77,17 @@ const sidebars: SidebarsConfig = {
         <h3 class="sidebar-title">Products</h3>
       `,
     },
-    // {
-    //   type: 'category',
-    //   label: 'IAAS',
-    //   items: [
-    //     'iaas/iaas',
-    //     'iaas/concepts',
-    //     'iaas/network',
-    //     'iaas/quickstart_iaas',
-    //   ],
-    // },
+    {
+      type: 'category',
+      label: 'IaaS - Vmware',
+      items: [
+        'iaas_vmware/iaas_vmware',
+        'iaas_vmware/concepts',
+        'iaas_vmware/quickstart',
+        'iaas_vmware/tutorials',
+        'iaas_vmware/faq',
+      ],
+    },
     {
       type: 'category',
       label: 'Storage',
