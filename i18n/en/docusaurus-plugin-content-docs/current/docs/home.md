@@ -10,7 +10,7 @@ tags:
 
 Welcome to the documentation space of **Cloud Temple**! This space has been designed to assist you in managing your Cloud Temple services via our **Cloud Temple Console**, also known as **Shiva**.
 
-## Getting started
+## Getting Started
 
 <div class="card-grid">
   <div class="card">
