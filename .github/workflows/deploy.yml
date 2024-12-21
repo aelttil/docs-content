@@ -65,4 +65,5 @@ jobs:
         with:
           context: .
           push: true
-          tags: ${{ secrets.DOCKER_USERNAME }}/docs:dev
+          platforms: linux/amd64,linux/arm64/v8
+          tags: cloudtempleinfra/docs:dev
