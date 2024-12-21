@@ -1,12 +1,8 @@
 ---
-title: Housing
+title: Vue d'ensemble
 ---
 
-# Housing Cloud Temple
-
-Le **Housing Cloud Temple** offre une solution d'hébergement physique pour vos infrastructures IT dans des zones de disponibilité fiables et sécurisées. Conçue pour répondre aux besoins des entreprises, cette offre permet d’héberger vos équipements dans des racks mutualisés ou dédiés, tout en assurant une connectivité réseau performante et des services professionnels d'assistance en datacenter.
-
-Avec des options flexibles et un haut niveau de sécurité, le Housing Cloud Temple garantit la continuité et la fiabilité de vos opérations, qu’il s’agisse d’héberger des appliances, des serveurs ou de bénéficier de services complémentaires pour optimiser votre infrastructure.
+L'offre **IaaS Cloud Temple**, propulsée par VMware, est conçue pour répondre aux besoins critiques des entreprises en matière de performance, de sécurité et de continuité d'activité. Avec des ressources dédiées, une infrastructure qualifiée **SecNumCloud**, et des options entièrement automatisées, cette solution garantit une fiabilité optimale pour vos charges de travail sensibles. 
 
 
 <div class="card-grid">
@@ -31,3 +27,4 @@ Avec des options flexibles et un haut niveau de sécurité, le Housing Cloud Tem
     <a href="faq" class="card-link">Consulter la FAQ &rarr;</a>
   </div>
 </div>
+
