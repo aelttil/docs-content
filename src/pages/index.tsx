@@ -32,7 +32,7 @@ export default function Home() {
                 Learn to manage your Cloud resources effortlessly with our intuitive and powerful console.
               </Translate>
             }
-            link="/docs-content/docs/console/"
+            link="/docs/console/"
             linkText={<Translate id="homepage.card1.linkText">Discover the console</Translate>}
           />
           <Card
@@ -42,7 +42,7 @@ export default function Home() {
                 Order your first instances, volumes, or services to get started on a secure and high-performance Cloud.
               </Translate>
             }
-            link="/docs-content/docs/console/orders/"
+            link="/docs/console/orders/"
             linkText={<Translate id="homepage.card2.linkText">Get started now</Translate>}
           />
           <Card
@@ -52,7 +52,7 @@ export default function Home() {
                 Launch your first virtual machine in a few simple steps and configure it to meet your specific needs.
               </Translate>
             }
-            link="/docs-content/docs/iaas/quickstart_iaas_template"
+            link="/docs/iaas/quickstart_iaas_template"
             linkText={<Translate id="homepage.card3.linkText">Deploy</Translate>}
           />
           <Card
@@ -62,7 +62,7 @@ export default function Home() {
                 Create an S3-compatible bucket and integrate access credentials to simplify your storage workflows.
               </Translate>
             }
-            link="/docs-content/docs/paas/s3/#lister-lensemble-des-bucket-s3-de-votre-tenant"
+            link="/docs/paas/s3/#lister-lensemble-des-bucket-s3-de-votre-tenant"
             linkText={<Translate id="homepage.card4.linkText">Create a Bucket</Translate>}
           />
 
