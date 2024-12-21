@@ -12,6 +12,9 @@ jobs:
     name: Build and Deploy to GitHub Pages
     runs-on: ubuntu-latest
     if: github.ref == 'refs/heads/main'
+    permissions: # Définir les permissions au niveau du job
+      pages: write
+      id-token: write
     steps:
       - uses: actions/checkout@v4
         with:
@@ -36,9 +39,6 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
-        permissions:
-          pages: write
-          id-token: write
         with:
           path: build
 
