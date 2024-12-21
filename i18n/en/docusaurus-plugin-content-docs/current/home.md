@@ -6,38 +6,40 @@ tags:
   - onboarding
 ---
 
-# Welcome to the Documentation Space
+# Bienvenue sur l'espace documentation
 
-Welcome to the **Cloud Temple** documentation space! This area is designed to support you in managing your Cloud Temple services through our **Cloud Temple Console**, also known as **Shiva**.
+Bienvenue dans l’espace documentation de **Cloud Temple** ! Cet espace a été conçu pour vous accompagner dans la gestion de vos services Cloud Temple via notre **Console Cloud Temple**, également connue sous le nom de **Shiva**.
 
-## Getting Started
+## Premiers pas
 
 <div class="card-grid">
   <div class="card">
-    <h3>Explore the Console</h3>
-    <p>Learn how to use our console to manage your Cloud resources.</p>
-    <a href="../console/" class="card-link">Discover the console &rarr;</a>
+    <h3>Explorez la console</h3>
+    <p>Apprenez à utiliser notre console pour gérer vos ressources Cloud.</p>
+    <a href="../console/" class="card-link">Découvrir la console &rarr;</a>
   </div>
     <div class="card">
-    <h3>Start with Object Storage</h3>
-    <p>Learn how to use object storage.</p>
-    <a href="../storage/oss/quickstart/" class="card-link">Configure a Bucket &rarr;</a>
+    <h3>Démarrer sur le Stockage Object</h3>
+    <p>Apprenez à utiliser le stockage object</p>
+    <a href="../storage/oss/quickstart/" class="card-link">Configurer un Bucket &rarr;</a>
   </div>
   <div class="card">
-    <h3>Provision Your Resources</h3>
-    <p>Quickly and efficiently create your first Cloud resources.</p>
-    <a href="../console/" class="card-link">Get Started &rarr;</a>
+    <h3>Provisionnez vos ressources</h3>
+    <p>Créez vos premières ressources Cloud rapidement et efficacement.</p>
+    <a href="../console/" class="card-link">Commencer &rarr;</a>
   </div>
   <div class="card">
-    <h3>Deploy in Just a Few Clicks</h3>
-    <p>Set up your services with ease using our detailed guides.</p>
-    <a href="../console/" class="card-link">Deploy &rarr;</a>
+    <h3>Déployez en quelques clics</h3>
+    <p>Configurez vos services avec simplicité grâce à nos guides détaillés.</p>
+    <a href="../console/" class="card-link">Déployer &rarr;</a>
   </div>
+
 </div>
 
-### How to Use This Documentation?
-This documentation is your guide to fully leveraging the capabilities of the Cloud Temple **console**. You will find tutorials, technical guides, and references to simplify the management of your cloud resources.
+### Comment utiliser cette documentation ?
+Cette documentation est votre guide pour exploiter tout le potentiel de la console Cloud Temple **la console**. Vous y trouverez des tutoriels, des guides techniques et des références pour simplifier la gestion de vos ressources cloud.
 
-We hope you find this documentation helpful and that it enables you to make the most of what **Shiva** has to offer.
+Nous espérons que vous trouverez cette documentation utile et que vous tirerez pleinement parti des possibilités offertes par **Shiva**.
 
-Happy working with **Cloud Temple**!
+Bon travail avec **Cloud Temple** !
+
