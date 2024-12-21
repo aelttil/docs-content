@@ -28,3 +28,89 @@
   --ifm-color-primary-lightest: #4fddbf;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }
+
+/* Style pour les titres principaux (non cliquables) */
+.sidebar-category-title > .menu__link {
+  font-weight: bold;
+  font-size: 1.1rem;
+  color: #333;
+  pointer-events: none; /* Empêche le clic */
+  cursor: default; /* Change le curseur */
+}
+
+/* Espacement entre les sous-éléments */
+.theme-doc-sidebar-item-category > ul {
+  padding-left: 20px; /* Indentation des sous-items */
+}
+
+/* Style général des sous-items */
+.menu__list-item {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+/* Conteneur pour les cartes en grille */
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 colonnes */
+  gap: 20px; /* Espacement entre les cartes */
+  margin: 20px 0;
+}
+
+/* Style des cartes */
+.card {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+/* Titre des cartes */
+.card h3 {
+  font-size: 1.2rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+/* Texte des cartes */
+.card p {
+  font-size: 0.9rem;
+  color: #666;
+  margin-bottom: 15px;
+}
+
+/* Liens dans les cartes */
+.card-link {
+  color: #28a745; /* Vert pour les liens */
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.card-link:hover {
+  color: #1c7430; /* Vert plus foncé au survol */
+}
+
+
+/* Style du séparateur */
+.sidebar-separator {
+  border: none;
+  border-top: 1px solid #ddd; /* Couleur grise claire */
+  margin: 15px 0; /* Espacement vertical */
+}
+
+/* Style du titre */
+.sidebar-title {
+  font-size: 1rem; /* Taille de la police */
+  font-weight: bold;
+  color: #444343; /* Gris foncé */
+  margin: 10px 0; /* Espacement au-dessus et en dessous */
+  text-align: left; /* Alignement à gauche */
+}
+

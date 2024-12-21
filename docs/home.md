@@ -6,15 +6,43 @@ tags:
   - onboarding
 ---
 
-# Bienvenue sur l'espace documentation de Cloud Temple.
+# Bienvenue sur l'espace documentation
 
 Bienvenue dans l’espace documentation de **Cloud Temple** ! Cet espace a été conçu pour vous accompagner dans la gestion de vos services Cloud Temple via notre **Console Cloud Temple**, également connue sous le nom de **Shiva**.
+
+
+<div class="card-grid">
+  <div class="card">
+    <h3>Explorez la console</h3>
+    <p>Apprenez à utiliser notre console pour gérer vos ressources Cloud.</p>
+    <a href="/docs/console" class="card-link">Découvrir la console &rarr;</a>
+  </div>
+  <div class="card">
+    <h3>Provisionnez vos ressources</h3>
+    <p>Créez vos premières ressources Cloud rapidement et efficacement.</p>
+    <a href="/docs/provisioning" class="card-link">Commencer &rarr;</a>
+  </div>
+  <div class="card">
+    <h3>Déployez en quelques clics</h3>
+    <p>Configurez vos services avec simplicité grâce à nos guides détaillés.</p>
+    <a href="/docs/deployment" class="card-link">Déployer &rarr;</a>
+  </div>
+  <div class="card">
+    <h3>Configurez un Bucket S3</h3>
+    <p>Créez un Bucket S3 compatible pour vos besoins de stockage.</p>
+    <a href="/docs/bucket-s3" class="card-link">Configurer un Bucket &rarr;</a>
+  </div>
+</div>
 
 ## La Console Cloud Temple
 
 La console Cloud Temple est la plateforme de gestion cloud (**Cloud Management Platform**) intégrée de Cloud Temple. Elle constitue le point central pour gérer l’ensemble de vos ressources cloud, vous offrant une interface unique et performante.
 
 Grâce à la **Console**, vous pouvez superviser et exploiter vos infrastructures cloud avec une grande simplicité. Voici un aperçu de ses fonctionnalités principales :
+
+
+## Premiers pas
+
 
 ### Gestion de vos produits et services Cloud Temple
 La console vous permet de piloter efficacement vos serveurs virtuels, votre stockage, vos réseaux et vos services Cloud depuis une interface centralisée.
@@ -53,3 +81,4 @@ Cette documentation est votre guide pour exploiter tout le potentiel de la conso
 Nous espérons que vous trouverez cette documentation utile et que vous tirerez pleinement parti des possibilités offertes par **Shiva**.
 
 Bon travail avec **Cloud Temple** !
+

@@ -1,6 +1,6 @@
 {
-    "label": "IaaS",
-    "position": 4,
+    "label": "PaaS",
+    "position": 5,
     "collapsed": true,
     "link": {
       "type": "generated-index"
