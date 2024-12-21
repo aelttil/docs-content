@@ -10,70 +10,31 @@ tags:
 
 Bienvenue dans l’espace documentation de **Cloud Temple** ! Cet espace a été conçu pour vous accompagner dans la gestion de vos services Cloud Temple via notre **Console Cloud Temple**, également connue sous le nom de **Shiva**.
 
+## Premiers pas
 
 <div class="card-grid">
   <div class="card">
     <h3>Explorez la console</h3>
     <p>Apprenez à utiliser notre console pour gérer vos ressources Cloud.</p>
-    <a href="/docs/console" class="card-link">Découvrir la console &rarr;</a>
+    <a href="../console/" class="card-link">Découvrir la console &rarr;</a>
+  </div>
+    <div class="card">
+    <h3>Démarrer sur le Stockage Object</h3>
+    <p>Apprenez à utiliser le stockage object</p>
+    <a href="../storage/oss/quickstart/" class="card-link">Configurer un Bucket &rarr;</a>
   </div>
   <div class="card">
     <h3>Provisionnez vos ressources</h3>
     <p>Créez vos premières ressources Cloud rapidement et efficacement.</p>
-    <a href="/docs/provisioning" class="card-link">Commencer &rarr;</a>
+    <a href="../console/" class="card-link">Commencer &rarr;</a>
   </div>
   <div class="card">
     <h3>Déployez en quelques clics</h3>
     <p>Configurez vos services avec simplicité grâce à nos guides détaillés.</p>
-    <a href="/docs/deployment" class="card-link">Déployer &rarr;</a>
+    <a href="../console/" class="card-link">Déployer &rarr;</a>
   </div>
-  <div class="card">
-    <h3>Configurez un Bucket S3</h3>
-    <p>Créez un Bucket S3 compatible pour vos besoins de stockage.</p>
-    <a href="/docs/bucket-s3" class="card-link">Configurer un Bucket &rarr;</a>
-  </div>
+
 </div>
-
-## La Console Cloud Temple
-
-La console Cloud Temple est la plateforme de gestion cloud (**Cloud Management Platform**) intégrée de Cloud Temple. Elle constitue le point central pour gérer l’ensemble de vos ressources cloud, vous offrant une interface unique et performante.
-
-Grâce à la **Console**, vous pouvez superviser et exploiter vos infrastructures cloud avec une grande simplicité. Voici un aperçu de ses fonctionnalités principales :
-
-
-## Premiers pas
-
-
-### Gestion de vos produits et services Cloud Temple
-La console vous permet de piloter efficacement vos serveurs virtuels, votre stockage, vos réseaux et vos services Cloud depuis une interface centralisée.
-
-### Surveillance et reporting
-Bénéficiez d’une vue complète sur vos ressources grâce à des outils de surveillance et de reporting intégrés, pour vous assurer que vos environnements fonctionnent de manière optimale.
-
-### Automatisation et orchestration
-Avec son **API puissante**, la console simplifie l’automatisation des tâches répétitives et l’orchestration de workflows complexes. Déployez, gérez et mettez à l'échelle vos ressources en quelques clics ou via des scripts personnalisés.
-
-### Sécurité et conformité
-La console intègre des fonctionnalités avancées pour :
-- Gérer les identités et les accès,
-- Filtrer les accès pour répondre aux exigences réglementaires,
-- Renforcer vos politiques de sécurité.
-
-### Intégration multi-cloud
-Grâce à ses capacités d’hybridation, La console facilite la gestion des environnements multi-cloud en intégrant des services tiers tels que **Microsoft Azure** et **Amazon AWS**, le tout via une interface unique.
-
-### Assistance technique et support client
-La console offre un accès direct à vos dossiers d’assistance technique. Vous bénéficiez :
-- D’un support client dédié pour résoudre vos problèmes techniques,
-- D’une assistance à la configuration initiale de vos services.
-
-### Services professionnels
-Besoin d’expertise ? Profitez de l’accompagnement de nos ingénieurs pour :
-- Du conseil personnalisé,
-- De l’aide à l’implémentation d’architectures cloud,
-- De la formation pour vos équipes.
-
----
 
 ### Comment utiliser cette documentation ?
 Cette documentation est votre guide pour exploiter tout le potentiel de la console Cloud Temple **la console**. Vous y trouverez des tutoriels, des guides techniques et des références pour simplifier la gestion de vos ressources cloud.

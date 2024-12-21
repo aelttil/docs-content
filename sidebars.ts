@@ -24,6 +24,15 @@ const sidebars: SidebarsConfig = {
       id: 'console/api',
     },
     {
+      type: 'category',
+      label: 'FAQ',
+      items: [
+        'faq/general/general',
+        'faq/issues',
+        'faq/iam/iam',
+      ],
+    },
+    {
       type: 'html', // Séparateur et titre
       value: `
         <hr class="sidebar-separator" />
@@ -66,52 +75,72 @@ const sidebars: SidebarsConfig = {
       ],
     },
     {
-      type: 'html', // Séparateur et titre
+      type: 'html',
       value: `
         <hr class="sidebar-separator" />
         <h3 class="sidebar-title">Products</h3>
       `,
     },
-  
+    // {
+    //   type: 'category',
+    //   label: 'IAAS',
+    //   items: [
+    //     'iaas/iaas',
+    //     'iaas/concepts',
+    //     'iaas/network',
+    //     'iaas/quickstart_iaas',
+    //   ],
+    // },
+    {
+      type: 'category',
+      label: 'Storage',
+      items: [
+        {
+          type: 'category',
+          label: 'Object Storage',
+          items: [
+            'storage/oss/oss',
+            'storage/oss/concepts',
+            'storage/oss/quickstart',
+            'storage/oss/tutorials',
+            'storage/oss/faq',
+          ],
+        },
+      ],
+    },
     {
       type: 'category',
       label: 'Bastion',
       items: [
         'bastion/bastion',
-        'bastion/bastion_quickstart',
-        'bastion/howto_bastion',
+        'bastion/concepts',
+        'bastion/quickstart',
+        'bastion/tutorials',
+        'bastion/faq',
       ],
     },
 
     {
       type: 'category',
-      label: 'IAAS',
+      label: 'Housing',
       items: [
-        'iaas/compute',
-        'iaas/storage',
-        'iaas/network',
-        'iaas/metrics',
-        'iaas/quickstart_iaas',
+        'housing/housing',
+        'housing/concepts',
+        'housing/quickstart',
+        'housing/tutorials',
+        'housing/faq',
       ],
     },
-    {
-      type: 'category',
-      label: 'PaaS',
-      items: [
-        'paas/concepts',
-        'paas/openshift',
-        'paas/s3',
-      ],
-    },
-    {
-      type: 'category',
-      label: 'FAQ',
-      items: [
-        'faq/general/general',
-        'faq/issues',
-        'faq/iam/iam',
-      ],
-    },
+
+    // {
+    //   type: 'category',
+    //   label: 'PaaS',
+    //   items: [
+    //     'paas/concepts',
+    //     'paas/openshift',
+    //   ],
+    // },
+
     {
       type: 'category',
       label: 'Support',
