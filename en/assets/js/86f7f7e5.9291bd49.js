@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkmy_website=self.webpackChunkmy_website||[]).push([["861"],{1624:function(e){e.exports=JSON.parse('{"tags":[{"label":"Releases","permalink":"/docs-content/en/docs/tags/releases","count":1},{"label":"home","permalink":"/docs-content/en/docs/tags/home","count":1},{"label":"welcome","permalink":"/docs-content/en/docs/tags/welcome","count":1}]}')}}]);
