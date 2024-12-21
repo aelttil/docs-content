@@ -1,0 +1,818 @@
+<!doctype html><html lang=fr dir=ltr class="docs-wrapper plugin-docs plugin-id-default docs-version-current docs-doc-page docs-doc-id-contract/iaas/sla_iaas" data-has-hydrated=false><meta charset=UTF-8><meta name=generator content="Docusaurus v3.6.1"><title data-rh=true>Convention de Service IaaS | Documentation Cloud Temple</title><meta data-rh=true name=viewport content="width=device-width,initial-scale=1.0"><meta data-rh=true name=twitter:card content=summary_large_image><meta data-rh=true property=og:image content=https://github.com/img/docusaurus-social-card.jpg><meta data-rh=true name=twitter:image content=https://github.com/img/docusaurus-social-card.jpg><meta data-rh=true property=og:url content=https://github.com/docs/contract/iaas/sla_iaas/><meta data-rh=true property=og:locale content=fr><meta data-rh=true property=og:locale:alternate content=en><meta data-rh=true name=docusaurus_locale content=fr><meta data-rh=true name=docsearch:language content=fr><meta data-rh=true name=docusaurus_version content=current><meta data-rh=true name=docusaurus_tag content=docs-default-current><meta data-rh=true name=docsearch:version content=current><meta data-rh=true name=docsearch:docusaurus_tag content=docs-default-current><meta data-rh=true property=og:title content="Convention de Service IaaS | Documentation Cloud Temple"><meta data-rh=true name=description content="Logo Cloud Temple"><meta data-rh=true property=og:description content="Logo Cloud Temple"><link data-rh=true rel=icon href=/img/favicon.ico><link data-rh=true rel=canonical href=https://github.com/docs/contract/iaas/sla_iaas/><link data-rh=true rel=alternate href=https://github.com/en/docs/contract/iaas/sla_iaas/ hreflang=en><link data-rh=true rel=alternate href=https://github.com/docs/contract/iaas/sla_iaas/ hreflang=fr><link data-rh=true rel=alternate href=https://github.com/docs/contract/iaas/sla_iaas/ hreflang=x-default><link rel=stylesheet href=/assets/css/styles.180585a3.css><script src=/assets/js/runtime~main.e715903e.js defer></script><script src=/assets/js/main.a094109b.js defer></script><body class=navigation-with-keyboard><script>!function(){var t,e=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme")}catch(t){}}();t=null!==e?e:"light",document.documentElement.setAttribute("data-theme",t)}(),function(){try{for(var[t,e]of new URLSearchParams(window.location.search).entries())if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id=__docusaurus><div role=region aria-label="Aller au contenu principal"><a class=skipToContent_fXgn href=#__docusaurus_skipToContent_fallback>Aller au contenu principal</a></div><nav aria-label=Main class="navbar navbar--fixed-top"><div class=navbar__inner><div class=navbar__items><button aria-label="Ouvrir/fermer la barre de navigation" aria-expanded=false class="navbar__toggle clean-btn" type=button><svg width=30 height=30 viewBox="0 0 30 30" aria-hidden=true><path stroke=currentColor stroke-linecap=round stroke-miterlimit=10 stroke-width=2 d="M4 7h22M4 15h22M4 23h22"/></svg></button><a class=navbar__brand href=/><div class=navbar__logo><img src=/img/logo.svg alt="Cloud Temple Logo" class="themedComponent_mlkZ themedComponent--light_NVdE"><img src=/img/logo.svg alt="Cloud Temple Logo" class="themedComponent_mlkZ themedComponent--dark_xIcU"></div><b class="navbar__title text--truncate"></b></a><a aria-current=page class="navbar__item navbar__link navbar__link--active" href=/docs/home/>Docs</a></div><div class="navbar__items navbar__items--right"><a href=https://github.com/aelttil target=_blank rel="noopener noreferrer" class="navbar__item navbar__link">GitHub<svg width=13.5 height=13.5 aria-hidden=true viewBox="0 0 24 24" class=iconExternalLink_nPIU><path fill=currentColor d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"/></svg></a><div class="navbar__item dropdown dropdown--hoverable dropdown--right"><a href=# aria-haspopup=true aria-expanded=false role=button class=navbar__link><svg viewBox="0 0 24 24" width=20 height=20 aria-hidden=true class=iconLanguage_nlXk><path fill=currentColor d="M12.87 15.07l-2.54-2.51.03-.03c1.74-1.94 2.98-4.17 3.71-6.53H17V4h-7V2H8v2H1v1.99h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11.76-2.04zM18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2l-4.5-12zm-2.62 7l1.62-4.33L19.12 17h-3.24z"/></svg>Français</a><ul class=dropdown__menu><li><a href=/en/docs/contract/iaas/sla_iaas/ rel="noopener noreferrer" class=dropdown__link lang=en>English</a><li><a href=/docs/contract/iaas/sla_iaas/ rel="noopener noreferrer" class="dropdown__link dropdown__link--active" lang=fr>Français</a></ul></div><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type=button disabled title="Basculer entre le mode sombre et clair (actuellement mode clair)" aria-label="Basculer entre le mode sombre et clair (actuellement mode clair)" aria-live=polite aria-pressed=false><svg viewBox="0 0 24 24" width=24 height=24 class=lightToggleIcon_pyhR><path fill=currentColor d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"/></svg><svg viewBox="0 0 24 24" width=24 height=24 class=darkToggleIcon_wfgR><path fill=currentColor d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"/></svg></button></div><div class=navbarSearchContainer_Bca1></div></div></div><div role=presentation class=navbar-sidebar__backdrop></div></nav><div id=__docusaurus_skipToContent_fallback class="main-wrapper mainWrapper_z2l0"><div class=docsWrapper_hBAB><button aria-label="Retour au début de la page" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type=button></button><div class=docRoot_UBD9><aside class="theme-doc-sidebar-container docSidebarContainer_YfHR"><div class=sidebarViewport_aRkj><div class=sidebar_njMd><nav aria-label="Docs sidebar" class="menu thin-scrollbar menu_SIkG"><ul class="theme-doc-sidebar-menu menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class=menu__link href=/docs/home/>Bienvenue sur l'espace documentation de Cloud Temple.</a><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="menu__link menu__link--sublist" href=/docs/category/console/>Console</a><button aria-label="Développer la catégorie 'Console' de la barre latérale" aria-expanded=false type=button class="clean-btn menu__caret"></button></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class=menu__list-item-collapsible><a class="menu__link menu__link--sublist" href=/docs/category/getting-started/>Getting Started</a><button aria-label="Réduire la catégorie 'Getting Started' de la barre latérale" aria-expanded=true type=button class="clean-btn menu__caret"></button></div><ul style=display:block;overflow:visible;height:auto class=menu__list><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class=menu__link tabindex=0 href=/docs/getting_started/changes/>Suivi des changements</a></ul><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="menu__link menu__link--sublist" href=/docs/category/bastion/>Bastion</a><button aria-label="Développer la catégorie 'Bastion' de la barre latérale" aria-expanded=false type=button class="clean-btn menu__caret"></button></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class=menu__list-item-collapsible><a class="menu__link menu__link--sublist" href=/docs/category/iaas/>IaaS</a><button aria-label="Réduire la catégorie 'IaaS' de la barre latérale" aria-expanded=true type=button class="clean-btn menu__caret"></button></div><ul style=display:block;overflow:visible;height:auto class=menu__list><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class=menu__link tabindex=0 href=/docs/iaas/iaas/>Présentation</a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class=menu__link tabindex=0 href=/docs/iaas/concepts/>Concepts</a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class=menu__link tabindex=0 href=/docs/iaas/backup/>Sauvegarde</a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class=menu__link tabindex=0 href=/docs/iaas/compute/>Calcul</a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class=menu__link tabindex=0 href=/docs/iaas/metrics/>Metrologie IaaS</a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class=menu__link tabindex=0 href=/docs/iaas/network/>Réseaux</a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class=menu__link tabindex=0 href=/docs/iaas/quickstart_iaas/>Automatisation avec Terraform</a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class=menu__link tabindex=0 href=/docs/iaas/quickstart_iaas_template/>Déploiement depuis un template</a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class=menu__link tabindex=0 href=/docs/iaas/storage/>Stockage</a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class=menu__link tabindex=0 href=/docs/iaas/tutorials_iaas/>Comment faire pour ?</a></ul><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class=menu__list-item-collapsible><a class="menu__link menu__link--sublist" href=/docs/category/housing/>Housing</a><button aria-label="Réduire la catégorie 'Housing' de la barre latérale" aria-expanded=true type=button class="clean-btn menu__caret"></button></div><ul style=display:block;overflow:visible;height:auto class=menu__list><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class=menu__link tabindex=0 href=/docs/housing/>Hébergement physique</a></ul><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class=menu__list-item-collapsible><a class="menu__link menu__link--sublist menu__link--sublist-caret menu__link--active" role=button aria-expanded=true href=/docs/contract/cgvu/>contract</a></div><ul style=display:block;overflow:visible;height:auto class=menu__list><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class=menu__link tabindex=0 href=/docs/contract/cgvu/>Conditions Générales de Vente et d'Utilisation (CGVU)</a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class=menu__link tabindex=0 href=/docs/contract/dpa/>Annexe Contractuelle - Données à Caractère Personnel (DPA)</a><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item"><div class=menu__list-item-collapsible><a class="menu__link menu__link--sublist menu__link--sublist-caret menu__link--active" role=button aria-expanded=true tabindex=0 href=/docs/contract/iaas/raci/>iaas</a></div><ul style=display:block;overflow:visible;height:auto class=menu__list><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class=menu__link tabindex=0 href=/docs/contract/iaas/raci/>Matrice de responsabilité IaaS</a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class=menu__link tabindex=0 href=/docs/contract/iaas/raci_s3/>Matrice de responsabilité IaaS - Stockage Objet S3</a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link menu__link--active" aria-current=page tabindex=0 href=/docs/contract/iaas/sla_iaas/>Convention de Service IaaS</a></ul><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="menu__link menu__link--sublist menu__link--sublist-caret" role=button aria-expanded=false tabindex=0 href=/docs/contract/network/raci/>network</a></div><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class=menu__link tabindex=0 href=/docs/contract/orderdoc/>Hiérarchie des documents contractuels</a><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="menu__link menu__link--sublist menu__link--sublist-caret" role=button aria-expanded=false tabindex=0 href=/docs/contract/paas/raci/>paas</a></div></ul><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="menu__link menu__link--sublist menu__link--sublist-caret" role=button aria-expanded=false href=/docs/faq/bastion/bastion_faq/>faq</a></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="menu__link menu__link--sublist menu__link--sublist-caret" role=button aria-expanded=false href=/docs/network/install_guides/fortinet/forti/>network</a></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="menu__link menu__link--sublist menu__link--sublist-caret" role=button aria-expanded=false href=/docs/paas/concepts/>paas</a></div><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class=menu__link href=/docs/privacy/>privacy</a></ul></nav></div></div></aside><main class=docMainContainer_TBSr><div class="container padding-top--md padding-bottom--lg"><div class=row><div class="col docItemCol_VOVn"><div class=docItemContainer_Djhp><article><nav class="theme-doc-breadcrumbs breadcrumbsContainer_Z_bl" aria-label="Fil d'Ariane"><ul class=breadcrumbs itemscope itemtype=https://schema.org/BreadcrumbList><li class=breadcrumbs__item><a aria-label="Page d'accueil" class=breadcrumbs__link href=/><svg viewBox="0 0 24 24" class=breadcrumbHomeIcon_YNFT><path d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z" fill=currentColor /></svg></a><li class=breadcrumbs__item><span class=breadcrumbs__link>contract</span><meta itemprop=position content=1><li class=breadcrumbs__item><span class=breadcrumbs__link>iaas</span><meta itemprop=position content=2><li itemscope itemprop=itemListElement itemtype=https://schema.org/ListItem class="breadcrumbs__item breadcrumbs__item--active"><span class=breadcrumbs__link itemprop=name>Convention de Service IaaS</span><meta itemprop=position content=3></ul></nav><div class="tocCollapsible_ETCw theme-doc-toc-mobile tocMobile_ITEo"><button type=button class="clean-btn tocCollapsibleButton_TO0P">Sur cette page</button></div><div class="theme-doc-markdown markdown"><p><img decoding=async loading=lazy alt="Logo Cloud Temple" src=/assets/images/ct-301656c84a436a4b0359a1a82ddeabd6.png width=469 height=72 class=img_ev3q></p>
+<header><h1>1. <strong>CONVENTION DE SERVICES IaaS</strong></h1></header>
+<table><thead><tr><th style=text-align:left><strong>Destinataires :</strong><th style=text-align:left><strong>COMMANDITAIRE</strong><tbody><tr><td style=text-align:left><strong>Référence du documents</strong><td style=text-align:left>CT.AM.JUR.ANX_Convention de Services_IaaS_v2.0<tr><td style=text-align:left><strong>Vos interlocuteurs</strong><td style=text-align:left><em>Prénom</em> <em>Nom</em><tr><td style=text-align:left><td style=text-align:left>Account Manager<tr><td style=text-align:left><td style=text-align:left>e-mail : <em>prenom.nom</em>@cloud-temple.com<tr><td style=text-align:left><strong>Date de dernière mise à jour</strong><td style=text-align:left>03/04/2024<tr><td style=text-align:left><strong>Date de validation contractuelle</strong><td style=text-align:left>Jour JJ AAAA</table>
+<hr>
+<table><thead><tr><th><strong>Version</strong><th><strong>Date</strong><th><strong>Action</strong><th><strong>Auteur</strong><tbody><tr><td>v0.1<td>07/06/2022<td>Rédaction initiale<td>Lorena ALCALDE<tr><td>v0.2<td>14/09/2022<td>Enrichissement<td>Lorena ALCALDE<tr><td>v1.0<td>30/12/2022<td>Intégration Indicateurs<td>Lorena ALCALDE<tr><td>v1.1<td>23/01/2023<td>Modification pied de page<td>Lorena ALCALDE<tr><td>v1.2<td>22/05/2023<td>Enrichissement<td>Lorena ALCALDE<tr><td>v1.3<td>29/06/2023<td>Enrichissement<td>Lorena ALCALDE<tr><td>v1.4<td>06/11/2023<td>Modification Capital et Enrichissement<td>Lorena ALCALDE<tr><td>v1.5<td>30/11/2023<td>Enrichissement<td>Lorena ALCALDE<tr><td>v1.6<td>21/03/2024<td>Enrichissement<td>Lorena ALCALDE<tr><td>v2.0<td>29/03/2024<td>Ajustements conformité SNC<td>Nicolas ABRIOUX<tr><td>v2.0<td>03/04/2024<td>Publication<td>Lorena ALCALDE</table>
+<hr>
+<h1>2. <strong>TABLE DES MATIÈRES</strong></h1>
+<ul>
+<li><a href=#1-convention-de-services-iaas>1. <strong>CONVENTION DE SERVICES IaaS</strong></a></li>
+<li><a href=#2-table-des-mati%C3%A8res>2. <strong>TABLE DES MATIÈRES</strong></a></li>
+<li><a href=#3-pr%C3%A9liminaire-et-glossaire>3. Préliminaire et Glossaire</a>
+<ul>
+<li><a href=#31-pr%C3%A9liminaire>3.1. Préliminaire</a></li>
+<li><a href=#32-glossaire>3.2. Glossaire</a></li>
+</ul>
+</li>
+<li><a href=#4-acronymes>4. Acronymes</a></li>
+<li><a href=#5-objet-de-la-pr%C3%A9sente-convention-de-service>5. Objet de la présente Convention de service</a></li>
+<li><a href=#6-audit>6. Audit</a></li>
+<li><a href=#7-description-du-service>7. Description du Service</a>
+<ul>
+<li><a href=#71-mod%C3%A8le-de-responsabilit%C3%A9-partag%C3%A9>7.1. Modèle de responsabilité partagé</a></li>
+<li><a href=#72-pr%C3%A9sentation-d%C3%A9taill%C3%A9e-du-p%C3%A9rim%C3%A8tre-du-service>7.2. Présentation détaillée du périmètre du Service</a>
+<ul>
+<li><a href=#721-infrastructures-datacenters>7.2.1. Infrastructures Datacenters</a></li>
+<li><a href=#722-infrastructure-logicielle-de-pilotage-du-service>7.2.2. Infrastructure logicielle de pilotage du Service</a></li>
+<li><a href=#723-infrastructures-de-calcul>7.2.3. Infrastructures de calcul</a></li>
+<li><a href=#724-infrastructure-de-stockage>7.2.4. Infrastructure de stockage</a></li>
+<li><a href=#725-infrastructure-r%C3%A9seau-globale>7.2.5. Infrastructure réseau globale</a></li>
+<li><a href=#726-infrastructure-de-sauvegarde>7.2.6. Infrastructure de sauvegarde</a></li>
+<li><a href=#727-mise-en-%C5%93uvre-de-solutions-de-reprise-dactivit%C3%A9-ou-de-continuit%C3%A9-dactivit%C3%A9>7.2.7. Mise en œuvre de solutions de reprise d'activité ou de continuité d'activité</a></li>
+</ul>
+</li>
+<li><a href=#73-limitations-des-services-dans-le-mod%C3%A8le-iaas-qualifi%C3%A9>7.3. Limitations des services dans le modèle IaaS qualifié</a>
+<ul>
+<li><a href=#731-services-manag%C3%A9s-en-run>7.3.1. Services managés en RUN</a></li>
+<li><a href=#732-configuration-du-secours>7.3.2. Configuration du secours</a></li>
+<li><a href=#733-configuration-de-la-sauvegarde>7.3.3. Configuration de la sauvegarde</a></li>
+</ul>
+</li>
+<li><a href=#74-mise-en-%C5%93uvre-du-service>7.4. Mise en œuvre du service</a>
+<ul>
+<li><a href=#741-pr%C3%A9requis-techniques>7.4.1. Prérequis techniques</a></li>
+</ul>
+</li>
+<li><a href=#75-localisation-du-service-en-france>7.5. Localisation du service en France</a>
+<ul>
+<li><a href=#751-localisation-des-datacenters-h%C3%A9bergeant-le-service>7.5.1. Localisation des Datacenters hébergeant le Service</a></li>
+<li><a href=#752-localisation-des-agences-cloud-temple-op%C3%A9rant-le-service>7.5.2. Localisation des agences Cloud Temple opérant le service</a></li>
+</ul>
+</li>
+<li><a href=#76-support>7.6. Support</a>
+<ul>
+<li><a href=#761-nature-du-support-accompagnant-le-service>7.6.1. Nature du support accompagnant le service</a></li>
+<li><a href=#762-sollicitation-du-service-support-technique>7.6.2. Sollicitation du service support technique</a></li>
+<li><a href=#763-processus-de-gestion-des-incidents>7.6.3. Processus de gestion des Incidents</a></li>
+<li><a href=#764-processus-de-priorisation-des-traitements>7.6.4. Processus de priorisation des traitements</a></li>
+<li><a href=#765-langue-et-localisation-du-service-de-support>7.6.5. Langue et localisation du service de support</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href=#8-engagements-et-niveaux-de-services>8. Engagements et niveaux de services</a>
+<ul>
+<li><a href=#81-engagements-de-disponibilit%C3%A9-de-linfrastructure>8.1. Engagements de disponibilité de l'infrastructure</a></li>
+<li><a href=#82-engagement-de-disponibilit%C3%A9-de-linterface-commanditaire>8.2. Engagement de disponibilité de l'interface COMMANDITAIRE</a></li>
+<li><a href=#83-engagement-de-disponibilit%C3%A9-du-support>8.3. Engagement de disponibilité du support</a></li>
+<li><a href=#84-engagement-de-disponibilit%C3%A9-du-stockage-objet-s3>8.4. Engagement de disponibilité du stockage objet S3</a></li>
+<li><a href=#85-pr%C3%A9cision-concernant-lengagement-de-sauvegarde>8.5. Précision concernant l'engagement de sauvegarde</a></li>
+</ul>
+</li>
+<li><a href=#9-organisation-de-la-relation-contractuelle>9. Organisation de la relation contractuelle</a>
+<ul>
+<li><a href=#91-responsabilit%C3%A9s-du-prestataire>9.1. Responsabilités du Prestataire</a></li>
+<li><a href=#92-limitation-des-responsabilit%C3%A9s-du-prestataire>9.2. Limitation des responsabilités du Prestataire</a></li>
+<li><a href=#93-limitation-dacc%C3%A8s>9.3. Limitation d'accès</a></li>
+<li><a href=#94-responsabilit%C3%A9s-des-tiers-participant-%C3%A0-la-fourniture-du-service-secure-temple>9.4. Responsabilités des tiers participant à la fourniture du service Secure Temple</a></li>
+<li><a href=#95-responsabilit%C3%A9s-et-obligations-du-commanditaire>9.5. Responsabilités et obligations du COMMANDITAIRE</a></li>
+<li><a href=#96-droits-du-commanditaire>9.6. Droits du COMMANDITAIRE</a></li>
+<li><a href=#97-effacement-des-donn%C3%A9es-en-fin-de-contrat>9.7. Effacement des données en fin de Contrat</a></li>
+</ul>
+</li>
+<li><a href=#10-cycle-de-vie-de-la-pr%C3%A9sente-convention-de-service>10. Cycle de vie de la présente Convention de service</a>
+<ul>
+<li><a href=#101-entr%C3%A9e-en-effet-de-la-convention-de-service>10.1. Entrée en effet de la Convention de service</a></li>
+<li><a href=#102-%C3%A9volutions-de-la-convention-de-service>10.2. Évolutions de la Convention de service</a>
+<ul>
+<li><a href=#1021-%C3%A9volutions-d%C3%A9clench%C3%A9es-par-le-commanditaire>10.2.1. Évolutions déclenchées par le COMMANDITAIRE</a></li>
+<li><a href=#1022-%C3%A9volutions-d%C3%A9clench%C3%A9es-par-le-prestataire>10.2.2. Évolutions déclenchées par le Prestataire</a></li>
+</ul>
+</li>
+<li><a href=#103-r%C3%A9versibilit%C3%A9>10.3. Réversibilité</a></li>
+</ul>
+</li>
+<li><a href=#11-disponibilit%C3%A9-continuit%C3%A9-et-restauration-du-service>11. Disponibilité, continuité et restauration du service</a>
+<ul>
+<li><a href=#111-gestion-des-incidents-et-des-interruptions>11.1. Gestion des Incidents et des interruptions</a>
+<ul>
+<li><a href=#1111-incidents>11.1.1. Incidents</a>
+<ul>
+<li><a href=#11111-types-dincidents-trait%C3%A9s-dans-le-cadre-de-cette-convention-de-service>11.1.1.1. Types d'Incidents traités dans le cadre de cette Convention de service</a></li>
+<li><a href=#11112-traitement-des-incidents>11.1.1.2. Traitement des incidents</a></li>
+<li><a href=#11113-niveau-de-notification-des-incidents-de-s%C3%A9curit%C3%A9>11.1.1.3. Niveau de notification des Incidents de sécurité</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href=#112-maintenance-du-service>11.2. Maintenance du Service</a>
+<ul>
+<li><a href=#1121-nature-de-la-maintenance>11.2.1. Nature de la maintenance</a></li>
+<li><a href=#1122-acc%C3%A8s-distants-de-cloud-temple-sur-le-p%C3%A9rim%C3%A8tre-du-commanditaire>11.2.2. Accès distants de Cloud Temple sur le périmètre du COMMANDITAIRE</a></li>
+<li><a href=#1123-acc%C3%A8s-distants-de-tiers-participant-%C3%A0-la-fourniture-du-service-sur-le-p%C3%A9rim%C3%A8tre-du-commanditaire>11.2.3. Accès distants de tiers participant à la fourniture du service sur le périmètre du COMMANDITAIRE</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href=#12-proc%C3%A9dure-deffacement-des-donn%C3%A9es-en-fin-de-contrat>12. Procédure d'effacement des données en fin de Contrat</a></li>
+<li><a href=#13-droit-applicable>13. Droit applicable</a>
+<ul>
+<li><a href=#131-de-mani%C3%A8re-g%C3%A9n%C3%A9rale>13.1. De manière générale</a></li>
+<li><a href=#132-respect-du-droit-et-des-r%C3%A9glementations-applicables>13.2. Respect du droit et des réglementations applicables</a></li>
+<li><a href=#133-rgpd>13.3. RGPD</a></li>
+<li><a href=#134-protection-vis-%C3%A0-vis-du-droit-extra-europ%C3%A9en>13.4. Protection vis à vis du droit extra-européen</a></li>
+</ul>
+</li>
+<li><a href=#14-signatures>14. SIGNATURES</a></li>
+</ul>
+<hr>
+<h1>3. Préliminaire et Glossaire</h1>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id=31-préliminaire>3.1. Préliminaire<a href=#31-préliminaire class=hash-link aria-label="Lien direct vers 3.1. Préliminaire" title="Lien direct vers 3.1. Préliminaire">​</a></h2>
+<p>Le présent document formalise la Convention de service associée au service IaaS qualifiée SecNumCloud sous l'appellation de « *Secure Temple *».</p>
+<p>"La présente convention de service complète et est complémentaire aux conditions générales de vente et d'utilisation du Prestataire. Il est
+entendu que les documents contractuels s'interprètent de manière cohérente entre eux. En cas de contradiction ou de divergence entre les
+termes des documents contractuels, les documents prévaudront les uns sur les autres dans l'ordre suivant :</p>
+<ol>
+<li>Conditions Générales de Vente et Utilisation (CGVU)</li>
+<li>Convention de Service SecNumCloud IaaS</li>
+<li>Convention de Service SecNumCloud PaaS</li>
+<li>Convention spécifique particulière</li>
+<li>Plan d'Assurance Sécurité (PAS)</li>
+<li>Conditions Particulières d'Utilisation (CPU)</li>
+</ol>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id=32-glossaire>3.2. Glossaire<a href=#32-glossaire class=hash-link aria-label="Lien direct vers 3.2. Glossaire" title="Lien direct vers 3.2. Glossaire">​</a></h2>
+<p>Dans la présente Convention de service, le <strong>COMMANDITAIRE</strong>, le <strong>Prestataire</strong> et les <strong>Parties</strong> sont identifiés dans le Contrat
+auquel est annexe la présente Convention de service.</p>
+<p>Les expressions ci-après employées dans la présente Convention de service seront interprétées conformément aux définitions qui leur sont
+attribuées ci-dessous :</p>
+<ul>
+<li>
+<p><strong>Changement :</strong> Tout ajout, une modification ou suppression impactant le Service, ayant été autorisé, planifié ou pris en charge.</p>
+</li>
+<li>
+<p><strong>Changement standard :</strong> Changement faisant l'objet d'une procédure, dont les modalités de mise en production et les impacts (y compris financiers) sont connus et acceptés à l'avance par les Parties. Il est alors intégré au catalogue des changements standards, et peut selon les cas avoir une GTI et une GTR. </p>
+</li>
+<li>
+<p><strong>Contrat :</strong> désigne le contrat souscrit par le COMMANDITAIRE auprès du Prestataire pour permettre au COMMANDITAIRE de bénéficier du Service, et auquel la présente Convention de service est annexée.</p>
+</li>
+<li>
+<p>*<strong>Convention de service :</strong> Ce document, établi dans le cadre d'un contrat spécifique ou des Conditions Générales de Vente et d'Utilisation (CGVU), et ce, en conformité avec les exigences duRéférentiel SecNumCloud.</p>
+</li>
+<li>
+<p><strong>Demande de service :</strong> demande du COMMANDITAIRE vers le Prestataire dans le cadre du Service, couvrant les opérations non réalisables par le COMMANDITAIRE depuis l'interface COMMANDITAIRE et les demandes de support dans le cadre du Service. Les demandes de service sont limitées à celles prévues au titre du Contrat ou de la présente Convention de service.</p>
+</li>
+<li>
+<p><strong>Disponibilité :</strong> Capacité à assurer la disponibilité et le maintien des performances optimales du Service, en accord avec les critères et engagements définis dans les Accords de Niveau de Service (SLA).</p>
+</li>
+<li>
+<p><strong>Données techniques</strong> : comprend l'ensemble des données manipulées pour délivrer le Service, notablement dont l'identité des bénéficiaires et des administrateurs de l'infrastructure technique, des journaux de l'infrastructure technique, configuration des accès, annuaire, certificats...</p>
+</li>
+<li>
+<p><strong>Evènement :</strong> Un "événement" est toute occurrence détectable ou identifiable pouvant avoir une importance pour la gestion du Service.</p>
+</li>
+<li>
+<p><strong>Hyperviseur :</strong> Système d'exploitation permettant l'execution de machines virtuelles sur une lame de calcul.</p>
+</li>
+<li>
+<p><strong>Incident :</strong> Tout événement imprévu qui perturbe le fonctionnement normal du Service ou compromet la sécurité des données.</p>
+</li>
+<li>
+<p><strong>Incident de sécurité :</strong> Tout événement dans le périmètre du Service:</p>
+<ul>
+<li>De nature intentionnellement malveillante ;</li>
+<li>De nature accidentelle portant atteinte à l'intégrité, la confidentialité ou la traçabilité du Service ou des données du COMMANDITAIRE ;</li>
+<li>Portant atteinte aux mesures de sécurité existantes.
+Les atteintes à la Disponibilité d'origine non-malveillante ne sont pas considérées comme un Incident de sécurité (panne matérielle, bug, dysfonctionnement, sinistre naturel...).</li>
+</ul>
+</li>
+<li>
+<p><strong>Interface COMMANDITAIRE :</strong> Interface d'administration du Service mise à disposition du COMMANDITAIRE par le Prestataire, regroupant une console d'administration web et une API.</p>
+</li>
+<li>
+<p><strong>Mise en production :</strong> action(s) d'administration de réalisation du Changement quand celui-ci est approuvé (le changement, au sens
+ITIL, ne concernant que la gestion du changement et non sa réalisation/concrétisation).</p>
+</li>
+<li>
+<p><strong>Problème</strong> : cause d'un ou plusieurs Incidents récurrents, cause d'un Incident potentiel (situation à risque).</p>
+</li>
+<li>
+<p><strong>Région :</strong> désigne un ensemble géographiquement délimité de zones de disponibilité cloud, fournissant des services de réseau, de
+calcul et de stockage pour optimiser la latence, la performance et la conformité réglementaire locale.</p>
+</li>
+<li>
+<p><strong>Service :</strong> désigne le service IaaS qualifié SecNumCloud « Secure Temple », délivré au COMMANDITAIRE par la Prestataire depuis des infrastructures techniques maintenues par le Prestataire, tel que décrit dans la section « Description du Service » de la présente Convention de service.</p>
+</li>
+<li>
+<p><strong>Secure Temple</strong> : désigne le service IaaS qualifié SecNumCloud, proposé par la société Cloud Temple, tel que défini dans l'attestation consultable sur le site de l'ANSSI et fournie en annexe de la présente Convention de service.</p>
+</li>
+<li>
+<p><strong>Sinistre :</strong> désigne un événement grave d'origine naturelle ou humaine, accidentelle ou intentionnelle, occasionnant des pertes et des dommages importants à la Partie sinistrée.</p>
+</li>
+<li>
+<p><strong>Supervision :</strong> Surveillance d'un Système d'Information ou d'un Service, impliquant la collecte de diverses données telles que mesures et alarmes. Cette activité se limite à l'observation et au suivi, sans intervenir directement sur les éléments surveillés, une prérogative qui appartient aux opérations d'Administration. </p>
+</li>
+<li>
+<p><strong>Tenant :</strong> Une instance isolée réservée à un utilisateur ou groupe d'utilisateurs, partageant une infrastructure commune tout en maintenant l'indépendance et la sécurité des données et des applications.</p>
+</li>
+<li>
+<p><strong>Zone de Disponibilité (AZ) (Availibility zone) :</strong> Une section
+spécifique et isolée de l'infrastructure de cloud computing, conçue
+pour assurer la haute disponibilité et la résilience des services
+par une distribution géographique des ressources.</p>
+</li>
+</ul>
+<h1>4. Acronymes</h1>
+<table><thead><tr><th><strong>Acronyme</strong><th style=text-align:left><strong>Définition</strong><tbody><tr><td><strong>CAB</strong><td style=text-align:left>Change Advisory Board -- Comité consultatif sur les changements<tr><td><strong>CMDB</strong><td style=text-align:left>Configuration Management Database -- Base de données de gestion des configurations<tr><td><strong>COPIL</strong><td style=text-align:left>Comité de pilotage<tr><td><strong>COSTRAT</strong><td style=text-align:left>Comité stratégique<tr><td><strong>COPROJ</strong><td style=text-align:left>Comité Projet<tr><td><strong>DB</strong><td style=text-align:left>Database (base de données)<tr><td><strong>DRP</strong><td style=text-align:left>Disaster Recovery Plan (PRA) (Plan de reprise d'activité)<tr><td><strong>GTE</strong><td style=text-align:left>Garantie de Temps d'Escalade<tr><td><strong>GTI</strong><td style=text-align:left>Garantie de Temps d'Intervention<tr><td><strong>GTR</strong><td style=text-align:left>Garantie de Temps de Résolution<tr><td><strong>ITIL</strong><td style=text-align:left>Information Technology Infrastructure Library - Bonnes pratiques pour la gestion des SI<tr><td><strong>IaaS</strong><td style=text-align:left>Infrastructure as a Service<tr><td><strong>MCO</strong><td style=text-align:left>Maintien en condition opérationnelle<tr><td><strong>MOA</strong><td style=text-align:left>Maitrise d'Ouvrage<tr><td><strong>MOE</strong><td style=text-align:left>Maitrise d'Œuvre<tr><td><strong>MSP</strong><td style=text-align:left>Managed Services Provider<tr><td><strong>OS</strong><td style=text-align:left>Operating system (système d'exploitation)<tr><td><strong>PAQ</strong><td style=text-align:left>Plan d'Assurance Qualité<tr><td><strong>PaaS</strong><td style=text-align:left>Platform as a Service<tr><td><strong>PAS</strong><td style=text-align:left>Plan d'Assurance Sécurité<tr><td><strong>PASSI</strong><td style=text-align:left>Prestataire d'Audit de Sécurité des Systèmes d'Information<tr><td><strong>RFC</strong><td style=text-align:left>Request For Change -- Demande de changement<tr><td><strong>RGPD</strong><td style=text-align:left>Règlement Général de Protection des Données (personnelles)<tr><td><strong>RPO</strong><td style=text-align:left>Recovery Point Objective -- Fraicheur des données restaurées en cas de Sinistre<tr><td><strong>RTO</strong><td style=text-align:left>Recovery Time Objective -- Délai de rétablissement du service en cas de Sinistre<tr><td><strong>SDM</strong><td style=text-align:left>Service Delivery Manager<tr><td><strong>SLA</strong><td style=text-align:left>Service Level Agreement -- Accord sur les niveaux de services<tr><td><strong>SNC</strong><td style=text-align:left>SecNumCloud<tr><td><strong>SOC</strong><td style=text-align:left>Security Operation Center<tr><td><strong>TMA</strong><td style=text-align:left>Tierce Maintenance dApplication<tr><td><strong>UO</strong><td style=text-align:left>Unité d'Œuvre<tr><td><strong>VABE</strong><td style=text-align:left>Validation d'Aptitude à la Bonne Exploitabilité<tr><td><strong>VABF</strong><td style=text-align:left>Validation d'Aptitude au Bon Fonctionnement<tr><td><strong>VM</strong><td style=text-align:left>Virtual Machine (Machine virtuelle)<tr><td><strong>VSR</strong><td style=text-align:left>Validation de Service Régulier</table>
+<h1>5. Objet de la présente Convention de service</h1>
+<p>La présente Convention de service établit les termes et conditions selon lesquels le Prestataire s'engage à délivrer le Service au
+COMMANDITAIRE. Son objet est de :</p>
+<ul>
+<li>
+<p>Préciser les exigences de performance attendues par le COMMANDITAIRE en termes de fonctionnalité et de fiabilité du Service ;</p>
+</li>
+<li>
+<p>Énoncer les obligations du Prestataire afin de satisfaire aux niveaux de service convenus ;</p>
+</li>
+<li>
+<p>Identifier les normes réglementaires applicables spécifiquement au Service délivré ;</p>
+</li>
+<li>
+<p>Assurer une uniformité et une intégrité dans l'évaluation de la qualité du Service ;</p>
+</li>
+<li>
+<p>Garantir l'excellence des services fournis, évaluée au moyen d'indicateurs de performance quantitatifs.</p>
+</li>
+</ul>
+<p>Il est stipulé que, dans l'hypothèse où le Prestataire se verrait retirer sa qualification SecNumCloud, le Contrat pourra être résilié de
+plein droit, sans encourir de pénalités, par le COMMANDITAIRE. Dans une telle éventualité, le Prestataire s'engage à informer le COMMANDITAIRE
+de cette déqualification par envoi d'une notification officielle, au moyen d'une lettre recommandée avec demande d'avis de réception.</p>
+<p>Il convient de noter qu'une modification ou un ajustement de la qualification SecNumCloud ne sera pas interprété comme une révocation de
+la qualification initiale.</p>
+<h1>6. Audit</h1>
+<p>Le Prestataire s'engage à permettre au COMMANDITAIRE, ou à tout auditeur tiers et non concurrent du Prestataire que ce dernier aurait désigné, de consulter l'ensemble des documents nécessaires à l'attestation du respect intégral des obligations liées à la conformité avec les dispositions de l'article 28 du Règlement Général sur la Protection des Données (RGPD), facilitant ainsi la réalisation
+d'audits.</p>
+<p>Par l'acceptation de la présente Convention de service, le COMMANDITAIRE confère son autorisation explicite à :</p>
+<ol>
+<li>L'Agence Nationale de la Sécurité des Systèmes d'Information (ANSSI) ainsi qu'à l'entité de qualification compétente pour entreprendre la vérification de la conformité du Service et de son système d'information au référentiel SecNumCloud.</li>
+<li>Un prestataire d'audit de la sécurité des systèmes d'information, dûment qualifié PASSI et expressément désigné par le Prestataire, pour mener à bien des audits de sécurité portant sur le Service.</li>
+</ol>
+<h1>7. Description du Service</h1>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id=71-modèle-de-responsabilité-partagé>7.1. Modèle de responsabilité partagé<a href=#71-modèle-de-responsabilité-partagé class=hash-link aria-label="Lien direct vers 7.1. Modèle de responsabilité partagé" title="Lien direct vers 7.1. Modèle de responsabilité partagé">​</a></h2>
+<p>Le Service proposé par le Prestataire se caractérise par la mise à disposition des prestations suivantes, lesquelles s'alignent sur le
+principe de responsabilité partagée présenté dans le référentiel SecNumCloud :</p>
+<ul>
+<li>
+<p>La provision de ressources de calcul (compute) ;</p>
+</li>
+<li>
+<p>La mise à disposition d'espaces de stockage ;</p>
+</li>
+<li>
+<p>L'accès à des services de connectivité réseau et internet ;</p>
+</li>
+<li>
+<p>L'offre d'un service de sauvegarde dédié aux machines virtuelles.</p>
+</li>
+</ul>
+<p>Le modèle de responsabilités partagé appliqué entre le Prestataire et le COMMANDITAIRE dans le cadre du Service est présenté en §7.1.</p>
+<p>Il est entendu que le Prestataire mobilisera son expertise pour réaliser les Prestations selon les meilleures pratiques professionnelles et
+conformément aux exigences du référentiel SecNumCloud.</p>
+<p>Le Service est qualifié SecNumCloud (voir attestation en Annexe).</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id=72-présentation-détaillée-du-périmètre-du-service>7.2. Présentation détaillée du périmètre du Service<a href=#72-présentation-détaillée-du-périmètre-du-service class=hash-link aria-label="Lien direct vers 7.2. Présentation détaillée du périmètre du Service" title="Lien direct vers 7.2. Présentation détaillée du périmètre du Service">​</a></h2>
+<table><thead><tr><th style=text-align:left>Compute<th style=text-align:left>Ressource de calcul du Tenant COMMANDITAIRE<tbody><tr><td style=text-align:left>Storage<td style=text-align:left>Données de production du Tenant COMMANDITAIRE<tr><td style=text-align:left>Stockage objet S3<td style=text-align:left>mise à disposition d’une infrastructure de stockage objet souverain multi AZ et compatible avec les API S3 standard.<tr><td style=text-align:left>Sauvegarde<td style=text-align:left>Modulo souscription au mass-storage adéquat<tr><td style=text-align:left>Infrastructure réseau<td style=text-align:left>Ressource réseau du Tenant COMMANDITAIRE<tr><td style=text-align:left>Console COMMANDITAIRE<td style=text-align:left>Le service permettant au COMMANDITAIRE d’accéder à son service IaaS et de l’administrer via l’interface Shiva<tr><td style=text-align:left>Support<td style=text-align:left>Le service de support accompagnant les services précédents et uniquement ceux-ci (*)</table>
+<p><em>(*) Dans la limite du périmètre du Service qualifié SNC et des responsabilités du Prestataire en la matière</em></p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id=721-infrastructures-datacenters>7.2.1. Infrastructures Datacenters<a href=#721-infrastructures-datacenters class=hash-link aria-label="Lien direct vers 7.2.1. Infrastructures Datacenters" title="Lien direct vers 7.2.1. Infrastructures Datacenters">​</a></h3>
+<p>Le Service englobe la mise à disposition, pour chaque Zone de disponibilité, des prestations qualifiées ci-après :</p>
+<ul>
+<li>Site datacenter situé en France pour la Région FR, conforme aux dernières normes technologiques, avec proposant un niveau de résilience équivalent ou supérieur au niveau Tier 3 du Uptime Institute ;</li>
+<li>Mise à disposition de salles techniques au sein de datacenters dédiés à l'accueil des équipements techniques indispensables à la production du service, incluant calcul, stockage, réseau, câblage, et autres composants nécessaires ;</li>
+<li>Alimentation électrique sécurisée, assurée par deux circuits électriques distincts, garantissant une continuité de service ;</li>
+<li>Fourniture de services de climatisation, ajustés pour respecter les normes et préconisations des fabricants d'équipements, afin de maintenir un environnement optimal pour les dispositifs techniques ;</li>
+<li>Supervision continue et métrologie détaillée, permettant un suivi précis et une gestion proactive des performances et de la sécurité du service fourni.</li>
+</ul>
+<p>Le Prestataire assure la mise à disposition de services avancés de détection et d'extinction d'incendie, conçus pour identifier et
+neutraliser efficacement tout départ de feu au sein des installations. Ces systèmes sont essentiels pour garantir la sécurité des équipements
+et des données. Ils comprennent des détecteurs de fumée de haute précision et des dispositifs d'extinction qui peuvent agir rapidement
+sans endommager l'équipement informatique. Ce service est crucial pour prévenir les risques d'incendie, minimiser les dommages potentiels et
+assurer la continuité des opérations.</p>
+<p>Le COMMANDITAIRE est informé que toutes les procédures et mesures de sécurité mises en place, y compris les tests annuels de basculement sur
+les groupes électrogènes, sont essentielles pour garantir la continuité et l'intégrité des services fournis. Ces pratiques sont conçues pour
+minimiser les risques de panne et assurer une réactivité optimale en cas d'Incident. En acceptant ces conditions, le client reconnaît
+l'importance de ces mesures et s'engage à coopérer pleinement pour faciliter leur mise en œuvre. Le COMMANDITAIRE est également encouragé à
+prendre connaissance des recommandations de sécurité fournies et à les intégrer dans sa propre stratégie de gestion des risques.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id=722-infrastructure-logicielle-de-pilotage-du-service>7.2.2. Infrastructure logicielle de pilotage du Service<a href=#722-infrastructure-logicielle-de-pilotage-du-service class=hash-link aria-label="Lien direct vers 7.2.2. Infrastructure logicielle de pilotage du Service" title="Lien direct vers 7.2.2. Infrastructure logicielle de pilotage du Service">​</a></h3>
+<p>Le Prestataire fournit au COMMANDITAIRE la console d'administration et l'API nécessaire à l'utilisation du Service. Il s'engage également à les maintenir cette console d'administration et l'API en condition opérationnelle optimale et à en assurer la sécurité de manière continue.
+Cette console d'administration et l'API sont désignées de manière groupées sous le terme « interface COMMANDITAIRE ».</p>
+<p>Le Prestataire alerte le COMMANDITAIRE sur le fait qu'une utilisation anormale de l'interface COMMANDITAIRE, notamment en cas de surcharge de ses APIs de commande (hammering), peut déclencher des mesures de sécurité automatiques entraînant le blocage de l'accès aux APIs de commande ou au Service. Il convient de souligner que cette situation ne constitue pas une indisponibilité du Service mais une action de protection du Service et de l'infrastructure du Prestataire ; par conséquent, le COMMANDITAIRE ne peut la considérer comme une indisponibilité dans ses calculs.</p>
+<p>De plus, le Prestataire précise au COMMANDITAIRE que les requêtes parfaitement identiques (doublons) envoyées à ses APIs sont limitées à une par seconde (Throttling). Si le COMMANDITAIRE soumet des requêtes identiques à une fréquence supérieure, leur rejet ne pourra être interprété comme une indisponibilité du Service.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id=723-infrastructures-de-calcul>7.2.3. Infrastructures de calcul<a href=#723-infrastructures-de-calcul class=hash-link aria-label="Lien direct vers 7.2.3. Infrastructures de calcul" title="Lien direct vers 7.2.3. Infrastructures de calcul">​</a></h3>
+<p>Le Service inclut la fourniture, dans les zones de disponibilité souscrites par le COMMANDITAIRE, des équipements nécessaires à
+l'exécution des charges de travail sous forme de machines virtuelles.</p>
+<p>Ceci comprend :</p>
+<ul>
+<li>La fourniture des chassis techniques nécessaires au bon fonctionnement des lames de calcul ;</li>
+<li>La fourniture des lames de calcul dans les quantités spécifiées par le COMMANDITAIRE et réparties selon les zones de disponibilité de son choix. Il est à noter que ces lames de calcul sont exclusivement dédiées au COMMANDITAIRE ;</li>
+<li>La mise à disposition de systèmes d'exploitation de type hyperviseurs, ainsi que la garantie du maintien en condition opérationnelle et de sécurité de l'infrastructure logicielle nécessaire au pilotage de ces systèmes d'exploitation. Il convient de mettre en évidence que, même si le Prestataire est responsable de la maintenance opérationnelle et de la sécurisation globale du Service, il ne détient pas de connaissances spécifiques concernant les environnements de production du COMMANDITAIRE ni des exigences liées à ses charges de travail. Par conséquent, la responsabilité de décider de la mise à jour des systèmes d'exploitation des lames de calcul hyperviseurs, une action susceptible de nécessiter un redémarrage, repose entièrement sur le COMMANDITAIRE. Cette opération peut être réalisée via l'Interface COMMANDITAIRE.</li>
+</ul>
+<p>Le choix du modèle de lame de calcul, sélectionné parmi le catalogue proposé par le Prestataire, relève de la responsabilité du
+COMMANDITAIRE.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id=724-infrastructure-de-stockage>7.2.4. Infrastructure de stockage<a href=#724-infrastructure-de-stockage class=hash-link aria-label="Lien direct vers 7.2.4. Infrastructure de stockage" title="Lien direct vers 7.2.4. Infrastructure de stockage">​</a></h3>
+<p>Le service comprend la fourniture au COMMANDITAIRE d'une infrastructure de stockage partagée de type SAN (Storage Area Network), offrant divers
+niveaux de performance. Ce service englobe :</p>
+<ul>
+<li>L'implémentation et le maintien en condition opérationnelle et en condition de sécurité du réseau SAN dédié ;</li>
+<li>L'installation et la gestion des baies de stockage mutualisées entre les clients, y compris leur maintien en condition opérationnelle et en condition de sécurité, leur supervision et leur métrologie ;</li>
+<li>La mise en place des systèmes automatisés pour l'allocation des LUNs (Logical Unit Numbers) de stockage dédiés à l'usage du COMMANDITAIRE, conformément aux volumes souscrits par le COMMANDITAIRE.</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id=725-infrastructure-réseau-globale>7.2.5. Infrastructure réseau globale<a href=#725-infrastructure-réseau-globale class=hash-link aria-label="Lien direct vers 7.2.5. Infrastructure réseau globale" title="Lien direct vers 7.2.5. Infrastructure réseau globale">​</a></h3>
+<p>Le Prestataire déploie dans le cadre du Service, un réseau global facilitant au COMMANDITAIRE la mise en accessibilité de ses systèmes
+hébergés. Ce service comprend :</p>
+<ul>
+<li>
+<p>La fourniture, le maintien en condition opérationnelle et en condition de sécurité de l'ensemble des liaisons en fibres optiques
+interconnectant les différentes Zones de disponibilité;</p>
+</li>
+<li>
+<p>La fourniture, le maintien en condition opérationnelle et en condition de sécurité des équipements techniques nécessaires au bon
+fonctionnement du réseau et à l'isolation des différents clients.</p>
+</li>
+</ul>
+<p>L'interconnexion réseau du Tenant COMMANDITAIRE, à Internet ou à des réseaux privés, et les équipements réseaux, liens opérateurs et autres
+composants techniques réalisant cette interconnexion, ne font pas partie du périmètre du Service. Cette interconnexion réseau est mise en œuvre
+conformément aux dispositions prévues dans le Contrat.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id=726-infrastructure-de-sauvegarde>7.2.6. Infrastructure de sauvegarde<a href=#726-infrastructure-de-sauvegarde class=hash-link aria-label="Lien direct vers 7.2.6. Infrastructure de sauvegarde" title="Lien direct vers 7.2.6. Infrastructure de sauvegarde">​</a></h3>
+<p>Le Prestataire met à disposition du COMMANDITAIRE un service de sauvegarde intégré, dédié et géré, destiné à la protection de ses
+machines virtuelles. Le Prestataire assure le maintien en condition opérationnelle et en condition de sécurité de ce service de sauvegarde.
+Le Prestataire garantit que les sauvegardes du COMMANDITAIRE seront situées en dehors de la Zone de disponibilité des charges de travail
+sauvegardées, sous réserve que le COMMANDITAIRE ait souscrit au Unités d'œuvre adéquates.</p>
+<p>Cette prestation de sauvegarde se limite à la sauvegarde des machines virtuelles et des configurations de topologie de l'environnement IaaS
+des Tenants du COMMANDITAIRE dans le cadre du Service. L'élaboration et l'application d'une politique de sauvegarde adéquate par le
+COMMANDITAIRE dépendent de la souscription à des unités d'œuvre spécifiques. Il incombe donc au COMMANDITAIRE de s'assurer de la
+disponibilité des ressources techniques nécessaires auprès du Prestataire pour mettre en œuvre sa politique de sauvegarde ou
+d'ajuster cette dernière en fonction des moyens disponibles.</p>
+<p>Le Prestataire s'engage à notifier le COMMANDITAIRE en cas de contraintes de capacité et à fournir une assistance conseil pour
+l'optimisation des ressources. Les obligations du Prestataire se limiteront à la mise en œuvre des besoins exprimés par le COMMANDITAIRE
+en matière de politique de sauvegarde, dans le cadre des ressources souscrites.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id=727-mise-en-œuvre-de-solutions-de-reprise-dactivité-ou-de-continuité-dactivité>7.2.7. Mise en œuvre de solutions de reprise d'activité ou de continuité d'activité<a href=#727-mise-en-œuvre-de-solutions-de-reprise-dactivité-ou-de-continuité-dactivité class=hash-link aria-label="Lien direct vers 7.2.7. Mise en œuvre de solutions de reprise d'activité ou de continuité d'activité" title="Lien direct vers 7.2.7. Mise en œuvre de solutions de reprise d'activité ou de continuité d'activité">​</a></h3>
+<p>Le Prestataire fournit au COMMANDITAIRE l'ensemble des solutions techniques nécessaires pour garantir une répartition optimale de ses ressources à travers diverses Zones de disponibilité. Il incombe au COMMANDITAIRE la responsabilité de gérer efficacement cette distribution de ressources, pour laquelle il a la possibilité à exploiter les outils du Prestataire disponibles à cet usage.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id=73-limitations-des-services-dans-le-modèle-iaas-qualifié>7.3. Limitations des services dans le modèle IaaS qualifié<a href=#73-limitations-des-services-dans-le-modèle-iaas-qualifié class=hash-link aria-label="Lien direct vers 7.3. Limitations des services dans le modèle IaaS qualifié" title="Lien direct vers 7.3. Limitations des services dans le modèle IaaS qualifié">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id=731-services-managés-en-run>7.3.1. Services managés en RUN<a href=#731-services-managés-en-run class=hash-link aria-label="Lien direct vers 7.3.1. Services managés en RUN" title="Lien direct vers 7.3.1. Services managés en RUN">​</a></h3>
+<p>Il est important de noter que sont écartés du Service :</p>
+<ul>
+<li>
+<p>L'hébergement de composants physiques du COMMANDITAIRE ;</p>
+</li>
+<li>
+<p>L'interconnexion réseau du Tenant COMMANDITAIRE, à Internet ou à des réseaux privés, incluant les liens opérateur ;</p>
+</li>
+<li>
+<p>Tout service de type managé, ou TMA;</p>
+</li>
+<li>
+<p>Toute assistance sur les machines virtuelles au niveau OS et au-dessus dans la pile de responsabilités Iaa, même s'il s'agit de simple supervision.</p>
+</li>
+</ul>
+<p>Cela étant, il n'est absolument pas exclu que le COMMANDITAIRE ait recours à de tels services auprès de l'offre MSP du Prestataire pour intervenir en mode services managés sur ses Tenants. Ces services ne seront alors pas encadrés par la présente Convention de service et ses engagements/clauses bipartites.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id=732-configuration-du-secours>7.3.2. Configuration du secours<a href=#732-configuration-du-secours class=hash-link aria-label="Lien direct vers 7.3.2. Configuration du secours" title="Lien direct vers 7.3.2. Configuration du secours">​</a></h3>
+<p>Par défaut, le Prestataire fournit la mise en place des ressources du IaaS au COMMANDITAIRE en réservant des ressources et en configurant les déploiements pour utiliser les Zones de disponibilité. Il incombe au COMMANDITAIRE de choisir les Zones de disponibilité via l'interface COMMANDITAIRE.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id=733-configuration-de-la-sauvegarde>7.3.3. Configuration de la sauvegarde<a href=#733-configuration-de-la-sauvegarde class=hash-link aria-label="Lien direct vers 7.3.3. Configuration de la sauvegarde" title="Lien direct vers 7.3.3. Configuration de la sauvegarde">​</a></h3>
+<p>La prestation de sauvegarde s'arrête à la sauvegarde des machines virtuelles et des configurations de topologie représentant l'environnement IaaS des Tenants du COMMANDITAIRE dans le cadre du Service.</p>
+<p>La prestation de sauvegarde et la complétion de la politique de sauvegarde du COMMANDITAIRE est soumise à la souscription d'espace de stockage sur le mass storage nécessaire pour assurer le service. Il est donc de la responsabilité du COMMANDITAIRE de souscrire auprès du Prestataire les moyens techniques nécessaires pour assurer la politique de sauvegarde sur son périmètre informatique, ou d'ajuster la politique de sauvegarde aux moyens mis en œuvre. Le Prestataire s'engage à informer le COMMANDITAIRE en cas de limite de capacité technique.</p>
+<p>Le Prestataire mettra en place les moyens techniques et humains nécessaires à la sauvegarde du système hébergé dans la limite des ressources souscrites par le COMMANDITAIRE.</p>
+<p>Par ailleurs, dans le cas des périmètres non pris en charge par le Prestataire, il appartient au COMMANDITAIRE de définir sa propre stratégie de sauvegarde et de paramétrer lui-même les sauvegardes des VM ou d'effectuer une Demande de service auprès du Prestataire pour que le paramétrage des sauvegardes pour les serveurs physiques soit mis en place si le COMMANDITAIRE dispose d'un contrat de service managé permettant au Prestataire d'agir via l'interface COMMANDITAIRE qui est la console d'administration qui est mise à disposition dans le cadre de cette Convention de service et qui dispose de fonctionnalités pour configurer les sauvegardes.</p>
+<p>En outre, ce service n'aura comme engagement que de traduire par le paramétrage via l'interface COMMANDITAIRE, la configuration spécifiée clairement par le COMMANDITAIRE.</p>
+<p>Pour des raisons de flexibilité de l'offre du Prestataire, le COMMANDITAIRE a l'option d'associer une politique de non-sauvegarde sur certaines de ses VM. Dans ce cas, il appartient au COMMANDITAIRE d'assumer ce choix. Le Prestataire ne sauvegardera pas les VM associées à la politique "no backup". Le Prestataire alerte le COMMANDITAIRE que choisir la politique "no backup" ou choisir de sauvegarder manuellement expose le COMMANDITAIRE à une perte de données définitive en cas d'Incident sur les couches basse ou sur les couches dépendant de sa responsabilité dans le modèle IaaS. Dans un tel cas, il sera impossible de tenir le Prestataire responsable de restaurer les données car il n'y aura rien à restaurer. Le Prestataire recommande de toujours sauvegarder les VM.</p>
+<p>Pour tout sujet concernant l'OS installé sur une machine virtuelle et tout logiciel ou programme exécuté « par-dessus l'OS », il est de la responsabilité du COMMANDITAIRE de réaliser les opérations d'administration et de supervision au sein de l'Union Européenne s'il souhaite garantir que toute la verticalité des couches du SI soient opérées et gérées depuis l'Union Européenne. Les opérations  d'administration hors du périmètre de responsabilité du Prestataire dans le cadre de la présente Convention de service dont indiquées dans la section « Modèle de responsabilités partagées » de la présente Conventions de Service.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id=74-mise-en-œuvre-du-service>7.4. Mise en œuvre du service<a href=#74-mise-en-œuvre-du-service class=hash-link aria-label="Lien direct vers 7.4. Mise en œuvre du service" title="Lien direct vers 7.4. Mise en œuvre du service">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id=741-prérequis-techniques>7.4.1. Prérequis techniques<a href=#741-prérequis-techniques class=hash-link aria-label="Lien direct vers 7.4.1. Prérequis techniques" title="Lien direct vers 7.4.1. Prérequis techniques">​</a></h3>
+<p>Pour la mise en œuvre du Service, le COMMANDITAIRE reconnaît qu'il devra :</p>
+<ul>
+<li>
+<p>Fonctionner avec une virtualisation de type VMware dans les versions supportées par l'éditeur et fournies par le Prestataire dans le cadre du Service;</p>
+</li>
+<li>
+<p>Recourir via le Prestataire à l'utilisation de l'outil de sauvegarde;</p>
+</li>
+<li>
+<p>Déclarer des IP fixes depuis lesquelles le Prestataire l'autorisera à accéder à l'interface COMMANDITAIRE (Filtrage par liste blanche). Les modifications de cette liste d'IP devront être réalisées via des Demandes de service (liste non administrable depuis l'interface d'administration du Service).</p>
+</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id=75-localisation-du-service-en-france>7.5. Localisation du service en France<a href=#75-localisation-du-service-en-france class=hash-link aria-label="Lien direct vers 7.5. Localisation du service en France" title="Lien direct vers 7.5. Localisation du service en France">​</a></h2>
+<p>Il est précisé qu'aucune des opérations et aucun des composants physiques impliqués dans la fourniture du Service , dont la présente Convention de service fait l'objet, n'est situé hors de l'Union Européenne.</p>
+<p>Cela inclut notamment le support, la supervision opérationnelle et la supervision de sécurité (SOC) de l'infrastructure technique délivrant le Service. De fait, tout le stockage, toutes les tâches d'administration, de supervision et tous les traitements sont réalisés en France.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id=751-localisation-des-datacenters-hébergeant-le-service>7.5.1. Localisation des Datacenters hébergeant le Service<a href=#751-localisation-des-datacenters-hébergeant-le-service class=hash-link aria-label="Lien direct vers 7.5.1. Localisation des Datacenters hébergeant le Service" title="Lien direct vers 7.5.1. Localisation des Datacenters hébergeant le Service">​</a></h3>
+<p>A défaut des opérations des collaborateurs et des agences du Prestataire, l'ensemble des opérations de production (comprenant le stockage et le traitement des données) et composants techniques délivrant le Service sont situés dans les Datacenters basés en France.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id=752-localisation-des-agences-cloud-temple-opérant-le-service>7.5.2. Localisation des agences Cloud Temple opérant le service<a href=#752-localisation-des-agences-cloud-temple-opérant-le-service class=hash-link aria-label="Lien direct vers 7.5.2. Localisation des agences Cloud Temple opérant le service" title="Lien direct vers 7.5.2. Localisation des agences Cloud Temple opérant le service">​</a></h3>
+<p>Les collaborateurs de Cloud Temple intervenant sur le périmètre duService opèrent depuis les agences de Cloud Temple toutes situées
+exclusivement en France. Ces agences sont situées en France, à Tours, Lyon, Caen et Paris La Défense.</p>
+<p>Le COMMANDITAIRE est informé de la possibilité des salariés de Cloud Temple de travailler à distance. Toutefois, le Prestataire garantit le même niveau de sécurité concernant les accès à distance, notamment concernant les accès VPN. Ces accès distants sont mis en œuvre conformément aux exigences du référentiel SecNumCloud.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id=76-support>7.6. Support<a href=#76-support class=hash-link aria-label="Lien direct vers 7.6. Support" title="Lien direct vers 7.6. Support">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id=761-nature-du-support-accompagnant-le-service>7.6.1. Nature du support accompagnant le service<a href=#761-nature-du-support-accompagnant-le-service class=hash-link aria-label="Lien direct vers 7.6.1. Nature du support accompagnant le service" title="Lien direct vers 7.6.1. Nature du support accompagnant le service">​</a></h3>
+<p>Le Prestataire fournit un service de support technique visant à assister le COMMANDITAIRE dans la gestion, le dépannage et l'optimisation de
+leurs ressources déployées. Ce service couvre une gamme étendue d'activités, depuis l'aide à la configuration initiale des services
+jusqu'au soutien technique avancé pour résoudre des problèmes spécifiques.</p>
+<p>Voici une description des caractéristiques et fonctionnalités du service de support :</p>
+<ul>
+<li>Assistance à la mise en œuvre initiale de l'utilisation du Service ;</li>
+<li>Assistance à la résolution d'incidents ;</li>
+<li>Assistance à la résolution de problèmes ;</li>
+<li>Suivi et conseil sur l'optimisation du socle technique.</li>
+</ul>
+<p>Dans le cadre du service de support, le Prestataire ne se substitue pas au COMMANDITAIRE dans l'usage du Service. Le COMMANDITAIRE reste entièrement responsable de la configuration, de l'exploitation de ses VM et de ses Tenants, et de la gestion de tous les éléments (données et applications incluses) qu'il a stockés ou installés sur les infrastructures du Prestataire. Le service de support technique est fourni en accord avec les Conditions Générales de Vente et d'Utilisation, le Prestataire étant tenu à  une obligation de moyens.</p>
+<p>Le COMMANDITAIRE s'engage à utiliser le service de support technique de manière raisonnable, s'abstenant notamment de solliciter des services non souscrits auprès du Prestataire et de faire intervenir les équipes du Prestataire auprès de ses propres clients ou de tiers non inclus dans le Contrat. Le Prestataire se réserve le droit de rejeter toute demande de service ne respectant pas ces critères.</p>
+<p>Le niveau d'engagement du support est conditionné à la souscription des unités d'œuvre de support associées.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id=762-sollicitation-du-service-support-technique>7.6.2. Sollicitation du service support technique<a href=#762-sollicitation-du-service-support-technique class=hash-link aria-label="Lien direct vers 7.6.2. Sollicitation du service support technique" title="Lien direct vers 7.6.2. Sollicitation du service support technique">​</a></h3>
+<p>Le support technique est accessible par le biais d'un système de tickets via la console COMMANDITAIRE et est disponible durant les heures normales de bureau hors jours fériés (8h - 18h ; Lundi -- Vendredi ; calendrier et horaires français). Pour les urgences survenant en dehors des heures ouvrées, notamment les incidents affectant significativement la production, le service d'astreinte peut être joint via un numéro communiqué au COMMANDITAIRE à l'initialisation du Service.</p>
+<p>Pour chaque demande ou Incident, il est impératif de générer un ticket auprès du support du Prestataire. L'initialisation de ce ticket, comprenant toutes les informations nécessaires, est essentielle et marque le début de l'évaluation des engagements du Prestataire.</p>
+<p>Dès que le Prestataire reçoit une demande ou une notification d'Incident, que ce soit par le biais de la console de gestion ou à la suite d'un appel téléphonique, un ticket est automatiquement créé. Lors de la déclaration d'un Incident, il est essentiel que le COMMANDITAIRE fournisse au prestataire un maximum de détails sur le problème
+rencontré. Cette démarche est cruciale pour permettre une évaluation adéquate de la situation, sa priorisation et un diagnostic efficace.</p>
+<p>Le Client reçoit alors une confirmation par courriel, indiquant la création du ticket et son numéro unique. Le COMMANDITAIRE peut consulter
+le statut et l'historique de ses demandes et déclarations d'Incidents directement depuis la console de gestion.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id=763-processus-de-gestion-des-incidents>7.6.3. Processus de gestion des Incidents<a href=#763-processus-de-gestion-des-incidents class=hash-link aria-label="Lien direct vers 7.6.3. Processus de gestion des Incidents" title="Lien direct vers 7.6.3. Processus de gestion des Incidents">​</a></h3>
+<p>Lors d'une déclaration d'un Incident, l'équipe de support technique du Prestataire initie une investigation pour identifier la cause du problème et établir un diagnostic. Le Client doit collaborer activement avec le Prestataire en fournissant toutes les informations nécessaires et en effectuant les tests requis. Le Prestataire peut accéder au Service du Client pour diagnostiquer l'Incident.</p>
+<p>Si les Services du Prestataire sont jugés fonctionnels et que l'Incident ne lui est pas imputable, le Client en sera informé. À la demande du Client, le Prestataire peut proposer des Services Professionnels pour identifier l'origine du problème, facturable sur accord préalable par tranche de 30mn.</p>
+<p>Dans le cas où l'Incident est de la responsabilité du Prestataire ou de l'un de ses sous-traitants, celui-ci complète le diagnostic et s'attèle à la restauration du Service sans frais supplémentaires. Le diagnostic s'appuie sur les échanges entre les Parties et les données du Prestataire, ces éléments étant considérés comme probants par accord des Parties.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id=764-processus-de-priorisation-des-traitements>7.6.4. Processus de priorisation des traitements<a href=#764-processus-de-priorisation-des-traitements class=hash-link aria-label="Lien direct vers 7.6.4. Processus de priorisation des traitements" title="Lien direct vers 7.6.4. Processus de priorisation des traitements">​</a></h3>
+<p>La détermination du niveau de priorité d'un dossier repose sur une analyse matricielle qui évalue l'impact de l'Incident et son degré de
+criticité :</p>
+<ul>
+<li>Les niveaux d'impact sont définis de la manière suivante :</li>
+</ul>
+<table><thead><tr><th>Niveau d'impact<th>Description<tbody><tr><td>Impact I1<td>Le ou les services du Prestataire sont interrompus<tr><td>Impact I2<td>Le ou les services du Prestataire sont dégradés<tr><td>Impact I3<td>Le ou les services du Prestataire sont actuellement stable, mais montrent des signes de potentiel déclin à long terme</table>
+<ul>
+<li>Les niveaux de Criticités sont définis de la manière suivante :</li>
+</ul>
+<table><thead><tr><th>Niveau de criticité<th>Description<tbody><tr><td>Criticité C1<td>Le ou les services du Prestataire se dégradent à une vitesse préoccupante<tr><td>Criticité C2<td>Le ou les services du Prestataire se détériore progressivement au fil du temps<tr><td>Criticité C3<td>Le ou les services du Prestataire présentes un ou plusieurs inconvenient sans conséquence significative</table>
+<ul>
+<li>Sur la base d'une analyse approfondie de la situation, prenant en compte les éléments déterminant l'Impact et la Criticité, une priorité est attribuée au ticket conformément à la matrice de décision ci-après :</li>
+</ul>
+<table><thead><tr><th>Niveau d'impact <br> \ Niveau de criticité<th>Impact I1<th>Impact I2<th>Impact I3<tbody><tr><td>Criticité C1<td>Priorité <strong>P1</strong><td>Priorité <strong>P2</strong><td>Priorité <strong>P3</strong><tr><td>Criticité C2<td>Priorité <strong>P2</strong><td>Priorité <strong>P3</strong><td>Priorité <strong>P4</strong><tr><td>Criticité C3<td>Priorité <strong>P3</strong><td>Priorité <strong>P4</strong><td>Priorité <strong>P5</strong></table>
+<p>Les engagements de niveau de service correspondant à chaque niveau de priorité sont détaillés dans le chapitre suivant.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id=765-langue-et-localisation-du-service-de-support>7.6.5. Langue et localisation du service de support<a href=#765-langue-et-localisation-du-service-de-support class=hash-link aria-label="Lien direct vers 7.6.5. Langue et localisation du service de support" title="Lien direct vers 7.6.5. Langue et localisation du service de support">​</a></h3>
+<p>Le support est fourni par le Prestataire au COMMANDITAIRE a minima en langue française. Le support peut être également fourni en langue anglaise.</p>
+<p>Les opérations du service de support du Prestataire pour l'offre de service d'infrastructure qualifiée SecNumCloud sont situées dans l'Union Européenne.</p>
+<h1>8. Engagements et niveaux de services</h1>
+<p>Le Prestataire s'engage à garantir une surveillance continue de la performance et de l'intégrité sécuritaire de son infrastructure technique délivrant le Service, veillant à leur fonctionnement optimal.</p>
+<p>L'indisponibilité d'un service, faisant l'objet d'un indicateur de performance, est reconnue dès son identification par le système de supervision du Prestataire, ou suite à une notification par un utilisateur du COMMANDITAIRE. Le début de l'indisponibilité est fixé au moment le plus précoce entre ces deux événements, afin de garantir un décompte précis et juste du temps d'indisponibilité.</p>
+<p>La fin de l'indisponibilité est officiellement marquée par la restauration complète du service, confirmée soit par les outils de supervision du Prestataire, soit par un retour utilisateur, assurant ainsi une reprise effective des opérations et une mesure fidèle de la durée de l'interruption.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id=81-engagements-de-disponibilité-de-linfrastructure>8.1. Engagements de disponibilité de l'infrastructure<a href=#81-engagements-de-disponibilité-de-linfrastructure class=hash-link aria-label="Lien direct vers 8.1. Engagements de disponibilité de l'infrastructure" title="Lien direct vers 8.1. Engagements de disponibilité de l'infrastructure">​</a></h2>
+<p>Le Prestataire s'engage à maintenir un niveau de disponibilité et de performance conforme aux standards définis pour chaque période spécifiée. Les engagements de niveau de service (Service Level Agreements, SLAs) s'appliquent sous réserve que le COMMANDITAIRE implémente ses systèmes à travers au moins deux des Zones de disponibilité  présentes dans la Région concernée.</p>
+<p>En l'absence de respect de ces conditions par le COMMANDITAIRE,
+celui-ci se verra dans l'incapacité de revendiquer l'application des
+SLAs concernés, lesquels sont spécifiquement identifiés par un
+astérisque (*). L'accessibilité aux SLAs se fait via l'interface
+COMMANDITAIRE. Les mesures s'entendent calculées mensuellement :</p>
+<ul>
+<li><strong>SLA 1 (*) : IC-INFRA_SNC-01</strong> – Disponibilité de la puissance de calcul (Compute) : taux de disponibilité garanti de 99,99%, calculé sur une base 24h/24, 7j/7.</li>
+<li><strong>SLA 2 (*) : IC-INFRA_SNC-02</strong> – Disponibilité du stockage : taux de disponibilité garanti de 99,99%, calculé sur une base 24h/24, 7j/7.</li>
+<li><strong>SLA 3     : IC-INFRA_SNC-03</strong> – Fiabilité de la sauvegarde : taux de disponibilité garanti de 99,99%, calculé sur une base 24h/24, 7j/7.</li>
+<li><strong>SLA 4 (*) : IC-INFRA_SNC-04</strong> – Disponibilité de l'infrastructure réseau : taux de disponibilité garanti de 99,99%, calculé sur une base 24h/24, 7j/7.</li>
+<li><strong>SLA 5     : IC-INFRA_SNC-05</strong> – Accès Internet : taux de disponibilité garanti de 99,99%, calculé sur une base 24h/24, 7j/7.</li>
+</ul>
+<p><em><strong>Remarques</strong></em> :</p>
+<ul>
+<li>
+<p><em>En réponse une attaque par déni de service distribué (DDoS), le Prestataire se réserve le droit d'ajuster sa configuration de routage internet pour
+limiter l'impact de cette attaque et sauvegarder son infrastructure. En particulier, si une adresse IP appartenant au COMMANDITAIRE est ciblée, le Prestataire peut recourir à la technique de blackholing
+via la communauté BGP pour bloquer tout le trafic vers l'adresse IP visée en amont chez ses fournisseurs, dans le but de protéger les ressources du COMMANDITAIRE ainsi que celles d'autres COMMANDITAIREs
+et de l'infrastructure du Prestataire. Le Prestataire encourage vivement le COMMANDITAIRE à adopter des mesures similaires, telles que l'utilisation de logiciels de pare-feu
+d'applications web disponibles sur le marché, et à configurer soigneusement ses groupes de sécurité via l'API de commande.</em></p>
+</li>
+<li>
+<p><em>Le Prestataire insiste sur la nécessité pour le COMMANDITAIRE de minimiser les ouvertures de flux, en évitant notamment de rendre accessibles les ports
+d'administration <strong>SSH</strong> (port TCP 22) et <strong>RDP</strong> (port TCP 3389) depuis l'ensemble d'Internet (sous-réseau 0.0.0.0/0), ainsi que les protocoles internes tels que <strong>SMB</strong> (port TCP/UDP 445) ou <strong>NFS</strong> (port TCP/UDP 2049).</em></p>
+</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id=82-engagement-de-disponibilité-de-linterface-commanditaire>8.2. Engagement de disponibilité de l'interface COMMANDITAIRE<a href=#82-engagement-de-disponibilité-de-linterface-commanditaire class=hash-link aria-label="Lien direct vers 8.2. Engagement de disponibilité de l'interface COMMANDITAIRE" title="Lien direct vers 8.2. Engagement de disponibilité de l'interface COMMANDITAIRE">​</a></h2>
+<ul>
+<li>SLA 6 : IC-INFRA_SNC-06 -- Accès à la console d'administration du  Service : une disponibilité garantie de 97%, assurée en continu, 24 heures sur 24 et 7 jours sur 7.</li>
+<li>SLA 7 : IC-INFRA_SNC-07 -- Accès aux APIs de pilotage du Service : une disponibilité de 99.9%, calculé sur une base 24h/24, 7j/7.</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id=83-engagement-de-disponibilité-du-support>8.3. Engagement de disponibilité du support<a href=#83-engagement-de-disponibilité-du-support class=hash-link aria-label="Lien direct vers 8.3. Engagement de disponibilité du support" title="Lien direct vers 8.3. Engagement de disponibilité du support">​</a></h2>
+<ul>
+<li><strong>SLA 8      : IC-INFRA_SNC-08</strong> – Voici les engagements de performance du support technique du Prestataire pour les incidents, hors maintenances programmées :</li>
+</ul>
+<table><thead><tr><th>Priorité<th>Garantie de temps d'intervention (GTI)<th>Objectif de performance<tbody><tr><td>Priorité <strong>P1</strong><td>30mn<td>95%<tr><td>Priorité <strong>P2</strong><td>2h<td>90%<tr><td>Priorité <strong>P3</strong><td>4h<td>90%<tr><td>Priorité <strong>P4</strong><td>24h<td>85%<tr><td>Priorité <strong>P5</strong><td>48h<td>85%</table>
+<ul>
+<li><strong>SLA 9      : IC-INFRA_SNC-09</strong> – Voici les engagements de performance du support technique du Prestataire pour les demandes de service :</li>
+</ul>
+<table><thead><tr><th><th>Garantie de temps d'intervention (GTI)<th>Objectif de performance<tbody><tr><td>Demande de service<td>4h<td>90%</table>
+<p><em>Remarque :</em></p>
+<ul>
+<li><em>Le délai pour la Garantie de Temps d’Intervention (GTI) est calculé à partir de la différence entre le moment où le COMMANDITAIRE ouvre le ticket et la première intervention du support du Prestataire.</em></li>
+<li><em>L'investigation d'incidents concernant les COMMANDITAIREs ne comprendra pas d'intervention à distance sur les serveurs hébergés du COMMANDITAIRE. Cette assistance se limitera à l'explication des métriques disponibles relatives
+à l'environnement du COMMANDITAIRE, afin de faciliter la compréhension des incidents ou des problèmes de performance rencontrés. Sur la base des résultats de cette analyse, des recommandations pourront être suggérées.</em></li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id=84-engagement-de-disponibilité-du-stockage-objet-s3>8.4. Engagement de disponibilité du stockage objet S3<a href=#84-engagement-de-disponibilité-du-stockage-objet-s3 class=hash-link aria-label="Lien direct vers 8.4. Engagement de disponibilité du stockage objet S3" title="Lien direct vers 8.4. Engagement de disponibilité du stockage objet S3">​</a></h2>
+<ul>
+<li><strong>SLA 10      : IC-INFRA_SNC-10</strong> – Voici les engagements de disponibilité pour le stockage objet S3 :</li>
+</ul>
+<table><thead><tr><th>Indicateur<th>Engagement<th>Objectif de disponibilité<tbody><tr><td>IC-INFRA-SNC-10.1<td>Durabilité du stockage d'un objet sur une région<td>99.9999999% / an<tr><td>IC-INFRA-SNC-10.2<td>Disponibilité de l'API Stockage Objet S3<td>99.99%<tr><td>IC-INFRA-SNC-10.3<td>Latence maximale d'accès à un objet sur une région<td>150 ms</table>
+<p>Remarques :</p>
+<ul>
+<li>Le Service de Stockage Objet est spécifiquement conçu pour le stockage d'objets et doit être employé dans ce seul but, <strong>excluant catégoriquement son utilisation en mode bloc</strong>. Recourir au mode bloc par des méthodes détournées, incluant par exemple l'utilisation de <em>"FUSE" dans un environnement Linux</em>, constitue une infraction aux termes d'utilisation énoncés. Aucun incident, dysfonctionnement ou dommage découlant de cet usage non conforme ne sera couvert par les Accords de Niveau de Service (SLA) définis dans cette convention de services.</li>
+<li>La garantie de durabilité est conditionnée à une utilisation des services conforme aux meilleures pratiques et standards actuels, et exclut explicitement toute modification des données, qu'elle soit intentionnelle ou accidentelle, résultant d'actions entreprises par le COMMANDITAIRE.</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id=85-précision-concernant-lengagement-de-sauvegarde>8.5. Précision concernant l'engagement de sauvegarde<a href=#85-précision-concernant-lengagement-de-sauvegarde class=hash-link aria-label="Lien direct vers 8.5. Précision concernant l'engagement de sauvegarde" title="Lien direct vers 8.5. Précision concernant l'engagement de sauvegarde">​</a></h2>
+<p>La stratégie de sauvegarde déployée pour le COMMANDITAIRE, est conditionnée par la souscription aux unités d'œuvre adéquates.</p>
+<p>Le Prestataire s'engage sur la mise à disposition d'une solution de sauvegarde qui permettra au COMMANDITAIRE d'appliquer les politiques de sauvegardes souhaitées.</p>
+<p>Il est précisé que le périmètre du Prestataire s'arrête à la mise à disposition d'un service de sauvegarde et c'est au COMMANDITAIRE de superviser via l'interface COMMANDITAIRE la bonne exécution des politiques associées.</p>
+<p>Il est précisé que la gestion de capacités de stockage de l'espace de stockage dédié aux sauvegardes, reste à la charge et responsabilité du COMMANDITAIRE. Le Prestataire met à disposition le taux d'utilisation via la console.</p>
+<p><em>Exemple : Non sauvegarde d'une machine virtuelle :</em></p>
+<p><em>Le COMMANDITAIRE a la charge de vérifier / superviser la bonne exécution des politiques des sauvegardes, dans le cas où le COMMANDITAIRE constate qu'une machine virtuelle n'est pas sauvegardée, il lui appartient d'en vérifier la cause, le COMMANDITAIRE pourra solliciter le Support du Prestaire selon le niveau de support souscrit pour être assisté.</em></p>
+<p><strong>Le SLA 8 : IC-INFRA_SNC-08 et SLA 9</strong>, sera exclusivement applicable dans le cas d'un Incident du service sauvegarde.</p>
+<h1>9. Organisation de la relation contractuelle</h1>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id=91-responsabilités-du-prestataire>9.1. Responsabilités du Prestataire<a href=#91-responsabilités-du-prestataire class=hash-link aria-label="Lien direct vers 9.1. Responsabilités du Prestataire" title="Lien direct vers 9.1. Responsabilités du Prestataire">​</a></h2>
+<p>Le Prestataire s'engage :</p>
+<ul>
+<li>
+<p>à informer son COMMANDITAIRE de manière adéquate (par exemple en cas de limite de capacité de ressources techniques délivrant le Service).</p>
+</li>
+<li>
+<p>à informer formellement le COMMANDITAIRE et dans un délai d'un mois, de tout​ changement juridique, organisationnel ou technique pouvant avoir un impact sur la conformité du Service aux exigences de protection contre les lois extra-européennes (19.6 du référentiel SNC v3.2).</p>
+</li>
+<li>
+<p>à fournir au COMMANDITAIRE des interfaces et des interfaces de service qui sont en langue française a minima.</p>
+</li>
+<li>
+<p>à étudier et prendre en compte les exigences sectorielles spécifiques liées aux types d'informations confiées par le COMMANDITAIRE dans le cadre de la mise en œuvre du service et dans la limite des responsabilités du Prestataire.</p>
+</li>
+<li>
+<p>à ne divulguer aucune information relative à la prestation à des tiers, sauf autorisation formelle et écrite du COMMANDITAIRE.</p>
+</li>
+<li>
+<p>à mettre à disposition toutes les informations nécessaires à la réalisation d'audits de conformité conformément aux dispositions de l'article 28 du RGPD.</p>
+</li>
+<li>
+<p>à rendre compte auprès du COMMANDITAIRE, par la présente Convention de service, de tout Incident de sécurité impactant le Service ou l'utilisation faite par le COMMANDITAIRE du Service (incluant les données du COMMANDITAIRE).</p>
+</li>
+<li>
+<p>à autoriser un prestataire d'audit de la sécurité des systèmes d'information (PASSI) qualifié, mandaté par le Prestataire, à auditer le service ainsi que son système d'information, conformément au plan de contrôle du SecNumCloud du Prestataire. De plus, le Prestataire s'engage à fournir toutes les informations nécessaires pour mener à bien les audits de conformité aux dispositions de l'article 28 du RGPD, menés par le commanditaire ou un tiers mandaté.</p>
+</li>
+<li>
+<p>à fournir, en qualité de sous-traitant, conformément à l'article 28 du Règlement général sur la protection des données (RGPD), assistance et conseils au COMMANDITAIRE en l'alertant dès lors qu'une instruction émise par ce dernier est susceptible de constituer une violation des règles de protection des données.</p>
+</li>
+<li>
+<p>à notifier par écrit, lorsqu'un projet impacte ou est susceptible d'impacter le niveau de sécurité du Service, le COMMANDITAIRE des potentiels impacts, des mesures d'atténuation mises en place, ainsi que des risques résiduels qui le concernent.</p>
+</li>
+<li>
+<p>à documenter et à mettre en œuvre l'ensemble des procédures nécessaires pour respecter les exigences légales, réglementaires et contractuelles applicables au service, ainsi que les besoins de sécurité spécifiques du COMMANDITAIRE, définis par ce dernier et prévus au Contrat. Sur demande du COMMANDITAIRE, le module Documentation de l'interface COMMANDITAIRE permettra un partage sécurisé de ces documents.</p>
+</li>
+<li>
+<p>à fournir, sur demande du COMMANDITAIRE, les éléments d'appréciation des risques relatifs à la soumission des données du COMMANDITAIRE au droit d'un état non-membre de l'Union Européenne.</p>
+</li>
+</ul>
+<p>Sur demande du COMMANDITAIRE formelle et écrite, le Prestataire s'engage à :</p>
+<ol>
+<li>
+<p>Rendre accessible au COMMANDITAIRE le règlement intérieur et la charte d'éthique du Prestataire ;</p>
+</li>
+<li>
+<p>Rendre accessible au COMMANDITAIRE les sanctions encourues en cas d'infraction à la politique de sécurité ;</p>
+</li>
+<li>
+<p>Fournir au COMMANDITAIRE l'ensemble des événements le concernant dans les éléments de journalisation du Service ;</p>
+</li>
+<li>
+<p>A la fin du Contrat le Prestataire s'engage à supprimer les données et Données techniques relatives au COMMANDITAIRE, conformément à la « procédure d'effacement des données en fin de Contrat » décrite dans la présente Convention de service.</p>
+</li>
+<li>
+<p>à assurer un effacement sécurisé de l'intégralité des données du COMMANDITAIRE par réécriture complète de tout support ayant hébergé ses données dans le cadre du Service.</p>
+</li>
+<li>
+<p>à fournir la liste complète des tiers autorisés à accéder aux infrastructures portant les données.</p>
+</li>
+</ol>
+<p>Le Prestataire maintiendra à jour et mettra à disposition du COMMANDITAIRE la liste exhaustive des tiers autorisés à accéder aux infrastructures portant les données, informant ce dernier de tout changement relatif aux sous-traitants. Le Prestataire et l'ensemble de ses filiales s'engagent à respecter les valeurs fondamentales de l'Union européenne, à savoir la dignité humaine, la liberté, la démocratie, l'égalité, l'état de droit, ainsi que le respect des Droits de l'homme. Le service fourni par le Prestataire est conforme à la législation en vigueur en matière de droits fondamentaux et aux valeurs de l'Union européenne relatives au respect de la dignité humaine, à la liberté, à l'égalité, à la démocratie et à l'État de droit.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id=92-limitation-des-responsabilités-du-prestataire>9.2. Limitation des responsabilités du Prestataire<a href=#92-limitation-des-responsabilités-du-prestataire class=hash-link aria-label="Lien direct vers 9.2. Limitation des responsabilités du Prestataire" title="Lien direct vers 9.2. Limitation des responsabilités du Prestataire">​</a></h2>
+<p>Du fait de l'ensemble des définitions et conditions mentionnées dans la présente Convention de service, les responsabilités du Prestataire sont limitées ainsi :</p>
+<ol>
+<li>
+<p>Le modèle de responsabilité partagée, décrit dans la section « Modèle de responsabilités partagées » de la présente Convention de service, limite de fait l'implication du Prestataire dans les couches de fonctionnement allant "au-dessus" de la mise à disposition de ressources de calcul, de réseau, de stockage et de sauvegarde. Ceci exclut en particulier sans s'y limiter :</p>
+<ul>
+<li>
+<p>La gestion de ce qui est installé sur les machines virtuelles (OS, middlewares, applicatifs, etc.);</p>
+</li>
+<li>
+<p>La tenue à jour des OS et autres logiciels installés par le COMMANDITAIRE sur ses machines dans ses Tenants;</p>
+</li>
+<li>
+<p>La sécurité des programmes, logiciels et applicatifs installés sur les machines virtuelles;</p>
+</li>
+<li>
+<p>La mise à jour des machines virtuelles;</p>
+</li>
+<li>
+<p>La sauvegarde des données au niveau applicatif.</p>
+</li>
+</ul>
+</li>
+<li>
+<p>Le Prestataire ne peut prendre d'engagements de sauvegarde des Tenants du COMMANDITAIRE sans que le COMMANDITAIRE n'ai au préalable souscrit aux unités d'oeuvres adéquates.</p>
+</li>
+<li>
+<p>Le Prestataire ne peut se prévaloir de la propriété des données transmises et générées par le COMMANDITAIRE. En effet, celles-ci relèvent de la propriété du COMMANDITAIRE.</p>
+</li>
+<li>
+<p>Le Prestataire souligne qu'il ne peut en aucun cas exploiter les données transmises et générées par le COMMANDITAIRE sans validation préalable de ce dernier.</p>
+</li>
+<li>
+<p>Le Prestataire dégage toute responsabilité sur les composants physiquement hébergés et infogéré par le Prestataire, mais étant la propriété directe du COMMANDITAIRE ou d'un tiers avec lequel le COMMANDITAIRE a contractualisé. L'hébergement de composants physiques des clients ne fait pas partie du Service et est de fait hors du cadre de la présente Convention de service. Il incombe au COMMANDITAIRE d'évaluer le niveau d'adhérence ou de dépendance qu'introduisent ces composants vis-à-vis du Service IaaS qualifié SecNumCloud.</p>
+</li>
+</ol>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id=93-limitation-daccès>9.3. Limitation d'accès<a href=#93-limitation-daccès class=hash-link aria-label="Lien direct vers 9.3. Limitation d'accès" title="Lien direct vers 9.3. Limitation d'accès">​</a></h2>
+<p>Dans le cadre du Service, le Prestataire est formellement interdit d'accéder aux Tenants appartenant au COMMANDITAIRE sans autorisation préalable. Il est de la  responsabilité du COMMANDITAIRE de fournir les accès nécessaires au personnel du Prestataire, selon les besoins spécifiques de l'hébergement et, le cas échéant, des services
+professionnels de support, si cette option a été choisie par le COMMANDITAIRE.</p>
+<p>Le COMMANDITAIRE reconnaît que ces accès sont accordés exclusivement pour les besoins liés à la prestation de services convenus, assurant ainsi une gestion sécurisée et conforme aux termes de l'accord.</p>
+<p>L'accès distant par des tiers impliqués dans la prestation de service du Prestataire est strictement interdit. Dans l'éventualité où une exigence technique spécifique nécessiterait un tel accès, celui-ci ne pourrait être établi qu'après avoir clairement notifié le COMMANDITAIRE, fourni une justification détaillée et obtenu son accord
+écrit.</p>
+<p>Cette mesure garantit le contrôle et la sécurité des données du COMMANDITAIRE, en s'assurant que toute exception à la règle est dûment autorisée et documentée.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id=94-responsabilités-des-tiers-participant-à-la-fourniture-du-service-secure-temple>9.4. Responsabilités des tiers participant à la fourniture du service Secure Temple<a href=#94-responsabilités-des-tiers-participant-à-la-fourniture-du-service-secure-temple class=hash-link aria-label="Lien direct vers 9.4. Responsabilités des tiers participant à la fourniture du service Secure Temple" title="Lien direct vers 9.4. Responsabilités des tiers participant à la fourniture du service Secure Temple">​</a></h2>
+<p>Le Prestataire maîtrise la liste des tiers partenaires participant de la fourniture du Service. Ces tiers sont les éditeurs, prestataires (du Prestataire) et autres fournisseurs participant de la fourniture du Service. Le Prestataire applique les mesures suivantes à ces tiers :</p>
+<ul>
+<li>
+<p>Le Prestataire exige des tiers participant à la mise en œuvre du service, dans leur contribution au Service, un niveau de sécurité au moins équivalent à celui qu'il s'engage à maintenir dans sa propre politique de sécurité applicable au service Secure Temple ;</p>
+</li>
+<li>
+<p>Le Prestataire contractualise, avec chacun des tiers participant à la mise en œuvre du service, des clauses d'audit permettant à un organisme de qualification de vérifier que ces tiers respectent les exigences légales et les exigences SNC, permettant au Prestataire de respecter ses engagements dans la présente Convention de service.</p>
+</li>
+<li>
+<p>Le Prestataire met en œuvre une procédure permettant de contrôler régulièrement les mesures mises en place par les tiers participant à la mise en œuvre du service pour respecter les exigences au Prestataire de respecter ses engagements dans la présente Convention de service.</p>
+</li>
+<li>
+<p>Le Prestataire met en œuvre une procédure de suivi des changements apportés par les tiers participant à la mise en œuvre du service susceptibles d'affecter le niveau de sécurité du système d'information du service. </p>
+</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id=95-responsabilités-et-obligations-du-commanditaire>9.5. Responsabilités et obligations du COMMANDITAIRE<a href=#95-responsabilités-et-obligations-du-commanditaire class=hash-link aria-label="Lien direct vers 9.5. Responsabilités et obligations du COMMANDITAIRE" title="Lien direct vers 9.5. Responsabilités et obligations du COMMANDITAIRE">​</a></h2>
+<p>Pour rappel, le Prestataire fournit au COMMANDITAIRE une plateforme d'execution de machines virtuelles, la configuration de celles-ci est à la charge du COMMANDITAIRE. Chaque machine virtuelle ne peut fonctionner sans une politique de sauvegarde associée. Le Prestataire définit via ses interfaces des politiques de sauvegarde automatiques. Mais c'est à la charge du COMMANDITAIRE l'activation de ces politiques de sauvegarde et donc d'activer les machines virtuelles.</p>
+<p>Le COMMANDITAIRE autorise l'ANSSI et l'organisme de qualification SNC à auditer le Service et l'infrastructure technique délivrant le Service.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id=96-droits-du-commanditaire>9.6. Droits du COMMANDITAIRE<a href=#96-droits-du-commanditaire class=hash-link aria-label="Lien direct vers 9.6. Droits du COMMANDITAIRE" title="Lien direct vers 9.6. Droits du COMMANDITAIRE">​</a></h2>
+<p>À tout moment au cours de la relation contractuelle, le COMMANDITAIRE peut déposer une réclamation relative au service qualifié auprès de l'ANSSI.</p>
+<p>À tout moment, le COMMANDITAIRE peut demander au Prestataire de lui rendre accessible son règlement intérieur et sa charte d'éthique.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id=97-effacement-des-données-en-fin-de-contrat>9.7. Effacement des données en fin de Contrat<a href=#97-effacement-des-données-en-fin-de-contrat class=hash-link aria-label="Lien direct vers 9.7. Effacement des données en fin de Contrat" title="Lien direct vers 9.7. Effacement des données en fin de Contrat">​</a></h2>
+<p>À l'issue du contrat, qu'il arrive à échéance ou qu'il soit résilié pour quelque raison que ce soit, le Prestataire s'engage à procéder à l'effacement sécurisé de l'intégralité des données du COMMANDITAIRE, y compris les données techniques. Le Prestataire s'assurera de communiquer au COMMANDITAIRE un préavis formel, respectant un délai de vingt et un (21) jours calendaires. Les données du COMMANDITAIRE seront alors supprimées dans un délai maximum de trente (30) jours suivant cette notification.</p>
+<p>Pour attester de cette suppression, le Prestataire remettra au COMMANDITAIRE un certificat confirmant l'effacement des données.</p>
+<h1>10. Cycle de vie de la présente Convention de service</h1>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id=101-entrée-en-effet-de-la-convention-de-service>10.1. Entrée en effet de la Convention de service<a href=#101-entrée-en-effet-de-la-convention-de-service class=hash-link aria-label="Lien direct vers 10.1. Entrée en effet de la Convention de service" title="Lien direct vers 10.1. Entrée en effet de la Convention de service">​</a></h2>
+<p>La présente Convention de service entre en effet le jour de sa signature par le COMMANDITAIRE.</p>
+<p>La collecte, la manipulation, le stockage et le traitement des données faits dans le cadre de l'avant-vente, la mise en œuvre, l'arrêt du Service​, sont faits dans le respect de la législation en vigueur.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id=102-évolutions-de-la-convention-de-service>10.2. Évolutions de la Convention de service<a href=#102-évolutions-de-la-convention-de-service class=hash-link aria-label="Lien direct vers 10.2. Évolutions de la Convention de service" title="Lien direct vers 10.2. Évolutions de la Convention de service">​</a></h2>
+<p>Les modifications ou ajouts apportés à la présente Convention de service découlent exclusivement des requêtes formulées par les organes de gouvernance désignés à cet effet. Ces propositions de changement seront examinées par les Parties, habilitées à déterminer les aspects nécessitant une formalisation écrite.</p>
+<p>Il est convenu que toute évolution de la Convention de service, après validation, qui altère les conditions financières initialement établies, nécessitera l'établissement et la signature d'un avenant au Contrat en cours.</p>
+<p>Les facteurs pouvant induire une révision de cette Convention de service incluent, sans s'y limiter :</p>
+<ul>
+<li>L'évolution de l'infrastructure technique délivrant le Service IaaS ;</li>
+<li>Les ajustements apportés aux services déployés par le Prestataire pour fournir le Service ;</li>
+<li>Les variations des engagements pris et des sanctions applicables ;</li>
+<li>Les reconfigurations organisationnelles au sein du COMMANDITAIRE ou du Prestataire ;</li>
+<li>L'expansion ou la réduction du champ d'application du Service.</li>
+</ul>
+<p>La gestion des versions et des révisions de la Convention de service est consignée en préambule du document pour en faciliter le suivi.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id=1021-évolutions-déclenchées-par-le-commanditaire>10.2.1. Évolutions déclenchées par le COMMANDITAIRE<a href=#1021-évolutions-déclenchées-par-le-commanditaire class=hash-link aria-label="Lien direct vers 10.2.1. Évolutions déclenchées par le COMMANDITAIRE" title="Lien direct vers 10.2.1. Évolutions déclenchées par le COMMANDITAIRE">​</a></h3>
+<p>Les évolutions de la Convention de service peuvent avoir, notamment, pour origine :</p>
+<ul>
+<li>
+<p>Une évolution de l'infrastructure gérée par le Prestataire ;</p>
+</li>
+<li>
+<p>Une modification des services mis en œuvre par le Prestataire ;</p>
+</li>
+<li>
+<p>Une modification des engagements de niveaux de services par le Prestataire.</p>
+</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id=1022-évolutions-déclenchées-par-le-prestataire>10.2.2. Évolutions déclenchées par le Prestataire<a href=#1022-évolutions-déclenchées-par-le-prestataire class=hash-link aria-label="Lien direct vers 10.2.2. Évolutions déclenchées par le Prestataire" title="Lien direct vers 10.2.2. Évolutions déclenchées par le Prestataire">​</a></h3>
+<p>Toute modification de la Convention de service est soumise à acceptation du COMMANDITAIRE. Il est entendu que toute modification ou complément
+validés modifiant les éléments financiers du Contrat, pourra impliquer la signature d'un avenant à celui-ci.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id=103-réversibilité>10.3. Réversibilité<a href=#103-réversibilité class=hash-link aria-label="Lien direct vers 10.3. Réversibilité" title="Lien direct vers 10.3. Réversibilité">​</a></h2>
+<p>De plus, Cloud Temple s'engage à permettre une révision de la présente Convention de service (prévoyant notamment sa résiliation) sans pénalité
+pour le COMMANDITAIRE en cas de perte de la qualification SecNumCloud.</p>
+<p>Les Services ne comprennent pas d'obligation de réversibilité (à savoir, l'aide au Client pour qu'il puisse migrer son système vers un autre" Prestataire) à l'exception de la mise à disposition du COMMANDITAIRE par le Prestataire de l'interface COMMANDITAIRE permettant au COMMANDITAIRE de sauvegarder et récupérer ses données y compris notamment les données de configuration de leur système d'information via l'une des modalités techniques suivantes au choix du COMMANDITAIRE : la mise à disposition de fichiers suivant un ou plusieurs formats documentés et exploitables en dehors du service fourni par le Prestataire ou bien via la mise en place d'interfaces techniques permettant l'accès aux données suivant un schéma documenté et exploitable (API).</p>
+<p>Le COMMANDITAIRE, seul maître de son système, doit tout mettre en œuvre pour faciliter cette opération en tant que de besoin (ce qui implique, notamment, qu'il mette en place une documentation rigoureuse à cet effet) et l'élaboration de plans de réversibilité. Dans le cas où le COMMANDITAIRE aurait besoin d'une prestation complémentaire, le
+Prestataire peut proposer une mission de conseil à cet égard dans le cadre d'un contrat spécifique à négocier.</p>
+<h1>11. Disponibilité, continuité et restauration du service</h1>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id=111-gestion-des-incidents-et-des-interruptions>11.1. Gestion des Incidents et des interruptions<a href=#111-gestion-des-incidents-et-des-interruptions class=hash-link aria-label="Lien direct vers 11.1. Gestion des Incidents et des interruptions" title="Lien direct vers 11.1. Gestion des Incidents et des interruptions">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id=1111-incidents>11.1.1. Incidents<a href=#1111-incidents class=hash-link aria-label="Lien direct vers 11.1.1. Incidents" title="Lien direct vers 11.1.1. Incidents">​</a></h3>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id=11111-types-dincidents-traités-dans-le-cadre-de-cette-convention-de-service>11.1.1.1. Types d'Incidents traités dans le cadre de cette Convention de service<a href=#11111-types-dincidents-traités-dans-le-cadre-de-cette-convention-de-service class=hash-link aria-label="Lien direct vers 11.1.1.1. Types d'Incidents traités dans le cadre de cette Convention de service" title="Lien direct vers 11.1.1.1. Types d'Incidents traités dans le cadre de cette Convention de service">​</a></h4>
+<ul>
+<li>
+<p>Sinistres</p>
+</li>
+<li>
+<p>Pannes et défaillances</p>
+</li>
+<li>
+<p>Incidents de sécurité :</p>
+</li>
+<li>
+<p>Impactant la disponibilité du service</p>
+</li>
+<li>
+<p>Impactant la confidentialité du service</p>
+</li>
+<li>
+<p>Impactant l'intégrité du service</p>
+</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id=11112-traitement-des-incidents>11.1.1.2. Traitement des incidents<a href=#11112-traitement-des-incidents class=hash-link aria-label="Lien direct vers 11.1.1.2. Traitement des incidents" title="Lien direct vers 11.1.1.2. Traitement des incidents">​</a></h4>
+<ul>
+<li>
+<p>Délais</p>
+</li>
+<li>
+<p>Actions a posteriori</p>
+</li>
+<li>
+<p>Archiver les documents détaillant les incidents de sécurité.</p>
+</li>
+<li>
+<p>Notification de violation de connées à caractère personnel (en
+ligne) : <a href=https://notifications.cnil.fr/notifications/index target=_blank rel="noopener noreferrer">https://notifications.cnil.fr/notifications/index</a></p>
+</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id=11113-niveau-de-notification-des-incidents-de-sécurité>11.1.1.3. Niveau de notification des Incidents de sécurité<a href=#11113-niveau-de-notification-des-incidents-de-sécurité class=hash-link aria-label="Lien direct vers 11.1.1.3. Niveau de notification des Incidents de sécurité" title="Lien direct vers 11.1.1.3. Niveau de notification des Incidents de sécurité">​</a></h4>
+<p>Le COMMANDITAIRE a la responsabilité de choisir les niveaux de gravité des Incidents de sécurité pour lesquels il souhaite être informé, par exemple via leur formalisation dans un PAS applicable au Service.</p>
+<p>Par défaut, le COMMANDITAIRE est informé :</p>
+<ul>
+<li>
+<p>Des incidents de sécurité avec impact (impacts I1 et I2 selon l'échelle d'impact définie dans le processus de priorisation des traitements de la présente Convention de service) ;</p>
+</li>
+<li>
+<p>Des violations de données à caractère personnel pour lesquelles le COMMANDITAIRE est responsable du traitement ;</p>
+</li>
+<li>
+<p>Des violations de données à caractère personnel pour lesquelles le Prestataire est responsable du traitement et comportant des données
+personnelles du COMMANDITAIRE.</p>
+</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id=112-maintenance-du-service>11.2. Maintenance du Service<a href=#112-maintenance-du-service class=hash-link aria-label="Lien direct vers 11.2. Maintenance du Service" title="Lien direct vers 11.2. Maintenance du Service">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id=1121-nature-de-la-maintenance>11.2.1. Nature de la maintenance<a href=#1121-nature-de-la-maintenance class=hash-link aria-label="Lien direct vers 11.2.1. Nature de la maintenance" title="Lien direct vers 11.2.1. Nature de la maintenance">​</a></h3>
+<p>La maintenance assurée consiste en la mise en œuvre :</p>
+<ul>
+<li>
+<p>Du plan de maintien en conditions opérationnelles du Service pour assurer de bons indicateurs de disponibilité tels que s'y engage le Prestataire plus haut ;</p>
+</li>
+<li>
+<p>Du plan de PCA/PRA si souscrit par le COMMANDITAIRE déclenché selon les éventuels incidents qui surviendraient.</p>
+</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id=1122-accès-distants-de-cloud-temple-sur-le-périmètre-du-commanditaire>11.2.2. Accès distants de Cloud Temple sur le périmètre du COMMANDITAIRE<a href=#1122-accès-distants-de-cloud-temple-sur-le-périmètre-du-commanditaire class=hash-link aria-label="Lien direct vers 11.2.2. Accès distants de Cloud Temple sur le périmètre du COMMANDITAIRE" title="Lien direct vers 11.2.2. Accès distants de Cloud Temple sur le périmètre du COMMANDITAIRE">​</a></h3>
+<p>Le Prestataire s'interdit, dans le cadre de la présente Convention de service, tout accès aux Tenants et à l'espace de l'interface du
+COMMANDITAIRE.</p>
+<p>Il incombera au COMMANDITAIRE donner les accès nécessaires au personnel du Prestataire. Le COMMANDITAIRE reconnaît que les accès seront utilisés dans le cadre de l'hébergement et in fine de l'infogérance (si souscrit par le COMMANDITAIRE).</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id=1123-accès-distants-de-tiers-participant-à-la-fourniture-du-service-sur-le-périmètre-du-commanditaire>11.2.3. Accès distants de tiers participant à la fourniture du service sur le périmètre du COMMANDITAIRE<a href=#1123-accès-distants-de-tiers-participant-à-la-fourniture-du-service-sur-le-périmètre-du-commanditaire class=hash-link aria-label="Lien direct vers 11.2.3. Accès distants de tiers participant à la fourniture du service sur le périmètre du COMMANDITAIRE" title="Lien direct vers 11.2.3. Accès distants de tiers participant à la fourniture du service sur le périmètre du COMMANDITAIRE">​</a></h3>
+<p>Aucun accès distant de tiers participant à la fourniture du Service n'est autorisé.</p>
+<p>Si un besoin technique rendait ce cas de figure nécessaire, alors ce type d'accès ne serait réalisé qu'après notification du COMMANDITAIRE justification et obtention de son accord écrit.</p>
+<h1>12. Procédure d'effacement des données en fin de Contrat</h1>
+<p>A la fin du Contrat, que le Contrat soit arrivé à son terme ou pour toute autre cause, le Prestataire assura l'effacement sécurisé de l'intégralité des données traitées dans le cadre du Service, y compris les Données techniques du COMMANDITAIRE. Le Prestataire donnera un préavis formel en respectant un délai de vingt et un jours (21)
+calendaires. Les données du COMMANDITAIRE seront supprimées dans un délai maximum de trente (30) jour après la notification. Le Prestataire fournit un certificat de suppression de données au COMMANDITAIRE.</p>
+<h1>13. Droit applicable</h1>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id=131-de-manière-générale>13.1. De manière générale<a href=#131-de-manière-générale class=hash-link aria-label="Lien direct vers 13.1. De manière générale" title="Lien direct vers 13.1. De manière générale">​</a></h2>
+<p>Le droit applicable et auquel est soumise la présente Convention de service est le droit français.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id=132-respect-du-droit-et-des-réglementations-applicables>13.2. Respect du droit et des réglementations applicables<a href=#132-respect-du-droit-et-des-réglementations-applicables class=hash-link aria-label="Lien direct vers 13.2. Respect du droit et des réglementations applicables" title="Lien direct vers 13.2. Respect du droit et des réglementations applicables">​</a></h2>
+<p>Le Prestataire s'engage sur les points suivants :</p>
+<ul>
+<li>
+<p>L'identification des contraintes légales et réglementaires applicables dans le cadre du Service ;</p>
+</li>
+<li>
+<p>Le respect des contraintes légales et réglementaires applicables aux données confiées au Prestaire ;</p>
+</li>
+<li>
+<p>Le respect de la Loi informatique et liberté et du RGPD ;</p>
+</li>
+<li>
+<p>La mise en œuvre de moyens de protection des données personnelles ;</p>
+</li>
+<li>
+<p>La mise en œuvre d'un processus de veille légale et réglementaire ;</p>
+</li>
+<li>
+<p>De disposer et maintenir des relations appropriées ou une veille avec les autorités sectorielles en lien avec la nature des données traitées dans le cadre du Services. Cela inclus notamment l'ANSSI, le CERT-FR et la CNIL.</p>
+</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id=133-rgpd>13.3. RGPD<a href=#133-rgpd class=hash-link aria-label="Lien direct vers 13.3. RGPD" title="Lien direct vers 13.3. RGPD">​</a></h2>
+<p>Agissant en qualité de sous-traitant au sens de l'article 28 du Règlement général sur la protection des données (RGPD), le Prestataire s'engage :</p>
+<ul>
+<li>
+<p>A assurer la transparence et la traçabilité ;</p>
+</li>
+<li>
+<p>A désigner un DPO en charge de définir et mettre en œuvre les mesures de protection des données à caractère personnel ;</p>
+</li>
+<li>
+<p>Apporter une assistance et du conseil au COMMANDITAIRE en l'alerte si une instruction de ce dernier constitue une violation des règles de protection des données personnelles si le Prestataire a le moyen d'en identifier ;</p>
+</li>
+<li>
+<p>Une garantie de sécurité sur les données traitées (du fait de la qualification SecNumCloud).</p>
+</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id=134-protection-vis-à-vis-du-droit-extra-européen>13.4. Protection vis à vis du droit extra-européen<a href=#134-protection-vis-à-vis-du-droit-extra-européen class=hash-link aria-label="Lien direct vers 13.4. Protection vis à vis du droit extra-européen" title="Lien direct vers 13.4. Protection vis à vis du droit extra-européen">​</a></h2>
+<p>En cas de recours par le Prestataire, dans le cadre du Service, au service d'une société tierce - y compris un sous-traitant - possédant son siège statutaire, administration centrale ou principal établissement au sein d'un État non membre de l'Union Européenne ou appartenant ou étant contrôlée par une société tierce domiciliée en dehors l'Union Européenne, le Prestataire s'engage que cette susdite société tierce ne disposera d'aucun accès aux données opérées par le service 'Secure Temple'.</p>
+<p>Pour rappel, les données visées sont celles qui sont confiées au Prestataire par le COMMANDITAIRE ainsi que toutes Données techniques comprenant des informations sur les COMMANDITAIRES.</p>
+<p>Pour les besoins du présent article, la notion de contrôle est entendue comme étant celle mentionnée au II de l'article L233-3 du code de commerce.</p>
+<h1>14. SIGNATURES</h1>
+<p>Fait à _______________, le
+__________________</p>
+<p>Pour Cloud Temple, le PRESTATAIRE</p>
+<p>Pour ___________________, le COMMANDITAIRE</div><footer class="theme-doc-footer docusaurus-mt-lg"><div class="row margin-top--sm theme-doc-footer-edit-meta-row"><div class=col><a href=https://github.com/aelttil/docs-content/docs/contract/iaas/sla_iaas.md target=_blank rel="noopener noreferrer" class=theme-edit-this-page><svg fill=currentColor height=20 width=20 viewBox="0 0 40 40" class=iconEdit_Z9Sw aria-hidden=true><g><path d="m34.5 11.7l-3 3.1-6.3-6.3 3.1-3q0.5-0.5 1.2-0.5t1.1 0.5l3.9 3.9q0.5 0.4 0.5 1.1t-0.5 1.2z m-29.5 17.1l18.4-18.5 6.3 6.3-18.4 18.4h-6.3v-6.2z"/></g></svg>Éditer cette page</a></div><div class="col lastUpdated_JAkA"></div></div></footer></article><nav class="pagination-nav docusaurus-mt-lg" aria-label="Pages de documentation"><a class="pagination-nav__link pagination-nav__link--prev" href=/docs/contract/iaas/raci_s3/><div class=pagination-nav__sublabel>Précédent</div><div class=pagination-nav__label>Matrice de responsabilité IaaS - Stockage Objet S3</div></a><a class="pagination-nav__link pagination-nav__link--next" href=/docs/contract/network/raci/><div class=pagination-nav__sublabel>Suivant</div><div class=pagination-nav__label>raci</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href=#31-préliminaire class="table-of-contents__link toc-highlight">3.1. Préliminaire</a><li><a href=#32-glossaire class="table-of-contents__link toc-highlight">3.2. Glossaire</a><li><a href=#71-modèle-de-responsabilité-partagé class="table-of-contents__link toc-highlight">7.1. Modèle de responsabilité partagé</a><li><a href=#72-présentation-détaillée-du-périmètre-du-service class="table-of-contents__link toc-highlight">7.2. Présentation détaillée du périmètre du Service</a><ul><li><a href=#721-infrastructures-datacenters class="table-of-contents__link toc-highlight">7.2.1. Infrastructures Datacenters</a><li><a href=#722-infrastructure-logicielle-de-pilotage-du-service class="table-of-contents__link toc-highlight">7.2.2. Infrastructure logicielle de pilotage du Service</a><li><a href=#723-infrastructures-de-calcul class="table-of-contents__link toc-highlight">7.2.3. Infrastructures de calcul</a><li><a href=#724-infrastructure-de-stockage class="table-of-contents__link toc-highlight">7.2.4. Infrastructure de stockage</a><li><a href=#725-infrastructure-réseau-globale class="table-of-contents__link toc-highlight">7.2.5. Infrastructure réseau globale</a><li><a href=#726-infrastructure-de-sauvegarde class="table-of-contents__link toc-highlight">7.2.6. Infrastructure de sauvegarde</a><li><a href=#727-mise-en-œuvre-de-solutions-de-reprise-dactivité-ou-de-continuité-dactivité class="table-of-contents__link toc-highlight">7.2.7. Mise en œuvre de solutions de reprise d'activité ou de continuité d'activité</a></ul><li><a href=#73-limitations-des-services-dans-le-modèle-iaas-qualifié class="table-of-contents__link toc-highlight">7.3. Limitations des services dans le modèle IaaS qualifié</a><ul><li><a href=#731-services-managés-en-run class="table-of-contents__link toc-highlight">7.3.1. Services managés en RUN</a><li><a href=#732-configuration-du-secours class="table-of-contents__link toc-highlight">7.3.2. Configuration du secours</a><li><a href=#733-configuration-de-la-sauvegarde class="table-of-contents__link toc-highlight">7.3.3. Configuration de la sauvegarde</a></ul><li><a href=#74-mise-en-œuvre-du-service class="table-of-contents__link toc-highlight">7.4. Mise en œuvre du service</a><ul><li><a href=#741-prérequis-techniques class="table-of-contents__link toc-highlight">7.4.1. Prérequis techniques</a></ul><li><a href=#75-localisation-du-service-en-france class="table-of-contents__link toc-highlight">7.5. Localisation du service en France</a><ul><li><a href=#751-localisation-des-datacenters-hébergeant-le-service class="table-of-contents__link toc-highlight">7.5.1. Localisation des Datacenters hébergeant le Service</a><li><a href=#752-localisation-des-agences-cloud-temple-opérant-le-service class="table-of-contents__link toc-highlight">7.5.2. Localisation des agences Cloud Temple opérant le service</a></ul><li><a href=#76-support class="table-of-contents__link toc-highlight">7.6. Support</a><ul><li><a href=#761-nature-du-support-accompagnant-le-service class="table-of-contents__link toc-highlight">7.6.1. Nature du support accompagnant le service</a><li><a href=#762-sollicitation-du-service-support-technique class="table-of-contents__link toc-highlight">7.6.2. Sollicitation du service support technique</a><li><a href=#763-processus-de-gestion-des-incidents class="table-of-contents__link toc-highlight">7.6.3. Processus de gestion des Incidents</a><li><a href=#764-processus-de-priorisation-des-traitements class="table-of-contents__link toc-highlight">7.6.4. Processus de priorisation des traitements</a><li><a href=#765-langue-et-localisation-du-service-de-support class="table-of-contents__link toc-highlight">7.6.5. Langue et localisation du service de support</a></ul><li><a href=#81-engagements-de-disponibilité-de-linfrastructure class="table-of-contents__link toc-highlight">8.1. Engagements de disponibilité de l'infrastructure</a><li><a href=#82-engagement-de-disponibilité-de-linterface-commanditaire class="table-of-contents__link toc-highlight">8.2. Engagement de disponibilité de l'interface COMMANDITAIRE</a><li><a href=#83-engagement-de-disponibilité-du-support class="table-of-contents__link toc-highlight">8.3. Engagement de disponibilité du support</a><li><a href=#84-engagement-de-disponibilité-du-stockage-objet-s3 class="table-of-contents__link toc-highlight">8.4. Engagement de disponibilité du stockage objet S3</a><li><a href=#85-précision-concernant-lengagement-de-sauvegarde class="table-of-contents__link toc-highlight">8.5. Précision concernant l'engagement de sauvegarde</a><li><a href=#91-responsabilités-du-prestataire class="table-of-contents__link toc-highlight">9.1. Responsabilités du Prestataire</a><li><a href=#92-limitation-des-responsabilités-du-prestataire class="table-of-contents__link toc-highlight">9.2. Limitation des responsabilités du Prestataire</a><li><a href=#93-limitation-daccès class="table-of-contents__link toc-highlight">9.3. Limitation d'accès</a><li><a href=#94-responsabilités-des-tiers-participant-à-la-fourniture-du-service-secure-temple class="table-of-contents__link toc-highlight">9.4. Responsabilités des tiers participant à la fourniture du service Secure Temple</a><li><a href=#95-responsabilités-et-obligations-du-commanditaire class="table-of-contents__link toc-highlight">9.5. Responsabilités et obligations du COMMANDITAIRE</a><li><a href=#96-droits-du-commanditaire class="table-of-contents__link toc-highlight">9.6. Droits du COMMANDITAIRE</a><li><a href=#97-effacement-des-données-en-fin-de-contrat class="table-of-contents__link toc-highlight">9.7. Effacement des données en fin de Contrat</a><li><a href=#101-entrée-en-effet-de-la-convention-de-service class="table-of-contents__link toc-highlight">10.1. Entrée en effet de la Convention de service</a><li><a href=#102-évolutions-de-la-convention-de-service class="table-of-contents__link toc-highlight">10.2. Évolutions de la Convention de service</a><ul><li><a href=#1021-évolutions-déclenchées-par-le-commanditaire class="table-of-contents__link toc-highlight">10.2.1. Évolutions déclenchées par le COMMANDITAIRE</a><li><a href=#1022-évolutions-déclenchées-par-le-prestataire class="table-of-contents__link toc-highlight">10.2.2. Évolutions déclenchées par le Prestataire</a></ul><li><a href=#103-réversibilité class="table-of-contents__link toc-highlight">10.3. Réversibilité</a><li><a href=#111-gestion-des-incidents-et-des-interruptions class="table-of-contents__link toc-highlight">11.1. Gestion des Incidents et des interruptions</a><ul><li><a href=#1111-incidents class="table-of-contents__link toc-highlight">11.1.1. Incidents</a></ul><li><a href=#112-maintenance-du-service class="table-of-contents__link toc-highlight">11.2. Maintenance du Service</a><ul><li><a href=#1121-nature-de-la-maintenance class="table-of-contents__link toc-highlight">11.2.1. Nature de la maintenance</a><li><a href=#1122-accès-distants-de-cloud-temple-sur-le-périmètre-du-commanditaire class="table-of-contents__link toc-highlight">11.2.2. Accès distants de Cloud Temple sur le périmètre du COMMANDITAIRE</a><li><a href=#1123-accès-distants-de-tiers-participant-à-la-fourniture-du-service-sur-le-périmètre-du-commanditaire class="table-of-contents__link toc-highlight">11.2.3. Accès distants de tiers participant à la fourniture du service sur le périmètre du COMMANDITAIRE</a></ul><li><a href=#131-de-manière-générale class="table-of-contents__link toc-highlight">13.1. De manière générale</a><li><a href=#132-respect-du-droit-et-des-réglementations-applicables class="table-of-contents__link toc-highlight">13.2. Respect du droit et des réglementations applicables</a><li><a href=#133-rgpd class="table-of-contents__link toc-highlight">13.3. RGPD</a><li><a href=#134-protection-vis-à-vis-du-droit-extra-européen class="table-of-contents__link toc-highlight">13.4. Protection vis à vis du droit extra-européen</a></ul></div></div></div></div></main></div></div></div><footer class="footer footer--dark"><div class="container container-fluid"><div class="row footer__links"><div class="col footer__col"><div class=footer__title>Docs</div><ul class="footer__items clean-list"><li class=footer__item><a class=footer__link-item href=/docs/home/>Tutorial</a></ul></div><div class="col footer__col"><div class=footer__title>Community</div><ul class="footer__items clean-list"><li class=footer__item><a href=https://www.linkedin.com/company/cloud-temple/ target=_blank rel="noopener noreferrer" class=footer__link-item>Linkedin<svg width=13.5 height=13.5 aria-hidden=true viewBox="0 0 24 24" class=iconExternalLink_nPIU><path fill=currentColor d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"/></svg></a><li class=footer__item><a href=https://github.com/cloud-temple target=_blank rel="noopener noreferrer" class=footer__link-item>GitHub<svg width=13.5 height=13.5 aria-hidden=true viewBox="0 0 24 24" class=iconExternalLink_nPIU><path fill=currentColor d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"/></svg></a></ul></div></div><div class="footer__bottom text--center"><div class=footer__copyright>Copyright © 2024 My Project, Inc. Built with Docusaurus.</div></div></div></footer></div>
