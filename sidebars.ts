@@ -73,19 +73,91 @@ const sidebars: SidebarsConfig = {
     {
       type: 'html',
       value: `
-        <hr class="sidebar-separator" />
+        <br>
         <h3 class="sidebar-title">Products</h3>
       `,
     },
     {
       type: 'category',
-      label: 'IaaS by Vmware',
+      label: 'Bastion',
+      items: [
+        'bastion/bastion',
+        'bastion/concepts',
+        'bastion/quickstart',
+        'bastion/tutorials',
+        'bastion/faq',
+      ],
+    },
+    {
+      type: 'category',
+      label: 'Housing',
+      items: [
+        'housing/housing',
+        'housing/concepts',
+        'housing/quickstart',
+        'housing/tutorials',
+        'housing/faq',
+      ],
+    },
+    {
+      type: 'category',
+      label: 'IaaS OpenSource',
+      items: [
+        'iaas_opensource/iaas_opensource',
+        'iaas_opensource/concepts',
+        'iaas_opensource/quickstart',
+        'iaas_opensource/tutorials',
+        'iaas_opensource/faq',
+      ],
+    },
+    {
+      type: 'category',
+      label: 'IaaS by VMware',
       items: [
         'iaas_vmware/iaas_vmware',
         'iaas_vmware/concepts',
         'iaas_vmware/quickstart',
         'iaas_vmware/tutorials',
         'iaas_vmware/faq',
+      ],
+    },
+    {
+      type: 'category',
+      label: 'PaaS Openshift',
+      items: [
+        'paas_openshift/paas_openshift',
+        'paas_openshift/concepts',
+        'paas_openshift/quickstart',
+        'paas_openshift/tutorials',
+        'paas_openshift/faq',
+      ],
+    },
+    {
+      type: 'category',
+      label: 'Network',
+      items: [
+        {
+          type: 'category',
+          label: 'Privates Network',
+          items: [
+            'network/private_network/private_network',
+            'network/private_network/concepts',
+            'network/private_network/quickstart',
+            'network/private_network/tutorials',
+            'network/private_network/faq',
+          ],
+        },
+        {
+          type: 'category',
+          label: 'Internet',
+          items: [
+            'network/internet/internet',
+            'network/internet/concepts',
+            'network/internet/quickstart',
+            'network/internet/tutorials',
+            'network/internet/faq',
+          ],
+        },
       ],
     },
     {
@@ -103,46 +175,6 @@ const sidebars: SidebarsConfig = {
             'storage/oss/faq',
           ],
         },
-      ],
-    },
-    {
-      type: 'category',
-      label: 'Bastion',
-      items: [
-        'bastion/bastion',
-        'bastion/concepts',
-        'bastion/quickstart',
-        'bastion/tutorials',
-        'bastion/faq',
-      ],
-    },
-
-    {
-      type: 'category',
-      label: 'Housing',
-      items: [
-        'housing/housing',
-        'housing/concepts',
-        'housing/quickstart',
-        'housing/tutorials',
-        'housing/faq',
-      ],
-    },
-
-    // {
-    //   type: 'category',
-    //   label: 'PaaS',
-    //   items: [
-    //     'paas/concepts',
-    //     'paas/openshift',
-    //   ],
-    // },
-
-    {
-      type: 'category',
-      label: 'Support',
-      items: [
-        'privacy',
       ],
     },
   ],

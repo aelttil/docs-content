@@ -65,7 +65,7 @@ const config: Config = {
 
   themeConfig: {
     // Replace with your project's social card
-    image: 'img/docusaurus-social-card.jpg',
+    image: 'img/logo.svg',
     navbar: {
       title: '',
       logo: {
@@ -106,11 +106,19 @@ const config: Config = {
       style: 'dark',
       links: [
         {
-          title: 'Docs',
+          title: 'Tools',
           items: [
             {
+              label: 'Status page',
+              href: 'https://status.cloud-temple.com/',
+            },
+            {
               label: 'Tutorial',
-              to: '/docs/home/',
+              to: '/docs/tags/tutorials/',
+            },
+            {
+              label: 'Onboarding',
+              to: '/docs/tags/onboarding/',
             },
           ],
         },
@@ -124,11 +132,24 @@ const config: Config = {
             {
               label: 'GitHub',
               href: 'https://github.com/cloud-temple',
+            },
+            {
+              label: 'Cloud Temple Web Site',
+              href: 'https://cloud-temple.com',
             }
           ],
         },
+        {
+          title: 'Support',
+          items: [
+            {
+              label: 'Privacy',
+              to: '/docs/privacy/',
+            },
+          ],
+        },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+      copyright: `Copyright © ${new Date().getFullYear()} Cloud Temple Docs, Inc. Built with Docusaurus.`,
     },
     prism: {
       theme: prismThemes.github,
