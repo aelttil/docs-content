@@ -2,33 +2,33 @@
 title: Quickstart
 ---
 
-This quickstart guide introduces you to how to request the creation of an Appliance and how to register a new session and connect to it.
+This quickstart guide shows you how to request the creation of an Appliance and how to register a new session and connect to it.
 
 ## Prerequisites
 
-1. Have subscribed to the Cloud Temple offer (Bastion Appliance subscription).
+1. Have subscribed to the Cloud Temple offer (Appliance Bastion subscription).
 2. The equipment to be administered must be accessible from the network where the Bastion Appliance is deployed.
-3. Have rights to the Bastion module.
-4. In the context of an on-premise Appliance deployment, the corresponding flows must be opened.
+3. Have the rights to the Bastion module.
+4. In the context of an on-premise deployment of the Appliance, the corresponding flows must be open.
 
-## Request the creation of an Appliance
-Before you can deploy an Appliance, you must request a subscription to an Appliance via a request to support.
-Support is accessible in the Shiva console from the lifebuoy icon on the top right bar of the window.
+## Request Appliance Creation
+Before deploying an Appliance, you must make a subscription request for an Appliance via a support request.
+The support is accessible in the Shiva console from the lifebuoy icon on the top right bar of the window.
 
 ![](images/shiva_support.png)
 
+## Registering Equipment
 
-## Register a device
 
-To regularly access a device for administration, it is more appropriate to create a session, which will only require your username and password for each connection.
+To regularly access an equipment to administer, it is more suitable to create a session, which will only require your username and password at each connection.
 
-To do this, go to the "Devices" tab in the "Bastion" menu, then click on the "New Device" button.
+To do this, go to the "Equipment" tab in the "Bastion" menu, then click on the "New equipment" button.
 
 ![](images/creer_session.png)
 
-Then fill in the necessary information to create your device:
+Then provide the necessary information to create your equipment:
 
-    - Device name;
+    - Equipment name;
     - Description;
     - Associated appliance;
     - Protocol type (SSH or RDP);
@@ -37,19 +37,19 @@ Then fill in the necessary information to create your device:
 
 ![](images/creer_session2.png)
 
-A notification indicating the creation of the device should appear at the top right of the page. The session is then added to the list of your devices.
+A notification indicating the creation of the equipment should appear at the top right of the page. The session will then be added to your list of equipment.
 
-To create a new device, you can also go through the "Appliances" tab by clicking on the action bar of the Appliance to which you want to associate a device.
+To create new equipment, you can also go through the "Appliances" tab by clicking on the action bar of the Appliance to which you wish to associate equipment.
 ![](images/creer_session3.png)
 
-## Connecting to a Device
+## Connecting to Equipment
 
-Go to the "Devices" tab under the "Bastion" tab. Click on the action bar of the device you want to open, and click on the "Open" button.
+Go to the "Equipments" tab under the "Bastion" tab. Click on the action bar of the equipment you wish to open, and click the "Open" button.
 
 ![](images/ouvrir_session.png)
 
-Each time you connect to the device, you only need to provide your authentication information.
+During each connection to the equipment, you only need to provide your authentication details.
 
 ![](images/ouvrir_session2.png)
 
-After entering your credentials, a notification confirming the start of the connection to your device appears, and the console to your virtual machine opens.
+After entering your credentials, a notification confirming the start of the connection to your equipment appears, and the console to your virtual machine opens.

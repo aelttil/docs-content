@@ -12,7 +12,7 @@ For example:
 ```
     mc alias set <alias_name> https://reks2ee2b1.s3.fr1.cloud-temple.com <access_key> <secret_key>
 ```
-Push a file:
+Upload a file:
 ```
     mc cp test.txt <alias_name>/<bucket_name>
 ```
@@ -24,7 +24,7 @@ Retrieve a file:
 
 You can also use [Cloud Berry Explorer](https://www.msp360.com/explorer/).
 
-1. Connect using your endpoint and key:
+1. Connect using your endpoint and your key:
 
 ![](images/S3_cloudberry_001.png)
 
@@ -32,7 +32,7 @@ You can also use [Cloud Berry Explorer](https://www.msp360.com/explorer/).
 
 ![](images/S3_cloudberry_002.png)
 
-3. You can then use the bucket as usual:
+3. You can then use the bucket normally:
 
 ![](images/S3_cloudberry_003.png)
 
@@ -43,6 +43,6 @@ You can use [Winscp](https://winscp.net/eng/download.php):
 
 ![](images/S3_winscp_001.png)
 
-2. Once connected, use WINSCP as you would a normal FTP or SCP site:
+2. Once connected, use WINSCP normally just like an FTP or SCP site:
 
 ![](images/S3_winscp_002.png)

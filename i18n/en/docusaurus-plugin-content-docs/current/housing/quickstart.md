@@ -2,37 +2,37 @@
 title: Quickstart
 ---
 
-This **Quickstart Housing** guide assists you in quickly getting started with Cloud Temple's physical hosting offer. It covers the essential steps to make a hosting request, set up your equipment, and benefit from additional services.
+This **Quickstart Housing** guide helps you quickly get started with Cloud Temple's physical hosting offer. It covers the essential steps to request hosting, configure your equipment, and take advantage of complementary services.
 
-## Step 1: Make a hosting request
+## Step 1: Submit a Hosting Request
 
 1. Access the Cloud Temple console.
-2. Open a service file by providing:
+2. Open a service ticket by providing:
    - Your organization's name.
    - Contact details (email and phone).
-   - Desired type of hosting (shared by 'U' or dedicated by rack).
-   - Quantity and characteristics of the equipment (size, weight, consumption, etc.).
+   - Desired type of hosting (shared at 'U' level or dedicated per rack).
+   - Quantity and characteristics of the equipment (size, weight, power consumption, etc.).
 
-## Step 2: Prepare your equipment
+## Step 2: Prepare Your Equipment
 
 - Ensure your equipment meets the technical constraints:
   - Size in rack units (U).
   - Maximum weight per 'U' (25kg for shared, up to 1000kg for a dedicated rack).
-  - Power consumption (150W to 3Kw depending on the option subscribed).
+  - Power consumption (150W to 3Kw depending on the subscribed option).
 ## Step 3: Configure Network Connectivity
 
 1. Select the required port type:
-   - 1Gbps Copper.
-   - 1Gbps or 10Gbps Fiber.
-2. Add Meet Me Room connectivity options if necessary for operator integration.
+   - Copper 1Gbps.
+   - Fiber 1Gbps or 10Gbps.
+2. Add connectivity options in Meet Me Room if necessary for operator integration.
 
 ## Step 4: Activate Hands & Eyes Services
 
 If needed, request technical assistance to:
 - Install your equipment.
-- Configure the wiring.
+- Configure cabling.
 - Perform occasional actions (reboot, photos, etc.).
 
 ## Step 5: Validate the Installation
 
-Once your equipment is installed, verify their connectivity and proper functioning directly via the Cloud Temple console or in coordination with support.
+Once your equipment is installed, verify their connectivity and proper functioning directly through the Cloud Temple console or in coordination with support.

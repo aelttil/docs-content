@@ -79,7 +79,7 @@ const sidebars: SidebarsConfig = {
     },
     {
       type: 'category',
-      label: 'IaaS - Vmware',
+      label: 'IaaS by Vmware',
       items: [
         'iaas_vmware/iaas_vmware',
         'iaas_vmware/concepts',
