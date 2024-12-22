@@ -2,57 +2,54 @@
 title: Quickstart
 ---
 
-Ce guide de démarrage vous présente comment demander la création d'une Appliance et comment enregistrer une nouvelle session et s'y connecter. 
+This quickstart guide introduces you to how to request the creation of an Appliance and how to register a new session and connect to it.
 
-## Prérequis
+## Prerequisites
 
-1. Avoir souscrit à l'offre Cloud Temple (souscription Appliance Bastion).
-2. Les équipements à administrer doivent être accessibles depuis le réseau où est déployée l'Appliance Bastion.
-3. Avoir les droits sur le module Bastion. 
-4. Dans le cadre d'un déploiement de l'Appliance onpremise, les flux correspondants doivent être ouverts. 
+1. Have subscribed to the Cloud Temple offer (Bastion Appliance subscription).
+2. The equipment to be administered must be accessible from the network where the Bastion Appliance is deployed.
+3. Have rights to the Bastion module.
+4. In the context of an on-premise Appliance deployment, the corresponding flows must be opened.
 
-## Demander la création d'une Appliance
-Avant de pouvoir déployer une Appliance, il faut faire une demande de souscription à une Appliance via une demande au support.
-Le support est accessible dans la console Shiva depuis l'icône de bouée sur la barre en haut à droite de la fenêtre.
+## Request the creation of an Appliance
+Before you can deploy an Appliance, you must request a subscription to an Appliance via a request to support.
+Support is accessible in the Shiva console from the lifebuoy icon on the top right bar of the window.
 
 ![](images/shiva_support.png)
 
 
-## Enregistrer un équipement
+## Register a device
 
-Pour accéder régulièrement à un équipement à administrer, il est plus adapté de créer une session, qui ne demandera que votre nom d’utilisateur et votre mot de passe à chaque connexion. 
+To regularly access a device for administration, it is more appropriate to create a session, which will only require your username and password for each connection.
 
-Pour cela, rendez-vous dans l’onglet « Equipements » du menu « Bastion », puis, cliquez sur le bouton « Nouveau équipement ».
+To do this, go to the "Devices" tab in the "Bastion" menu, then click on the "New Device" button.
 
 ![](images/creer_session.png)
 
+Then fill in the necessary information to create your device:
 
-Renseignez ensuite les informations nécessaires à la création de votre équipement :
-
-    - Nom de l'équipement ;
-    - Description ;
-    - Appliance associée ;
-    - Type de protocole (SSH ou RDP) ;
-    - Adresse IP de l’host ;
-    - Configuration du clavier.
+    - Device name;
+    - Description;
+    - Associated appliance;
+    - Protocol type (SSH or RDP);
+    - Host IP address;
+    - Keyboard configuration.
 
 ![](images/creer_session2.png)
 
+A notification indicating the creation of the device should appear at the top right of the page. The session is then added to the list of your devices.
 
-Une notification vous indiquant la création de l'équipement devrait apparaître en haut à droite de la page. La session s’ajoute ensuite à la liste de vos équipements. 
-
-Pour créer un nouvel équipement, vous pouvez également passer par l’onglet « Appliances » en cliquant sur la barre d’action de l’Appliance à laquelle vous souhaitez associer un équipement.
-
+To create a new device, you can also go through the "Appliances" tab by clicking on the action bar of the Appliance to which you want to associate a device.
 ![](images/creer_session3.png)
 
-## Se connecter à un équipement
+## Connecting to a Device
 
-Rendez-vous dans l’onglet « Equipements » de l’onglet « Bastion ». Cliquez sur la barre d’actions de l'équipement que vous souhaitez ouvrir, et cliquez sur le bouton « Ouvrir ».
+Go to the "Devices" tab under the "Bastion" tab. Click on the action bar of the device you want to open, and click on the "Open" button.
 
 ![](images/ouvrir_session.png)
 
-À chaque connexion à l'équipement, vous n’avez besoin de renseigner que vos informations d'authentification.
+Each time you connect to the device, you only need to provide your authentication information.
 
 ![](images/ouvrir_session2.png)
 
-Après avoir saisi vos identifiants, une notification confirmant le début de la connexion à votre équipement apparaît et la console vers votre machine virtuelle s’ouvre.
+After entering your credentials, a notification confirming the start of the connection to your device appears, and the console to your virtual machine opens.

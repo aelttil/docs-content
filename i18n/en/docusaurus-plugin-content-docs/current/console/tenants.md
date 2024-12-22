@@ -2,82 +2,81 @@
 title: Tenants
 ---
 
-## Concept de tenant
+## Tenant Concept
 
-Le tenant est un __regroupement de ressources au sein d'une organisation__. Une [Organisation](organisations.md) a au minimum un tenant (appelé __tenant par défaut__, pouvant être renommé). Généralement, plusieurs tenants sont utilisés pour segmenter les responsabilités ou les périmètres techniques.
+A tenant is a __grouping of resources within an organization__. An [Organization](organisations.md) has at least one tenant (referred to as the __default tenant__, which can be renamed). Typically, multiple tenants are used to segment responsibilities or technical scopes.
 
-Par exemple :
+For example:
 
-- Un tenant __Production__
-- Un tenant __Préproduction__
-- Un tenant __Recette__
-- Un tenant __Qualification__
+- A __Production__ tenant
+- A __Preproduction__ tenant
+- A __Acceptance__ tenant
+- A __Qualification__ tenant
 
-Mais il est aussi possible d'organiser les choses avec une __vue applicative__ ou par __criticité__ : 
+But it is also possible to organize things with an __application view__ or by __criticality__:
 
-- Un tenant __Application 1__ ou __Criticité 1__
-- Un tenant __Application 2__ ou __Criticité 2__
+- A __Application 1__ or __Criticality 1__ tenant
+- A __Application 2__ or __Criticality 2__ tenant
 - ...
 
-Les ressources techniques commandées sont affectées à un tenant précis et ne sont pas partagées avec les autres tenants. Par exemple, un cluster d'Hyperviseur et les réseaux L2 associées ne sont disponibles que dans 1 tenant.
-Concernant les réseaux, il est possible de demander des réseaux __'cross tenant'__ afin d'assurer la continuité réseau entre les tenants.
+The technical resources ordered are assigned to a specific tenant and are not shared with other tenants. For example, a Hypervisor cluster and the associated L2 networks are only available in 1 tenant.
+Regarding networks, it is possible to request __'cross tenant'__ networks to ensure network continuity between tenants.
 
-Les permissions des utilisateurs sont à définir dans chaque tenant. Ainsi chaque organisation doit bien réfléchir aux tenants souhaités. Ce point est généralement abordé en atelier initialisation, au moment de la création de l'organisation.
+User permissions must be defined in each tenant. Therefore, each organization must carefully consider the desired tenants. This point is usually addressed in the initial setup workshop, at the time of the organization's creation.
 
-Il est possible de faire évoluer l'architecture en ajoutant ou supprimant des tenants.
+It is possible to evolve the architecture by adding or removing tenants.
 
-Un tenant ne peut pas être vide. Il doit nécessairement être initialisé avec un minimum de ressource :
+A tenant cannot be empty. It must necessarily be initialized with a minimum of resources:
 
-- Une zone de disponibilité (AZ, soit un datacenter physique),
-- Un cluster de calcul,
-- Un espace de stockage,
-- Un vlan réseau.
+- An availability zone (AZ, i.e., a physical datacenter),
+- A compute cluster,
+- A storage space,
+- A network vlan.
 
-## Création d'un tenant
+## Creating a tenant
 
-La création d'un tenant est réalisée par une demande de service indiquant :
+The creation of a tenant is carried out by a service request indicating:
 
-    Le nom de votre Organisation
-    Le nom d'un contact avec son mail et n° de téléphone pour finaliser la configuration
-    Le nom du tenant
-    La zone de disponibilité ou à défaut le site physique souhaité pour le tenant
+    The name of your Organization
+    The name of a contact with their email and phone number to finalize the configuration
+    The name of the tenant
+The desired availability zone or, failing that, the physical site for the tenant
 
-*__Nota__ : La création d'un tenant sera possible directement pour le commanditaire Q2 2024.*
+*__Note__ : The creation of a tenant will be possible directly for the sponsor Q2 2024.*
 
-| Référence de commande                                        | Unité    | SKU                     |  
-|--------------------------------------------------------------|----------|-------------------------|
-| TENANT - *(REGION)* - Activation d'un tenant                 | 1 tenant | csp:tenant:v1           |
-| TENANT - *(REGION)* - Activation d'une zone de disponibilité | 1 tenant | csp:(region):iaas:az:v1 |
+| Order Reference                                        | Unit    | SKU                     |  
+|--------------------------------------------------------|---------|-------------------------|
+| TENANT - *(REGION)* - Tenant activation                | 1 tenant | csp:tenant:v1           |
+| TENANT - *(REGION)* - Activation of an availability zone | 1 tenant | csp:(region):iaas:az:v1 |
 
 
-## Selection d'un tenant
+## Tenant selection
 
-La selection du tenant se fait depuis la page principale de la console Shiva :
+Tenant selection is done from the main page of the Shiva console:
 
 ![](images/shiva_tenant.png)
 
-*__Nota :__ Les ressources d'un tenant lui sont propres et ne sont pas mélangeable avec d'autres tenants.*
+*__Note:__ The resources of a tenant are its own and are not mixable with other tenants.*
 
-## Autorisation d'accès à un tenant : IP autorisées
+## Tenant access authorization: Authorized IPs
 
-L'accès à la console de gestion cloud est strictement limité aux adresses IP préalablement autorisées, en conformité avec les exigences de la qualification SecNumCloud. Cette restriction garantit un niveau de sécurité renforcé en ne permettant l'accès qu'aux utilisateurs provenant de plages d'IP spécifiées, minimisant ainsi les risques d'accès non autorisés et protégeant l'infrastructure cloud selon les standards de sécurité les plus élevés.
+Access to the cloud management console is strictly limited to previously authorized IP addresses, in compliance with the requirements of the SecNumCloud qualification. This restriction ensures an enhanced level of security by only allowing access to users from specified IP ranges, thus minimizing the risk of unauthorized access and protecting the cloud infrastructure according to the highest security standards.
 
-Il est désormais possible d'afficher la liste des adresses IP publiques autorisées sur le tenant et d’ajouter une nouvelle adresse IP publique à cette liste directement depuis l'onglet "Administration > Accès". 
+It is now possible to display the list of authorized public IP addresses on the tenant and to add a new public IP address to this list directly from the "Administration > Access" tab.
 
 ![](images/shiva_ip_access_management_01.png)
 
-Pour cela, l’utilisateur doit disposer du droit `console_public_access_read` pour consulter les IPs autorisées, et du droit `console_public_access_write` pour ajouter une adresse IP publique à la liste.
+For this, the user must have the `console_public_access_read` permission to view the authorized IPs, and the `console_public_access_write` permission to add a public IP address to the list.
 
-Il est alors possible d'ajouter une nouvelle IP:
-
+It is then possible to add a new IP:
 ![](images/shiva_ip_access_management_02.png)
 
-Note : *La suppression d'un IP autorisée se fait par une demande de support dans la console Cloud Temple.*
+Note: *The removal of an authorized IP is done by a support request in the Cloud Temple console.*
 
-## Consommation de ressource au sein d'un tenant
+## Resource consumption within a tenant
 
-Il est possible de visualiser les ressources cloud consommées au sein d'un tenant, offrant ainsi une vue détaillée de l'utilisation des différents services déployés. Cette fonctionnalité permet aux utilisateurs de suivre en temps réel la consommation de leurs ressources, d'identifier les services les plus sollicités et d'optimiser leur utilisation en fonction des besoins. 
+It is possible to view the cloud resources consumed within a tenant, thus providing a detailed view of the usage of the various deployed services. This feature allows users to track their resource consumption in real time, identify the most utilized services, and optimize their usage according to needs. 
 
-Dans le menu de la console, cliquez sur "Rapport de consommation" puis sélectionnez la période de temps souhaitée. Vous pourrez ainsi visualiser en détail la consommation des ressources cloud sur la période définie, ce qui vous permettra d’analyser l’utilisation des services et d’optimiser votre gestion en conséquence :
+In the console menu, click on "Consumption Report" and then select the desired time period. You will be able to view in detail the consumption of cloud resources over the defined period, allowing you to analyze the use of services and optimize your management accordingly:
 
 ![](images/shiva_tenant_ressources_01.png)

@@ -4,30 +4,30 @@ title: Housing
 
 # Housing Cloud Temple
 
-Le **Housing Cloud Temple** offre une solution d'hébergement physique pour vos infrastructures IT dans des zones de disponibilité fiables et sécurisées. Conçue pour répondre aux besoins des entreprises, cette offre permet d’héberger vos équipements dans des racks mutualisés ou dédiés, tout en assurant une connectivité réseau performante et des services professionnels d'assistance en datacenter.
+The **Housing Cloud Temple** provides a physical hosting solution for your IT infrastructures in reliable and secure availability zones. Designed to meet the needs of businesses, this offer allows you to host your equipment in shared or dedicated racks, while ensuring high-performance network connectivity and professional datacenter support services.
 
-Avec des options flexibles et un haut niveau de sécurité, le Housing Cloud Temple garantit la continuité et la fiabilité de vos opérations, qu’il s’agisse d’héberger des appliances, des serveurs ou de bénéficier de services complémentaires pour optimiser votre infrastructure.
+With flexible options and a high level of security, the Housing Cloud Temple ensures the continuity and reliability of your operations, whether it's hosting appliances, servers, or benefiting from additional services to optimize your infrastructure.
 
 
 <div class="card-grid">
   <div class="card">
     <h3>Concepts</h3>
-    <p>Découvrez les bases et principes essentiels pour comprendre et maîtriser notre infrastructure.</p>
-    <a href="concepts" class="card-link">Explorer les concepts &rarr;</a>
+    <p>Discover the essential basics and principles to understand and master our infrastructure.</p>
+    <a href="concepts" class="card-link">Explore the concepts &rarr;</a>
   </div>
-  <div class="card">
+<div class="card">
     <h3>Quickstart</h3>
-    <p>Commencez rapidement avec nos ressources en suivant des instructions claires et simples.</p>
-    <a href="quickstart" class="card-link">Lancer le Quickstart &rarr;</a>
+    <p>Get started quickly with our resources by following clear and simple instructions.</p>
+    <a href="quickstart" class="card-link">Launch the Quickstart &rarr;</a>
   </div>
     <div class="card">
     <h3>Tutorials</h3>
-    <p>Apprenez étape par étape à configurer et utiliser nos services avec des guides détaillés.</p>
-    <a href="tutorials" class="card-link">Découvrir les tutoriels &rarr;</a>
+    <p>Learn step by step how to set up and use our services with detailed guides.</p>
+    <a href="tutorials" class="card-link">Explore the tutorials &rarr;</a>
   </div>
   <div class="card">
     <h3>FAQ</h3>
-    <p>Trouvez les réponses aux questions fréquentes pour résoudre rapidement vos problèmes.</p>
-    <a href="faq" class="card-link">Consulter la FAQ &rarr;</a>
+    <p>Find answers to frequently asked questions to quickly solve your problems.</p>
+    <a href="faq" class="card-link">Check out the FAQ &rarr;</a>
   </div>
 </div>

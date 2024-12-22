@@ -7,5 +7,5 @@ These tutorials assist you in deploying and managing a Cloud Temple Bastion from
 <div class="card">
   <h3>FAQ</h3>
   <p>No tutorials are available at the moment, but we are actively working on it. Check back soon for more information!</p>
-  <a href="../" class="card-link">Go to FAQ page &rarr;</a>
+  <a href="../" class="card-link">Access the FAQ page &rarr;</a>
 </div>

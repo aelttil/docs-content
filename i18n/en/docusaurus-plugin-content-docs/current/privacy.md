@@ -2,104 +2,99 @@
 title: Privacy
 ---
 
-## Contexte
+## Context
 
-La politique de protection des données existe pour assurer un niveau de sécurité adéquat en termes de confidentialité, de disponibilité et d’intégrité des ressources en information et en données personnelles vis-à-vis de toutes les menaces qui pourraient les affecter. 
+The data protection policy exists to ensure an adequate level of security in terms of confidentiality, availability, and integrity of information resources and personal data against all threats that could affect them.
 
-Cloud Temple définit, applique, opère, surveille, réalise des revues, maintient et améliore le processus et les mesures relatifs au traitement des données et à la sécurité de l’information en se basant sur une approche des risques.
+Cloud Temple defines, applies, operates, monitors, reviews, maintains, and improves the process and measures related to data processing and information security based on a risk approach.
 
-La vie privée des personnes sera ainsi toujours respectée.
-
+The privacy of individuals will always be respected.
 
 ## Introduction
 
-Toute l’information que nous traitons, conservons ou transférons concernant les personnes doit être protégée de manière adéquate contre les accès non autorisés ou les modifications. Lors de l’obtention, la conservation pour le traitement ou le transfert de l’information concernant les personnes, nous respectons leurs vœux et leur droit à la vie privée en tout temps.
+All the information we process, store, or transfer about individuals must be adequately protected against unauthorized access or modifications. When obtaining, storing for processing, or transferring information about individuals, we respect their wishes and their right to privacy at all times.
+Cloud Temple ensures the respect of integrity, confidentiality, and availability of information generated in the processing of personal data: Cloud Temple must ensure the protection of its information resources against internal or external threats, whether accidental or deliberate.
 
-Cloud Temple s’assure du respect de l’intégrité, de la confidentialité et de la disponibilité de l’information générée dans le traitement des données personnelles : Cloud Temple doit assurer la protection de ses ressources en information vis-à-vis des menaces internes ou externes, accidentelles ou délibérées.
+## Privacy Protection Objectives
+- Ensure the continuity of Cloud Temple's critical activities
+- Ensure that all information processed, stored, exchanged, or published by Cloud Temple is of absolute integrity
+- Ensure that any information related to our clients is monitored and stored in accordance with procedures for maintaining appropriate confidentiality
+- Ensure that information related to individuals is handled in a manner consistent with our privacy protection principles and respectful of individual rights.
 
-## Les objectifs de protection de la vie privée
-- Assurer la continuité des activités cruciales de Cloud Temple
-- Assurer que toute l’information traitée, conservée, échangée ou publiée par Cloud Temple est d’une intégrité absolue
-- Assurer que toute information relative à nos clients sera surveillée et conservée conformément aux procédures de maintien d’une confidentialité appropriée
-- Assurer que l’information relative aux personnes est manipulée de manière cohérente avec nos principes de protection de la vie privée et respectueuse des droits des individus.
+## Privacy Protection Principles
+- All staff will be informed and responsible for adhering to privacy protection requirements relevant to their role.
+- Provisions will be made to fund relevant privacy protection measures in operational and management processes.
+- Risks during data processing will be monitored, and measures will be taken when changes lead to risks that are not acceptable.
+- Risk classification and acceptability criteria can be found in the organizational framework of the privacy protection policy.
+- Situations that could put the organization in violation of laws and regulations will not be tolerated.
 
-## Principes de protection de la vie privée
-- Tout le personnel sera informé et responsable du respect des exigences en matière de protection de la vie privée pertinente à leur rôle.
-- Des dispositions seront prises pour financer des mesures de protection de la vie privée pertinentes dans les processus opérationnels et de gestion.
-- Les risques lors du traitement des données seront surveillés et les mesures seront prises lorsque des modifications entraîneront des risques qui ne sont pas acceptables.
-- Les critères de classification de risque et d’acceptabilité se retrouvent dans le cadre organisationnel de la politique de protection de la vie privée.
-- Des situations qui pourraient placer l’organisme en violation des lois et des règlements ne seront pas tolérées.
+## Responsibilities
 
-## Responsabilités
+The Executive Management is responsible for ensuring that privacy is adequately addressed within the company.
+Each manager is responsible for ensuring that the individuals working under their supervision protect information in accordance with the organization's standards.
 
-La Direction Générale est responsable de s’assurer que le respect de la vie privée est traité de manière adéquate au sein de l’entreprise.
+All staff members have privacy protection responsibilities that are part of their job.
 
-Chaque directeur est responsable de s’assurer que les personnes qui travaillent sous sa gouverne protègent l’information en conformité avec les normes de l’organisme.
+## Key Outcomes
 
-Tous les membres du personnel ont des responsabilités de protection de la vie privée qui font partie de leur travail.
+Appropriate and proportionate measures will be implemented to protect resources and provide confidence to interested parties.
 
-## Résultats principaux
+The impacts of data breaches will be limited.
 
-Des mesures appropriées et proportionnées seront mises en œuvre pour protéger les ressources et donner confiance aux parties intéressées.
+Decisions on data protection matters will be based on an assessment of the risks faced by Cloud Temple.
 
-Les impacts de la violation de données seront limités.
+Cloud Temple's legal, regulatory, and contractual requirements will be met.
 
-Les décisions sur les sujets de protection des données seront basées sur une évaluation des risques auxquels fait face Cloud Temple.
+## Information Translation
 
-Les exigences légales, réglementaires et contractuelles de Cloud Temple seront remplies.
+The English, Spanish, Italian, and German translations of this documentation are done automatically.
+Despite reasonable efforts to provide a quality translation, Cloud Temple cannot guarantee the accuracy of the information contained herein. 
+For any questions related to this, please refer to the French version of the information.
 
-## Traduction des informations
+## Legal Notice
 
-Les traductions anglaise, espagnole, italienne et allemande de cette documentation sont réalisées de façon automatique. 
+### Person editing this website
+Company name: __CLOUD TEMPLE__, Simplified Joint Stock Company with a Single Associate
 
-Malgré les efforts raisonnables déployés pour fournir une traduction de qualité, Cloud Temple n'est pas en mesure de garantir l'exactitude des informations qu'elle contient. 
-Pour toute question s'y rapportant, veuillez vous référer à la version française des informations.
+Headquarters address: Le Belvédère, 1-7 Cr Valmy, 92800 Puteaux – SPACES.
 
-## Mentions légales
+Telephone (switchboard): 01 41 91 77 77
 
-### Personne éditrice de ce site internet
-Raison sociale : __CLOUD TEMPLE__, Société par Actions Simplifiées à Associé Unique
+Registration number in the Trade and Companies Register: 825 400 336
 
-Adresse du siège social : Le Belvédère, 1-7 Cr Valmy, 92800 Puteaux – SPACES.
+VAT: FR 55 825 400 336
 
-Téléphone (standard) : 01 41 91 77 77
+Share capital: 13,174,890 euros
 
-Numéro d’inscription au RCS : 825 400 336
+Publication Director: Franck DUBRAY
 
-TVA : FR 55 825 400 336
+Hosting: Cloud Temple
 
-Capital social : 13 174 890 euros
+Address: Le Belvédère, 1-7 Cr Valmy, 92800 Puteaux – SPACES.
 
-Directeur de la publication : Franck DUBRAY
+Telephone (switchboard): 01 41 91 77 77
 
-Hébergement : Cloud Temple
+### Data collection
+Cloud Temple commits to ensuring that the collection and processing of your data, carried out from the site __docs.cloud-temple.com__,
+comply with the General Data Protection Regulation (GDPR) and the Data Protection Act.
 
-Adresse : Le Belvédère, 1-7 Cr Valmy, 92800 Puteaux – SPACES.
+For any information or exercise of your Data Protection rights on the personal data processing managed by Cloud Temple, you can contact the Data Protection Officer (DPO):
 
-Téléphone (standard) : 01 41 91 77 77
+by email at: __contact@cloud-temple.com__
 
-### Collecte des données
-Cloud Temple s’engage à ce que la collecte et le traitement de vos données, effectués à partir du site __docs.cloud-temple.com__, 
-soient conformes au Règlement Général sur la Protection des Données (RGPD) et à la loi Informatique et Libertés. 
+To exercise your rights on the data concerning you, you must include a copy of a valid identity document (identity card or passport) attached in the following format: GIF, JPG, PNG, PDF, maximum 2MB.
 
-Pour toute information ou exercice de vos droits Informatique et Libertés sur les traitements de données personnelles 
-gérés par Cloud Temple, vous pouvez contacter le délégué à la protection des données (DPO) :
+by mail at the following address:
 
-par e-mail à : __contact@cloud-temple.com__
+*__Cloud Temple for the attention of the Data Protection Officer (DPO) Le Belvédère, 1-7 Cr Valmy, 92800 Puteaux – SPACES.__*
 
-Pour exercer vos droits sur les données vous concernant, vous devez insérer une copie d’une pièce d’identité en cours de validité (carte d’identité ou passeport) en pièce jointe au format suivant : GIF, JPG, PNG, PDF, maximum 2Mo.
+To exercise your rights on the data concerning you, you must include a copy of a valid identity document (identity card or passport).
 
-par courrier à l’adresse suivante :
+### Personal data and cookies
+___This site does not collect any personal data. The audience measurement tool we use is set up 
+so that the information collected is anonymized.___
 
-*__Cloud Temple à l’attention de monsieur le délégué à la protection des données (DPO) Le Belvédère, 1-7 Cr Valmy, 92800 Puteaux – SPACES.__*
+The cookies placed on your computer when you visit allow us to know the number of visits and the most viewed pages, 
+without enabling us to personally identify you.
 
-Pour exercer vos droits sur les données vous concernant, vous devez insérer une copie d’une pièce d’identité en cours de validité (carte d’identité ou passeport).
-
-### Données personnelles et cookies
-___Ce site ne prélève aucune donnée à caractère personnel. L’outil de mesure d’audience que nous utilisons est paramétré 
-de façon à ce que les informations recueillies soient anonymisées.___
-
-Les cookies déposés sur votre ordinateur lorsque vous le consultez nous permet de connaître le nombre de visites et les pages les plus consultées, 
-sans pour autant permettre de vous identifier personnellement.
-
-Nous sommes ainsi en conformité avec la réglementation de la CNIL et exemptés d’autorisation préalable
+Thus, we are in compliance with the regulations of the CNIL and exempt from prior authorization.

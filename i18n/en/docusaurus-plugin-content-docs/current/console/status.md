@@ -1,71 +1,68 @@
 ---
-title: Opérations planifiées et gestion des Incidents
+title: Scheduled Operations and Incident Management
 ---
 
-Comme toute plateforme d'infrastructure Cloud, la plateforme Cloud Temple fait l'objet de travaux et de maintenance matérielle et logicielle régulièrement.
+Like any Cloud infrastructure platform, the Cloud Temple platform undergoes regular hardware and software maintenance and upgrades.
 
-## Accès aux opérations et incidents en cours
+## Access to ongoing operations and incidents
 
-L'icône de suivi des opérations permet de visualiser les opérations planifiées sur l'infrastructure Cloud Temple ainsi que les incidents ouverts sur le tenant. Cette icône est accessible dans la barre d'icône en haut à gauche de l'écran et à la forme d'une icône __'Outils'__
+The operation tracking icon allows you to view the operations scheduled on the Cloud Temple infrastructure as well as the open incidents on the tenant. This icon is accessible in the icon bar at the top left of the screen and is shaped like a __'Tools'__ icon
 
 ![](images/shiva_intervention_menu01.png)
 
-Cette icône vise à fournir une visibilité sur les interventions planifiées, en cours et terminées et/ou les incidents sur le tenant.
+This icon aims to provide visibility on planned, ongoing, and completed interventions and/or incidents on the tenant.
 
-Quand des interventions et/ou incidents sont en cours, un nombre apparait sur l’icône.
-
-En cliquant sur visualisation rapide, vous trouverez les interventions en cours. Il est également possible de cliquer sur __‘Toutes les interventions’__ ou __‘Tous les incidents et rapports du tenant’__ pour afficher plus de détails.
+When interventions and/or incidents are ongoing, a number appears on the icon.
+By clicking on quick view, you will find the ongoing interventions. It is also possible to click on __'All interventions'__ or __'All incidents and tenant reports'__ to display more details.
 
 ![](images/shiva_intervention_menu03.png)
 
-## Suivi des interventions planifiées
+## Tracking of Scheduled Interventions
 
-La page Interventions est composée de deux onglets. Le premier onglet permet de visualiser les interventions prévues sur les 30 prochains jours et les interventions en cours.
+The Interventions page consists of two tabs. The first tab allows you to view the interventions scheduled for the next 30 days and the ongoing interventions.
 
 ![](images/shiva_intervention_menu04.png)
 
-Les interventions terminées quant à elles sont visibles dans le second onglet ‘Terminé’
+Completed interventions, on the other hand, are visible in the second 'Completed' tab.
 
 ![](images/shiva_intervention_menu05.png)
 
-L'accès à ces informations nécessite pour le profil de l'utilisateur la permission '**intervention_read**'.
+Access to this information requires the user profile to have the '**intervention_read**' permission.
 
-## Gestion des incidents
+## Incident Management
+Two types of incidents can be distinguished: global incidents, which affect the entire system, and client-specific incidents, which only impact the resources or services associated with a particular client.
 
-Deux types d'incidents sont à distinguer : les incidents globaux, qui affectent l'ensemble du système, et les incidents spécifiques à un périmètre client, qui impactent uniquement les ressources ou services associés à un client particulier.
+### Global Incidents
 
-### Incidents globaux
-
-La récupération des informations concernant les incidents globaux ne nécessite aucune permission particulière. Un bandeau rouge est affiché dès la connexion à la console pour avertir de la présence d'un incident global en cours de résolution. L'utilisateur a la possibilité de masquer ce bandeau temporairement durant sa session, mais celui-ci réapparaîtra à chaque nouvelle connexion ou lors d'un rafraîchissement de la page, tant que l'incident reste non résolu.
+Retrieving information about global incidents does not require any special permissions. A red banner is displayed as soon as you log into the console to alert you of an ongoing global incident. The user has the option to temporarily hide this banner during their session, but it will reappear with each new login or page refresh, as long as the incident remains unresolved.
 
 ![](images/shiva_incident_001.png)
 
-Un bouton __'En savoir plus'__ redirige vers la page publique de suivi des incidents, permettant d'accéder à des informations supplémentaires sur l'incident en cours :
+A __'Learn more'__ button redirects to the public incident tracking page, providing access to additional information about the ongoing incident:
 
 ![](images/shiva_incident_002.png)
 
-Il est possible d'obtenir les rapports des incidents globaux. L'accès à ces rapports requiert la permission spécifique '**incident_management**'. 
+It is possible to obtain global incident reports. Access to these reports requires the specific permission '**incident_management**'.
 
-Voici un exemple de l'onglet affichant ces rapports :
+Here is an example of the tab displaying these reports:
 
 ![](images/shiva_incident_003.png)
 
-### Incidents sur un périmètre commanditaire
+### Incidents on a sponsor scope
 
-La visibilité des incidents spécifiques à un périmètre client nécessite la permission **incident_read**. Ces incidents sont représentés par une icône dédiée, accompagnée d'un badge rouge indiquant le nombre d'incidents en cours. 
+Visibility of incidents specific to a client scope requires the **incident_read** permission. These incidents are represented by a dedicated icon, accompanied by a red badge indicating the number of ongoing incidents.
 
-L'icône est cliquable, permettant de lister les tickets associés aux incidents. Chaque ticket inclut un lien vers les détails de l'incident, offrant la possibilité de suivre l'avancement de leur résolution :
+The icon is clickable, allowing the listing of tickets associated with the incidents. Each ticket includes a link to the incident details, offering the possibility to follow the progress of their resolution:
 
 ![](images/shiva_incident_004.png)
 
-Pour consulter les détails d'un incident, il est nécessaire d'être l'auteur du ticket d'incident ou de disposer de la permission **support_management**.
+To view the details of an incident, it is necessary to be the author of the incident ticket or to have the **support_management** permission.
 
-### Gestion des notifications
-
-Dans le but d'informer rapidement les utilisateurs en cas de nouvel incident, un système de notifications par e-mail a été mis en place. Depuis leur profil utilisateur, un onglet intitulé '*Mes abonnements*' permet aux utilisateurs de s'abonner aux notifications pour les deux types d'incidents. Ainsi, ils recevront un e-mail dans un délai très court lors de la déclaration ou de la résolution d'un incident.
+### Notification Management
+In order to promptly inform users in the event of a new incident, an email notification system has been implemented. From their user profile, a tab titled '*My subscriptions*' allows users to subscribe to notifications for both types of incidents. Thus, they will receive an email in a very short time when an incident is reported or resolved.
 
 ![](images/shiva_incident_005.png)
 
-L'objet de l'e-mail indiquera le type d'incident et, dans le cas d'un incident lié à un périmètre, le nom du périmètre impacté. La notification contiendra également un lien permettant d'accéder directement aux détails de l'incident :
+The subject of the email will indicate the type of incident and, in the case of an incident related to a perimeter, the name of the impacted perimeter. The notification will also contain a link to directly access the details of the incident:
 
 ![](images/shiva_incident_006.png)
