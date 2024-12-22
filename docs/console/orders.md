@@ -60,7 +60,7 @@ Vous obtenez ensuite un résumé des options sélectionnées avant de valider vo
 
 ## Commander de la ressource stockage supplémentaire
 
-La logique d'allocation du stockage en mode bloc sur les clusters de calcul est [décrite ici](../iaas/storage.md).
+La logique d'allocation du stockage en mode bloc sur les clusters de calcul est [décrite ici]().
 
 ### Déployer un nouveau cluster de calcul
 
@@ -164,7 +164,7 @@ __nota__ :
 
 ## Ajouter de la ressource mémoire supplémentaire à un cluster de calcul
 
-La logique d'allocation de la mémoire sur les clusters de calcul est [décrite ici](../iaas/compute.md).
+La logique d'allocation de la mémoire sur les clusters de calcul est [décrite ici]().
 
 Pour ajouter de la mémoire vive sur un cluster, il suffit de se rendre sur la configuration du cluster (comme pour l'ajout d'un hôte de calcul tel que précédemment vue) et de cliquer sur __'Modifier la mémoire'__.
 
