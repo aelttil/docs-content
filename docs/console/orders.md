@@ -60,7 +60,7 @@ Vous obtenez ensuite un résumé des options sélectionnées avant de valider vo
 
 ## Commander de la ressource stockage supplémentaire
 
-La logique d'allocation du stockage en mode bloc sur les clusters de calcul est [décrite ici]().
+La logique d'allocation du stockage en mode bloc sur les clusters de calcul est TODO
 
 ### Déployer un nouveau cluster de calcul
 
@@ -147,7 +147,7 @@ L'option de désactivation se trouve dans les options du réseau sélectionné. 
 
 ## Ajouter des hyperviseurs supplémentaires à un cluster de calcul
 
-La logique de fonctionnement des clusters de calcul est [décrite ici].
+La logique de fonctionnement des clusters de calcul est TODO
 
 L'ajout d'hyperviseurs à un cluster de calcul se fait dans le menu __'IaaS'__ dans le bandeau vert à gauche de l'écran.
 Dans l'exemple suivant, nous allons ajouter du calcul sur un cluster d'hyperviseur utilisant la technologie VMware.
@@ -164,7 +164,7 @@ __nota__ :
 
 ## Ajouter de la ressource mémoire supplémentaire à un cluster de calcul
 
-La logique d'allocation de la mémoire sur les clusters de calcul est [décrite ici]().
+La logique d'allocation de la mémoire sur les clusters de calcul est TODO
 
 Pour ajouter de la mémoire vive sur un cluster, il suffit de se rendre sur la configuration du cluster (comme pour l'ajout d'un hôte de calcul tel que précédemment vue) et de cliquer sur __'Modifier la mémoire'__.
 
