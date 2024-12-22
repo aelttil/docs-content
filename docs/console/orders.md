@@ -125,7 +125,7 @@ La technologie réseau utilisée sur l'infrastructure Cloud Temple est basée su
 Il est aussi possible de partager des réseaux entre vos tenants et de les terminer en zone de hosting.
 Basiquement, vous pouvez imaginer un réseau Cloud Temple comme un vlan 802.1q disponible en tout point de votre tenant.
 
-*Le détail complet de la création d'un nouveau réseau est [décrit dans la section réseaux](../network/private_network.md).*
+TODO
 
 La commande d'un nouveau réseau et les décisions de partage entre vos tenants, sont réalisées dans le menu __'Réseau'__ du bandeau vert à gauche de l'écran. Les réseaux seront d'abord créés, puis une commande distincte sera générée pour les propager. Vous pouvez suivre l'avancement des commandes en cours en accédant à l'onglet "Commande" dans le menu, ou en cliquant sur les labels d'information qui vous redirigent vers les commandes actives ou en cours de traitement.
 
