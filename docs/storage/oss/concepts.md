@@ -70,3 +70,15 @@ Le stockage S3 Cloud Temple stocke les données de manière native sur __trois z
 
 Cette réplication assure que même en cas de défaillance d'une zone, les données restent accessibles et intactes, 
 contribuant ainsi à une infrastructure de stockage hautement résiliente.
+
+
+## Taille maximale de fichier pouvant être manipulé avec la console web
+La limite en web est de 40Mo par fichier. Au delà, il faut utiliser un client natif S3 avec l'API. 
+
+
+## L'offre S3 Cloud Temple utilise-t-elle la méthode 'PathStyle'
+
+De part les contraintes associées à la qualification SecNumCloud, à cet instant, l'offre est prévue pour utiliser la méthode '**PathStyle**'. Nous travaillons à ce que la méthode '**UrlStyle**' soit disponible S1 2025.
+
+## Nombre maximum de buckets par tenant
+Le nombre maximum de buckets par tenant est de 999.

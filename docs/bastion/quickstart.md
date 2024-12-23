@@ -11,6 +11,29 @@ Ce guide de démarrage vous présente comment demander la création d'une Applia
 3. Avoir les droits sur le module Bastion. 
 4. Dans le cadre d'un déploiement de l'Appliance onpremise, les flux correspondants doivent être ouverts. 
 
+
+## Les flux nécessaires au fonctionnement du produit Bastion
+
+Plusieurs flux sont nécessaires pour le bon fonctionnement de l'Appliance Bastion.
+
+### La passerelle bastion
+| Source                   | Destination                                 | Protocole |
+|--------------------------|---------------------------------------------|-----------|
+| Appliance bastion client | 91.223.207.71 (botg.shiva.cloud-temple.com) | UDP/4242  |
+
+### Flux d'administration RDP
+
+| Source                   | Destination                 | Protocole |
+|--------------------------|-----------------------------|-----------|
+| Appliance bastion client | Les instances à administrer | TCP/3389  |
+
+### Flux d'administration SSH
+
+| Source                   | Destination                 | Protocole |
+|--------------------------|-----------------------------|-----------|
+| Appliance bastion client | Les instances à administrer | TCP/22    |
+
+
 ## Demander la création d'une Appliance
 Avant de pouvoir déployer une Appliance, il faut faire une demande de souscription à une Appliance via une demande au support.
 Le support est accessible dans la console Shiva depuis l'icône de bouée sur la barre en haut à droite de la fenêtre.

@@ -21,10 +21,5 @@ Cloud Temple propose une offre Réseaux Privés conçue pour répondre aux besoi
     <p>Apprenez étape par étape à configurer et utiliser nos services avec des guides détaillés.</p>
     <a href="tutorials" class="card-link">Découvrir les tutoriels &rarr;</a>
   </div>
-  <div class="card">
-    <h3>FAQ</h3>
-    <p>Trouvez les réponses aux questions fréquentes pour résoudre rapidement vos problèmes.</p>
-    <a href="faq" class="card-link">Consulter la FAQ &rarr;</a>
-  </div>
 </div>
 

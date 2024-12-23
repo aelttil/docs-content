@@ -6,7 +6,7 @@ title: Déployer des ressources
 
 Le suivi du déploiement de nouvelles ressources se fait dans le menu __'Commandes'__ accessible dans le bandeau vert à gauche de l'écran. 
 
-Il permet de visualiser les ressources Cloud commandées, en cours de déploiement et les eventuelles erreurs au sein d'un [tenant](tenants.md) de votre [Organisation](organisations.md).
+Il permet de visualiser les ressources Cloud commandées, en cours de déploiement et les eventuelles erreurs au sein d'un [Tenant](iam/concepts.md#tenant) de votre [Organisation](iam/concepts.md#organisations).
 
 ![](images/shiva_orders_list.png)
 

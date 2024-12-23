@@ -25,7 +25,7 @@ Vous devez alors :
 
 - Indiquer le nom de ce nouveau jeton,
 - Indiquer une date d'expiration (maximum 12 mois de validité),
-- Choisir les [permissions associées au jeton](permissions.md).
+- Choisir les permissions associées au jeton.
 
 Les détails concernant votre jeton sont alors affichés. __Attention, il n'est plus possible d'y accéder a posteriori.__
 

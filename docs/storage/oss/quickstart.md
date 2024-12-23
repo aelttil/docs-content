@@ -111,3 +111,10 @@ La suppression d'un bucket se fait dans les actions associées au bucket en choi
 ![](images/S3_delete.png)
 
 _**ATTENTION : La suppression est définitive et il n'existe aucun moyen de récupérer les données.**_
+
+
+## Comment est facturé l'offre S3 de Cloud Temple ?
+
+Le prix est un prix mensuel, au Gio de stockage, facturé mensuellement. Cependant, la plateforme comptabilise l'usage à l'heure et réalise la facturation sur une base mensuelle de 720 heures.
+
+Par exemple, si vous consommez dans le mois 30 Gio pendant 1h puis rien, puis quelques jours plus tard 30Gio pendants 2h, la facture mensuelle sera de *( Prix (1 x 30Gio) + 2 x Prix (30Gio) ) / 720* sur le mois considéré. La facturation est terme échue.

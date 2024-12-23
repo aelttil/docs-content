@@ -7,7 +7,8 @@ title: Quickstart
 
 ### Affectation des droits d'accès
 
-Il est indispensable que l'administrateur du [tenant](../console/tenants.md) accorde le droit de gestion de la plateforme Openshift à l'utilisateur administrateur Openshift pour pouvoir y accéder :
+Il est indispensable que l'administrateur du [Tenant](../console/iam/concepts.md#tenants) accorde le droit de gestion de la plateforme Openshift à l'utilisateur administrateur Openshift pour pouvoir y accéder :
+
 
 ![](images/oshift_rights.png)
 

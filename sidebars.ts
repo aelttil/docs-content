@@ -8,31 +8,6 @@ const sidebars: SidebarsConfig = {
       id: 'home',
     },
     {
-      type: 'doc',
-      id: 'console/api',
-    },
-    // {
-    //   type: 'category',
-    //   label: 'FAQ',
-    //   items: [
-    //     'faq/general/general',
-    //     'faq/issues',
-    //     'faq/iam/iam',
-    //   ],
-    // },
-    // {
-    //   type: 'link', // Lien externe
-    //   label: 'Visitez notre site web', // Texte affiché
-    //   href: 'https://www.cloud-temple.com', // URL externe
-    //   className: 'sidebar-external-link', // Classe personnalisée pour le style
-    // },
-    // {
-    //   type: 'link',
-    //   label: 'Cloud Temple sur GitHub', // Texte affiché
-    //   href: 'https://github.com/cloud-temple', // URL du dépôt GitHub
-    //   className: 'sidebar-github-link', // Classe CSS personnalisée
-    // },
-    {
       type: 'html', // Séparateur et titre
       value: `
         <hr class="sidebar-separator" />
@@ -40,32 +15,42 @@ const sidebars: SidebarsConfig = {
       `,
     },
     {
-      type: 'category',
-      label: 'Management',
-      items: [
-        'console/console',
-      ],
+      type: 'doc',
+      id: 'console/console',
     },
     {
-      type: 'category',
-      label: 'Organisations & Tenants',
-      items: [
-        'console/organisations',
-        'console/tenants',
-      ],
+      type: 'doc',
+      id: 'console/console_quickstart',
+    },
+    {
+      type: 'doc',
+      id: 'console/status',
+    },
+    {
+      type: 'doc',
+      id: 'console/orders',
+    },
+    {
+      type: 'doc',
+      id: 'console/metrics/concepts',
+    },
+    {
+      type: 'doc',
+      id: 'console/api',
     },
     {
       type: 'category',
       label: 'IAM',
       items: [
-        'console/accounts',
-        'console/permissions',
+        'console/iam/iam',
+        'console/iam/concepts',
+        'console/iam/quickstart',
         {
           type: 'category',
           label: 'Tutorials',
           items: [
-            'console/iam/sso_aad',
-            'console/iam/sso_adfs',
+            'console/iam/tutorials/sso_aad',
+            'console/iam/tutorials/sso_adfs',
           ],
         },
       ],
@@ -85,7 +70,6 @@ const sidebars: SidebarsConfig = {
         'bastion/concepts',
         'bastion/quickstart',
         'bastion/tutorials',
-        'bastion/faq',
       ],
     },
     {
@@ -96,7 +80,6 @@ const sidebars: SidebarsConfig = {
         'housing/concepts',
         'housing/quickstart',
         'housing/tutorials',
-        'housing/faq',
       ],
     },
     {
@@ -107,7 +90,6 @@ const sidebars: SidebarsConfig = {
         'iaas_opensource/concepts',
         'iaas_opensource/quickstart',
         'iaas_opensource/tutorials',
-        'iaas_opensource/faq',
       ],
     },
     {
@@ -118,7 +100,6 @@ const sidebars: SidebarsConfig = {
         'iaas_vmware/concepts',
         'iaas_vmware/quickstart',
         'iaas_vmware/tutorials',
-        'iaas_vmware/faq',
       ],
     },
     {
@@ -129,7 +110,6 @@ const sidebars: SidebarsConfig = {
         'paas_openshift/concepts',
         'paas_openshift/quickstart',
         'paas_openshift/tutorials',
-        'paas_openshift/faq',
       ],
     },
     {
@@ -144,7 +124,6 @@ const sidebars: SidebarsConfig = {
             'network/private_network/concepts',
             'network/private_network/quickstart',
             'network/private_network/tutorials',
-            'network/private_network/faq',
           ],
         },
         {
@@ -155,7 +134,6 @@ const sidebars: SidebarsConfig = {
             'network/internet/concepts',
             'network/internet/quickstart',
             'network/internet/tutorials',
-            'network/internet/faq',
           ],
         },
       ],
@@ -172,7 +150,6 @@ const sidebars: SidebarsConfig = {
             'storage/oss/concepts',
             'storage/oss/quickstart',
             'storage/oss/tutorials',
-            'storage/oss/faq',
           ],
         },
       ],

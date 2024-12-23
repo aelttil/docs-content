@@ -8,6 +8,7 @@ const config: Config = {
   title: 'Documentation Cloud Temple',
   tagline: 'Tout ce dont vous avez besoin pour tirer le meilleur parti des produits Cloud Temple.  ',
   favicon: 'img/favicon.ico',
+  onBrokenLinks: 'log',
 
   // enable faster build time https://docusaurus.io/blog/releases/3.6
   future: {
@@ -26,8 +27,6 @@ const config: Config = {
   // If you aren't using GitHub pages, you don't need these.
   organizationName: 'aelttil', // Usually your GitHub org/user name.
   projectName: 'docs', // Usually your repo name.
-
-  onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
 
   // Even if you don't use internationalization, you can use this field to set
@@ -145,6 +144,14 @@ const config: Config = {
             {
               label: 'Privacy',
               to: '/docs/privacy/',
+            },
+            {
+              label: 'UGAP',
+              to: '/docs/market_place_public',
+            },
+            {
+              label: 'CAIH',
+              to: '/docs/market_place_public',
             },
           ],
         },
