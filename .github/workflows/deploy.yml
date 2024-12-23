@@ -5,14 +5,17 @@ on:
     branches:
       - main
       - dev
+  create:
+    tags:
+      - "*"
 
 jobs:
-  # Job pour la branche main (déploiement GitHub Pages)
-  build-main:
-    name: Build and Deploy to GitHub Pages
+  # Job pour la branche dev (déploiement GitHub Pages)
+  deploy-dev:
+    name: Deploy Documentation to GitHub Pages
     runs-on: ubuntu-latest
-    if: github.ref == 'refs/heads/main'
-    permissions: # Définir les permissions au niveau du job
+    if: github.ref == 'refs/heads/dev'
+    permissions:
       pages: write
       id-token: write
     steps:
@@ -28,7 +31,7 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
-      - name: Build website
+      - name: Build documentation
         run: npm run build
 
       - name: Upload Build Artifact
@@ -39,14 +42,12 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
-        with:
-          path: build
 
-  # Job pour la branche dev (construction et push de l'image Docker)
-  build-dev:
+  # Job pour la branche main (construction et push d'une image Docker non versionnée)
+  build-main:
     name: Build and Push Docker Image
     runs-on: ubuntu-latest
-    if: github.ref == 'refs/heads/dev'
+    if: github.ref == 'refs/heads/main'
     steps:
       - uses: actions/checkout@v4
 
@@ -65,4 +66,35 @@ jobs:
           context: .
           push: true
           platforms: linux/amd64,linux/arm64/v8
-          tags: cloudtempleinfra/docs:dev
+          tags: cloudtempleinfra/docs:main
+
+  # Job pour les tags (construction et push d'une image Docker versionnée)
+  build-tag:
+    name: Build and Push Versioned Docker Image
+    runs-on: ubuntu-latest
+    if: startsWith(github.ref, 'refs/tags/')
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Extract Tag Name
+        id: extract_tag
+        run: echo "TAG=${GITHUB_REF##*/}" >> $GITHUB_ENV
+
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v2
+
+      - name: Log in to DockerHub
+        uses: docker/login-action@v2
+        with:
+          username: ${{ secrets.DOCKER_USERNAME }}
+          password: ${{ secrets.DOCKER_PASSWORD }}
+
+      - name: Build and Push Docker Image
+        uses: docker/build-push-action@v4
+        with:
+          context: .
+          push: true
+          platforms: linux/amd64,linux/arm64/v8
+          tags: |
+            cloudtempleinfra/docs:${{ env.TAG }}
+            cloudtempleinfra/docs:latest
